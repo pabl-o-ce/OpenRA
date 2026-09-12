@@ -150,6 +150,12 @@ namespace OpenRA.Server
 		ReplayRecorder recorder;
 		GameInformation gameInfo;
 		readonly List<GameInformation.Player> worldPlayers = new();
+
+		// Profile IDs of authenticated clients by client index, for INotifyGameOutcome.
+		// Never pruned: DropClient removes clients from LobbyInfo before the end-game outcome is reported.
+		readonly Dictionary<int, int> clientProfileIds = new();
+		string engineVersion;
+
 		readonly Stopwatch pingUpdated = Stopwatch.StartNew();
 
 		public readonly VoteKickTracker VoteKickTracker;
@@ -188,8 +194,54 @@ namespace OpenRA.Server
 			foreach (var t in serverTraits.WithInterface<IEndGame>())
 				t.GameEnded(this);
 
+			var replayFilename = recorder?.Filename;
 			recorder?.Dispose();
 			recorder = null;
+
+			// Notify after the replay footer is written, so the replay is complete when the outcome is reported
+			NotifyGameOutcome(GameOutcomeReason.EndGame, replayFilename);
+		}
+
+		void NotifyGameOutcome(GameOutcomeReason reason, string replayFilename)
+		{
+			// No game was started, so there is no outcome to report
+			if (gameInfo == null)
+				return;
+
+			engineVersion ??= ResolveEngineVersion(gameInfo);
+			var outcome = new GameOutcome(reason, gameInfo, replayFilename, DateTime.UtcNow,
+				new Dictionary<int, int>(clientProfileIds), engineVersion);
+
+			foreach (var t in serverTraits.WithInterface<INotifyGameOutcome>())
+			{
+				// Result notifications run inside the order loop: a failing trait must not take the server down
+				try
+				{
+					t.GameOutcomeDetermined(this, outcome);
+				}
+				catch (Exception ex)
+				{
+					Log.Write("server", $"Failed to report the game outcome ({reason}):");
+					Log.Write("server", ex.ToString());
+				}
+			}
+		}
+
+		static string ResolveEngineVersion(GameInformation gameInfo)
+		{
+			// Game.EngineVersion is only set by Game.Initialize, which the dedicated server never calls
+			if (!string.IsNullOrEmpty(Game.EngineVersion))
+				return Game.EngineVersion;
+
+			try
+			{
+				var version = File.ReadAllText(Path.Combine(Platform.EngineDir, "VERSION")).Trim();
+				if (!string.IsNullOrEmpty(version))
+					return version;
+			}
+			catch { }
+
+			return gameInfo.Version;
 		}
 
 		// Craft a fake handshake request/response because that's the
@@ -388,6 +440,9 @@ namespace OpenRA.Server
 						break;
 					}
 				}
+
+				// Safety net: normally EndGame has already reported the outcome and this is ignored
+				NotifyGameOutcome(GameOutcomeReason.Shutdown, null);
 
 				foreach (var t in serverTraits.WithInterface<INotifyServerShutdown>())
 					t.ServerShutdown(this);
@@ -678,7 +733,12 @@ namespace OpenRA.Server
 								DropClient(newConn);
 							}
 							else
+							{
+								if (profile != null)
+									clientProfileIds[newConn.PlayerIndex] = profile.ProfileID;
+
 								CompleteConnection();
+							}
 						}));
 					});
 				}
@@ -782,12 +842,19 @@ namespace OpenRA.Server
 					winner.Outcome = WinState.Won;
 					winner.OutcomeTimestampUtc = now;
 				}
+
+				// Report the result while the players are still connected. This runs once per game:
+				// from here on every outcome is defined, so later defeats return early above.
+				NotifyGameOutcome(GameOutcomeReason.Result, recorder?.Filename);
 			}
 		}
 
 		void OutOfSync(int frame)
 		{
 			Log.Write("server", $"Out of sync detected at frame {frame}, cancel replay recording");
+
+			// Report before the recorder is torn down, while the replay name is still known
+			NotifyGameOutcome(GameOutcomeReason.OutOfSync, recorder?.Filename);
 
 			// Make sure the written file is not valid
 			// TODO: storing a serverside replay on desync would be extremely useful
