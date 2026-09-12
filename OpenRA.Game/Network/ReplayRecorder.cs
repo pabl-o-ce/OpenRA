@@ -22,6 +22,10 @@ namespace OpenRA.Network
 		const int CreateReplayFileMaxRetryCount = 128;
 
 		public ReplayMetadata Metadata;
+
+		/// <summary>File name (without directory) of the replay being written, or null until the game starts.</summary>
+		public string Filename { get; private set; }
+
 		BinaryWriter writer;
 		readonly Func<string> chooseFilename;
 		MemoryStream preStartBuffer = new();
@@ -59,6 +63,7 @@ namespace OpenRA.Network
 				try
 				{
 					file = File.Create(fullFilename);
+					Filename = Path.GetFileName(fullFilename);
 				}
 				catch (IOException ex)
 				{
