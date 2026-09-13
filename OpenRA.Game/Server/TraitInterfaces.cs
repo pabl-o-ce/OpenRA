@@ -23,6 +23,9 @@ namespace OpenRA.Server
 	public interface IStartGame { void GameStarted(Server server); }
 	public interface IClientJoined { void ClientJoined(Server server, Connection conn); }
 	public interface IEndGame { void GameEnded(Server server); }
+
+	// Fires when every win state is defined, and again on end game, desync and shutdown; implementations must tolerate repeats
+	public interface INotifyGameOutcome { void GameOutcomeDetermined(Server server, GameOutcome outcome); }
 	public interface ITick { void Tick(Server server); }
 
 	public abstract class ServerTrait { }

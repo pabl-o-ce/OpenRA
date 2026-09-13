@@ -231,6 +231,7 @@ ServerTraits:
 	PlayerPinger
 	MasterServerPinger
 	LobbySettingsNotification
+	PvpHitOutcomeEmitter
 
 ChromeMetrics:
 	common|metrics.yaml

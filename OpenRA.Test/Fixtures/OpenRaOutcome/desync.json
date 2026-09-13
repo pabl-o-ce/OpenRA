@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "event": "openra.outcome",
+  "event_id": "11531046-6e01-5f6f-974d-232e024df2e4",
+  "match_id": "d4e5f6a7-b8c9-4d0e-9f1a-2b3c4d5e6f70",
+  "state": "desync",
+  "reason": "out_of_sync",
+  "engine_version": "pvphit-20250330.1",
+  "mod_id": "pvphit",
+  "mod_version": "pvphit-20250330.1",
+  "map": "8b0f4a7d2c3e1f9a6b5c4d3e2f1a0b9c8d7e6f5a",
+  "replay": "pvphit-Server-2026-09-07T160000Z.orarep",
+  "started_at": "2026-09-07T16:00:00Z",
+  "finalized_at": "2026-09-07T16:04:12Z",
+  "duration_seconds": 252,
+  "players": [
+    { "slot": 0, "name": "alice", "is_bot": false, "fingerprint": "2c05c8594a171cfd4ff340155092e89d3d1d64d7", "profile_id": 100042, "outcome": "Undefined", "outcome_at": null, "disconnect_frame": null },
+    { "slot": 1, "name": "bob", "is_bot": false, "fingerprint": "9e107d9d372bb6826bd81d3542a419d6f0b7a1c3", "profile_id": 100057, "outcome": "Undefined", "outcome_at": null, "disconnect_frame": null }
+  ]
+}
