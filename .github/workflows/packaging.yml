@@ -6,6 +6,9 @@ on:
     - 'release-*'
     - 'playtest-*'
     - 'devtest-*'
+    # PvPHit releases (PVPHIT.md). Only the source and Linux jobs run for these:
+    # packaging/{macos,windows}/buildpackage.sh have no pvphit target yet.
+    - 'pvphit-*'
 
 permissions:
   contents: write  #  for release creation (svenstaro/upload-release-action)
@@ -65,6 +68,7 @@ jobs:
 
   macos:
     name: macOS Disk Image
+    if: ${{ !startsWith(github.ref_name, 'pvphit-') }}
     runs-on: macos-13
     steps:
       - name: Clone Repository
@@ -98,6 +102,7 @@ jobs:
 
   windows:
     name: Windows Installers
+    if: ${{ !startsWith(github.ref_name, 'pvphit-') }}
     runs-on: ubuntu-22.04
     steps:
       - name: Clone Repository
