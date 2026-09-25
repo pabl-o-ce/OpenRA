@@ -63,7 +63,12 @@ Pass `Server.*`/`Game.Mod=`/`Engine.SupportDir=` directly to `bin/OpenRA.Server.
 (the form pvphit-game uses, see the server launch row above) when you need a setting the
 script does not expose.
 
-Release build (what the GitHub release contains):
+Releases are cut by pushing a `pvphit-*` tag: `.github/workflows/packaging.yml` runs the
+source and Linux jobs for it and uploads the artifacts to the GitHub release for that tag.
+The macOS and Windows jobs are skipped, because `packaging/{macos,windows}/buildpackage.sh`
+have no `pvphit` target yet.
+
+The same build by hand (what the GitHub release contains):
 
 ```sh
 TAG=pvphit-20250330.1
