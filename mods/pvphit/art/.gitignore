@@ -1,0 +1,12 @@
+# Reproducible intermediate renders; sheets and editable source are tracked.
+tank/body/
+tank/turret/
+tank/wreck/
+tank/assembled/
+roster/*/*/
+source/roster/*.blend1
+*.blend1
+refined/frames/
+refined/render-status.json
+heavy/frames/
+heavy/render-status.json

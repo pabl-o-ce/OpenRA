@@ -1,0 +1,12 @@
+# Existing flag regions still resolve against the preserved RA atlas pixels.
+flags:
+	Image: pvphit|art/ui/flags.png
+	Image2x: pvphit|art/ui/flags-2x.png
+	Image3x: pvphit|art/ui/flags-3x.png
+	Regions:
+		kiln: 0, 260, 30, 15
+
+logos:
+	Image: pvphit|art/ui/mark.png
+	Image2x: pvphit|art/ui/mark-2x.png
+	Image3x: pvphit|art/ui/mark-3x.png

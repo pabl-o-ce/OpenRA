@@ -1,0 +1,9 @@
+# Original synthesized radio acknowledgements; shared notification UI remains inherited.
+FurnaceVehicle:
+	DefaultVariant: .wav
+	DefaultPrefix: pvphit|audio/
+	Voices:
+		Select: acknowledge
+		Move: acknowledge
+		Attack: acknowledge
+		Action: mechanism

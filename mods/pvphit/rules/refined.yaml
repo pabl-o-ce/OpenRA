@@ -1,0 +1,65 @@
+# Art-only overrides for the Blender MCP pass.
+FC.TANK:
+	Buildable:
+		IconPalette: furnace-player
+		IconPaletteIsPlayerPalette: true
+
+FC.FACTORY:
+	Buildable:
+		IconPalette: furnace-player
+		IconPaletteIsPlayerPalette: true
+	WithProductionDoorOverlay:
+		Sequence: build-top
+		RequiresCondition: !build-incomplete
+
+^FCYARDPROP:
+	Inherits: ^SpriteActor
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	HiddenUnderShroud:
+		Type: CenterPosition
+	RenderSprites:
+		Palette: player
+	MapEditorData:
+		Categories: Decoration
+
+FC.YARD.BARRIER:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-barrier
+
+FC.YARD.PRESSURE-SKID:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-pressure-skid
+
+FC.YARD.PIPE:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-pipe
+
+FC.YARD.PALLET:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-pallet
+
+FC.YARD.CONCRETE:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-concrete
+
+FC.YARD.ROAD:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-road
+
+FC.YARD.DRAIN:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-drain
+
+FC.YARD.HAZARD:
+	Inherits: ^FCYARDPROP
+	RenderSprites:
+		Image: fc-yard-hazard

@@ -1,0 +1,237 @@
+MapFormat: 12
+
+RequiresMod: pvphit
+
+Title: Furnace Covenant — Tank Proving Ground
+
+Author: PvPHit
+
+Tileset: TEMPERAT
+
+MapSize: 48,48
+
+Bounds: 1,1,46,46
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: kiln
+	PlayerReference@Tester:
+		Name: Tester
+		Playable: True
+		Required: True
+		AllowBots: False
+		LockFaction: True
+		Faction: kiln
+		Color: E65036
+	PlayerReference@Blue:
+		Name: Blue
+		NonCombatant: True
+		Faction: kiln
+		Color: 4099EE
+	PlayerReference@Yellow:
+		Name: Yellow
+		NonCombatant: True
+		Faction: kiln
+		Color: EDDD44
+	PlayerReference@Purple:
+		Name: Purple
+		NonCombatant: True
+		Faction: kiln
+		Color: B65BEA
+
+Actors:
+	Facing00: fc.tank
+		Owner: Tester
+		Location: 9,9
+		Facing: 0
+	Facing01: fc.tank
+		Owner: Tester
+		Location: 13,9
+		Facing: 32
+	Facing02: fc.tank
+		Owner: Tester
+		Location: 17,9
+		Facing: 64
+	Facing03: fc.tank
+		Owner: Tester
+		Location: 21,9
+		Facing: 96
+	Facing04: fc.tank
+		Owner: Tester
+		Location: 25,9
+		Facing: 128
+	Facing05: fc.tank
+		Owner: Tester
+		Location: 29,9
+		Facing: 160
+	Facing06: fc.tank
+		Owner: Tester
+		Location: 33,9
+		Facing: 192
+	Facing07: fc.tank
+		Owner: Tester
+		Location: 37,9
+		Facing: 224
+	Facing08: fc.tank
+		Owner: Blue
+		Location: 9,14
+		Facing: 256
+	Facing09: fc.tank
+		Owner: Blue
+		Location: 13,14
+		Facing: 288
+	Facing10: fc.tank
+		Owner: Blue
+		Location: 17,14
+		Facing: 320
+	Facing11: fc.tank
+		Owner: Blue
+		Location: 21,14
+		Facing: 352
+	Facing12: fc.tank
+		Owner: Blue
+		Location: 25,14
+		Facing: 384
+	Facing13: fc.tank
+		Owner: Blue
+		Location: 29,14
+		Facing: 416
+	Facing14: fc.tank
+		Owner: Blue
+		Location: 33,14
+		Facing: 448
+	Facing15: fc.tank
+		Owner: Blue
+		Location: 37,14
+		Facing: 480
+	Facing16: fc.tank
+		Owner: Yellow
+		Location: 9,19
+		Facing: 512
+	Facing17: fc.tank
+		Owner: Yellow
+		Location: 13,19
+		Facing: 544
+	Facing18: fc.tank
+		Owner: Yellow
+		Location: 17,19
+		Facing: 576
+	Facing19: fc.tank
+		Owner: Yellow
+		Location: 21,19
+		Facing: 608
+	Facing20: fc.tank
+		Owner: Yellow
+		Location: 25,19
+		Facing: 640
+	Facing21: fc.tank
+		Owner: Yellow
+		Location: 29,19
+		Facing: 672
+	Facing22: fc.tank
+		Owner: Yellow
+		Location: 33,19
+		Facing: 704
+	Facing23: fc.tank
+		Owner: Yellow
+		Location: 37,19
+		Facing: 736
+	Facing24: fc.tank
+		Owner: Purple
+		Location: 9,24
+		Facing: 768
+	Facing25: fc.tank
+		Owner: Purple
+		Location: 13,24
+		Facing: 800
+	Facing26: fc.tank
+		Owner: Purple
+		Location: 17,24
+		Facing: 832
+	Facing27: fc.tank
+		Owner: Purple
+		Location: 21,24
+		Facing: 864
+	Facing28: fc.tank
+		Owner: Purple
+		Location: 25,24
+		Facing: 896
+	Facing29: fc.tank
+		Owner: Purple
+		Location: 29,24
+		Facing: 928
+	Facing30: fc.tank
+		Owner: Purple
+		Location: 33,24
+		Facing: 960
+	Facing31: fc.tank
+		Owner: Purple
+		Location: 37,24
+		Facing: 992
+	Aim0: fc.tank
+		Owner: Tester
+		Location: 9,32
+		Facing: 0
+		TurretFacing: 0
+	Aim1: fc.tank
+		Owner: Tester
+		Location: 13,32
+		Facing: 0
+		TurretFacing: 128
+	Aim2: fc.tank
+		Owner: Tester
+		Location: 17,32
+		Facing: 0
+		TurretFacing: 256
+	Aim3: fc.tank
+		Owner: Tester
+		Location: 21,32
+		Facing: 0
+		TurretFacing: 384
+	Aim4: fc.tank
+		Owner: Tester
+		Location: 25,32
+		Facing: 0
+		TurretFacing: 512
+	Aim5: fc.tank
+		Owner: Tester
+		Location: 29,32
+		Facing: 0
+		TurretFacing: 640
+	Aim6: fc.tank
+		Owner: Tester
+		Location: 33,32
+		Facing: 0
+		TurretFacing: 768
+	Aim7: fc.tank
+		Owner: Tester
+		Location: 37,32
+		Facing: 0
+		TurretFacing: 896
+
+Rules:
+	FC.TANK:
+		Turreted:
+			RealignDelay: -1
+	World:
+		-SpawnStartingUnits:
+		-MapStartingLocations:
+		-CrateSpawner:
+		LuaScript:
+			Scripts: proving-ground.lua
+		MissionData:
+			Briefing: Inspect the 32 facing samples and independent turret row. Select red tanks to move and force-fire. Player colors must affect identification panels only. This laboratory has no victory condition.
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: false
+			ExploredMapCheckboxEnabled: true
+			FogCheckboxLocked: true
+			ExploredMapCheckboxLocked: true

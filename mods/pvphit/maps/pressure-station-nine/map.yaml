@@ -1,0 +1,174 @@
+MapFormat: 12
+
+RequiresMod: pvphit
+
+Title: Furnace Covenant — Pressure Station Nine
+
+Author: PvPHit
+
+Tileset: TEMPERAT
+
+MapSize: 98,98
+
+Bounds: 1,1,96,96
+
+Visibility: Lobby
+
+Categories: Conquest
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: kiln
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		AllowBots: false
+		LockFaction: True
+		Faction: kiln
+	PlayerReference@Multi1:
+		Name: Multi1
+		Playable: True
+		AllowBots: false
+		LockFaction: True
+		Faction: kiln
+
+Actors:
+	WestSpawn: mpspawn
+		Owner: Neutral
+		Location: 14,48
+	EastSpawn: mpspawn
+		Owner: Neutral
+		Location: 83,49
+	NorthFacility: fc.facility
+		Owner: Neutral
+		Location: 48,18
+	SouthFacility: fc.facility
+		Owner: Neutral
+		Location: 48,78
+	Ruin0: fc.ruin
+		Owner: Neutral
+		Location: 39,36
+	Ruin1: fc.ruin
+		Owner: Neutral
+		Location: 58,61
+	Ruin2: fc.ruin
+		Owner: Neutral
+		Location: 41,36
+	Ruin3: fc.ruin
+		Owner: Neutral
+		Location: 56,61
+	Ruin4: fc.ruin
+		Owner: Neutral
+		Location: 43,36
+	Ruin5: fc.ruin
+		Owner: Neutral
+		Location: 54,61
+	Ruin6: fc.ruin
+		Owner: Neutral
+		Location: 45,36
+	Ruin7: fc.ruin
+		Owner: Neutral
+		Location: 52,61
+	Ruin8: fc.ruin
+		Owner: Neutral
+		Location: 47,36
+	Ruin9: fc.ruin
+		Owner: Neutral
+		Location: 50,61
+	Ruin10: fc.ruin
+		Owner: Neutral
+		Location: 49,36
+	Ruin11: fc.ruin
+		Owner: Neutral
+		Location: 48,61
+	Ruin12: fc.ruin
+		Owner: Neutral
+		Location: 51,36
+	Ruin13: fc.ruin
+		Owner: Neutral
+		Location: 46,61
+	Ruin14: fc.ruin
+		Owner: Neutral
+		Location: 53,36
+	Ruin15: fc.ruin
+		Owner: Neutral
+		Location: 44,61
+	Ruin16: fc.ruin
+		Owner: Neutral
+		Location: 55,36
+	Ruin17: fc.ruin
+		Owner: Neutral
+		Location: 42,61
+	Ruin18: fc.ruin
+		Owner: Neutral
+		Location: 57,36
+	Ruin19: fc.ruin
+		Owner: Neutral
+		Location: 40,61
+	Pipe0: fc.pipe
+		Owner: Neutral
+		Location: 30,14
+	Pipe1: fc.pipe
+		Owner: Neutral
+		Location: 67,83
+	Pipe2: fc.pipe
+		Owner: Neutral
+		Location: 34,14
+	Pipe3: fc.pipe
+		Owner: Neutral
+		Location: 63,83
+	Pipe4: fc.pipe
+		Owner: Neutral
+		Location: 38,14
+	Pipe5: fc.pipe
+		Owner: Neutral
+		Location: 59,83
+	Pipe6: fc.pipe
+		Owner: Neutral
+		Location: 42,14
+	Pipe7: fc.pipe
+		Owner: Neutral
+		Location: 55,83
+	Pipe8: fc.pipe
+		Owner: Neutral
+		Location: 46,14
+	Pipe9: fc.pipe
+		Owner: Neutral
+		Location: 51,83
+	Pipe10: fc.pipe
+		Owner: Neutral
+		Location: 50,14
+	Pipe11: fc.pipe
+		Owner: Neutral
+		Location: 47,83
+	Pipe12: fc.pipe
+		Owner: Neutral
+		Location: 54,14
+	Pipe13: fc.pipe
+		Owner: Neutral
+		Location: 43,83
+	Pipe14: fc.pipe
+		Owner: Neutral
+		Location: 58,14
+	Pipe15: fc.pipe
+		Owner: Neutral
+		Location: 39,83
+	Pipe16: fc.pipe
+		Owner: Neutral
+		Location: 62,14
+	Pipe17: fc.pipe
+		Owner: Neutral
+		Location: 35,83
+	Pipe18: fc.pipe
+		Owner: Neutral
+		Location: 66,14
+	Pipe19: fc.pipe
+		Owner: Neutral
+		Location: 31,83
+
+Rules: pvphit|rules/slice.yaml
+
+FluentMessages: pvphit|fluent/slice.ftl

@@ -1,0 +1,62 @@
+FCInduction:
+	ReloadDelay: 60
+	Range: 4c768
+	Report: pvphit|audio/induction.wav
+	ValidTargets: Ground, GroundActor
+	Projectile: Bullet
+		Speed: 900
+		Image: fc-bolt
+		Palette: effect
+		Shadow: false
+	Warhead@damage: SpreadDamage
+		Spread: 96
+		Damage: 5500
+		ValidTargets: GroundActor
+		Versus:
+			None: 30
+			Wood: 65
+			Light: 75
+			Heavy: 115
+			Concrete: 50
+		DamageTypes: ExplosionDeath
+	Warhead@effect: CreateEffect
+		Image: fc-impact
+		Explosions: idle
+		ImpactSounds: pvphit|audio/impact.wav
+		ValidTargets: Ground, GroundActor
+
+FCVehicleDeath:
+	Warhead@effect: CreateEffect
+		Image: fc-impact
+		Explosions: idle
+		ImpactSounds: pvphit|audio/impact.wav
+		ValidTargets: Ground, GroundActor
+
+FCScoutGun:
+	Inherits: FCInduction
+	ReloadDelay: 15
+	Range: 3c576
+	Report: pvphit|audio/scout.wav
+	Warhead@damage: SpreadDamage
+		Damage: 900
+		Versus:
+			Light: 100
+			Heavy: 25
+			Concrete: 10
+
+FCMortar:
+	Inherits: FCInduction
+	ReloadDelay: 110
+	Range: 9c512
+	MinRange: 2c0
+	Report: pvphit|audio/mortar.wav
+	Projectile: Bullet
+		Speed: 210
+		LaunchAngle: 160
+	Warhead@damage: SpreadDamage
+		Spread: 384
+		Damage: 11000
+		Versus:
+			Light: 65
+			Heavy: 45
+			Concrete: 125

@@ -1,0 +1,50 @@
+fc-tank:
+	Defaults:
+		Scale: 0.5
+		Offset: 0,-7
+		Facings: 32
+		UseClassicFacings: false
+		# Source 0 faces screen-south; engine 0 faces north, increasing westward.
+		Frames: 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+	idle:
+		Filename: pvphit|art/tank/body-sheet.png
+	turret:
+		Filename: pvphit|art/tank/turret-sheet.png
+	muzzle:
+		Filename: pvphit|art/effects/muzzle.png
+		Facings: 1
+		Frames: 0,1,2,3
+		Length: 4
+		Tick: 40
+		Offset: 0,0
+		Scale: 1
+	icon:
+		Filename: pvphit|art/tank/icon.png
+		Facings: 1
+		Frames: 0
+		Offset: 0,0
+		Scale: 1
+
+fc-tank-wreck:
+	idle:
+		Filename: pvphit|art/tank/wreck-sheet.png
+		Scale: 0.5
+		Offset: 0,-7
+		Facings: 32
+		UseClassicFacings: false
+		Frames: 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+
+fc-bolt:
+	idle:
+		Filename: pvphit|art/effects/bolt.png
+
+fc-impact:
+	idle:
+		Filename: pvphit|art/effects/impact.png
+		Length: 8
+		Tick: 40
+
+fc-slag:
+	idle:
+		Filename: pvphit|art/effects/slag.png
+		Length: 12

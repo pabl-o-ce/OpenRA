@@ -1,0 +1,97 @@
+MapFormat: 12
+
+RequiresMod: pvphit
+
+Title: Furnace Covenant — Foundry Systems Lab
+
+Author: PvPHit
+
+Tileset: TEMPERAT
+
+MapSize: 48,48
+
+Bounds: 1,1,46,46
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: kiln
+	PlayerReference@Tester:
+		Name: Tester
+		Playable: True
+		Required: True
+		AllowBots: False
+		LockFaction: True
+		Faction: kiln
+		Color: E65036
+	PlayerReference@Blue:
+		Name: Blue
+		NonCombatant: True
+		Faction: kiln
+		Color: 4099EE
+	PlayerReference@Yellow:
+		Name: Yellow
+		NonCombatant: True
+		Faction: kiln
+		Color: EDDD44
+	PlayerReference@Purple:
+		Name: Purple
+		NonCombatant: True
+		Faction: kiln
+		Color: B65BEA
+
+Actors:
+	HQ: fc.hq
+		Owner: Tester
+		Location: 10,17
+	Generator: fc.generator
+		Owner: Tester
+		Location: 17,17
+	Processor: fc.processor
+		Owner: Tester
+		Location: 25,17
+	Factory: fc.factory
+		Owner: Tester
+		Location: 34,17
+	Scout: fc.scout
+		Owner: Tester
+		Location: 17,27
+	Siege: fc.siege
+		Owner: Tester
+		Location: 12,29
+	Tank: fc.tank
+		Owner: Tester
+		Location: 12,34
+	Facility: fc.facility
+		Owner: Neutral
+		Location: 22,30
+	Target: fc.generator
+		Owner: Blue
+		Location: 35,30
+
+Rules: pvphit|rules/slice.yaml
+	FC.TANK:
+		Turreted:
+			RealignDelay: -1
+	World:
+		-SpawnStartingUnits:
+		-MapStartingLocations:
+		LuaScript:
+			Scripts: pvphit|maps/tank-proving-ground/systems.lua
+		MissionData:
+			Briefing: Inspect the 32 facing samples and independent turret row. Select red tanks to move and force-fire. Player colors must affect identification panels only. This laboratory has no victory condition.
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: false
+			ExploredMapCheckboxEnabled: true
+			FogCheckboxLocked: true
+			ExploredMapCheckboxLocked: true
+
+FluentMessages: pvphit|fluent/slice.ftl

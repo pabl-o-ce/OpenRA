@@ -1,7 +1,7 @@
 # PvPHit mod (pabl-o-ce/OpenRA, branch pvphit-release-20250330).
-# Inherits Red Alert rules and content unchanged: every `ra|...` reference
-# below resolves to ../ra through the `ra` package. Only identity differs:
-# mod id `pvphit`, the PvPHit player database, and a per-mod map folder.
+# Inherits Red Alert content and adds focused Furnace Covenant overrides.
+# Every `ra|...` reference resolves to ../ra through the `ra` package.
+# The conversion roster and economy are scoped to the prototype maps.
 # Engine and mod versions are stamped from the release tag by `make version`.
 Metadata:
 	Title: mod-title
@@ -74,6 +74,7 @@ FileSystem: ContentInstallerFileSystem
 
 MapFolders:
 	ra|maps: System
+	pvphit|maps: System
 	~^SupportDir|maps/pvphit/{DEV_VERSION}: User
 
 Rules:
@@ -92,6 +93,8 @@ Rules:
 	ra|rules/aircraft.yaml
 	ra|rules/ships.yaml
 	ra|rules/fakes.yaml
+	pvphit|rules/furnace.yaml
+	pvphit|rules/refined.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -101,6 +104,10 @@ Sequences:
 	ra|sequences/aircraft.yaml
 	ra|sequences/misc.yaml
 	ra|sequences/decorations.yaml
+	pvphit|sequences/furnace.yaml
+	pvphit|sequences/roster.yaml
+	pvphit|sequences/refined.yaml
+	pvphit|sequences/heavy.yaml
 
 TileSets:
 	ra|tilesets/snow.yaml
@@ -113,6 +120,7 @@ Cursors:
 
 Chrome:
 	ra|chrome.yaml
+	pvphit|chrome.yaml
 
 Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll
 
@@ -183,6 +191,7 @@ FluentMessages:
 	ra|fluent/rules.ftl
 	# Listed last: FluentBundle applies later files as overrides, so these replace ra.ftl's mod-title/mod-windowtitle.
 	pvphit|fluent/pvphit.ftl
+	pvphit|fluent/furnace.ftl
 
 AllowUnusedFluentMessagesInExternalPackages: false
 
@@ -193,9 +202,11 @@ Weapons:
 	ra|weapons/other.yaml
 	ra|weapons/smallcaliber.yaml
 	ra|weapons/superweapons.yaml
+	pvphit|weapons/furnace.yaml
 
 Voices:
 	ra|audio/voices.yaml
+	pvphit|audio/voices.yaml
 
 Notifications:
 	ra|audio/notifications.yaml
@@ -236,6 +247,7 @@ ServerTraits:
 ChromeMetrics:
 	common|metrics.yaml
 	ra|metrics.yaml
+	pvphit|metrics.yaml
 
 Fonts:
 	Tiny:
@@ -284,7 +296,7 @@ SupportsMapsFrom: ra
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS
+SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS, PngSheet
 
 VideoFormats: Vqa, Wsa
 

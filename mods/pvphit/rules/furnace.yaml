@@ -1,0 +1,458 @@
+# Original actors are additive. Build menus are enabled only by the slice maps.
+World:
+	# The lobby reads factions from default rules, before loading map overrides.
+	Faction@kiln:
+		Name: faction-kiln.name
+		InternalName: kiln
+		Side: Allies
+		Description: faction-kiln.description
+		Selectable: false
+
+^Palettes:
+	PlayerColorPalette@FURNACE:
+		BaseName: furnace-player
+		BasePalette: player
+	PlayerColorShift@FURNACE:
+		BasePalette: furnace-player
+		MinHue: 0.27
+		MaxHue: 0.42
+		ReferenceHue: 0.34
+		ReferenceSaturation: 0.75
+		ReferenceValue: 0.6
+
+FC.TANK:
+	Inherits: ^TrackedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+		CameraPitch: 120
+	-MustBeDestroyed:
+	-Capturable:
+	-WithDamageOverlay:
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~fc.vehicles
+		Description: actor-fc-tank.description
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: actor-fc-tank.name
+		GenericName: actor-fc-tank.name
+	Health:
+		HP: 46000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 72
+		TurnSpeed: 20
+	RevealsShroud:
+		Range: 6c0
+	Turreted:
+		TurnSpeed: 20
+	Armament:
+		Weapon: FCInduction
+		Recoil: 100
+		RecoilRecovery: 20
+		LocalOffset: 1100,0,550
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	WithShadow:
+		Offset: 85,128,0
+		ZOffset: -1024
+	Selectable:
+		Bounds: 1536, 1365, 0, -256
+		DecorationBounds: 1706, 1536, 0, -256
+	RenderSprites:
+		Image: fc-tank
+		PlayerPalette: furnace-player
+	SpawnActorOnDeath:
+		Actor: fc.tank.husk
+	FireWarheadsOnDeath:
+		Weapon: FCVehicleDeath
+		EmptyWeapon: FCVehicleDeath
+	Voiced:
+		VoiceSet: FurnaceVehicle
+
+FC.SCOUT:
+	Inherits: FC.TANK
+	Buildable:
+		BuildPaletteOrder: 20
+		Description: actor-fc-scout.description
+	Valued:
+		Cost: 450
+	Tooltip:
+		Name: actor-fc-scout.name
+		GenericName: actor-fc-scout.name
+	Health:
+		HP: 15333
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 125
+		Locomotor: wheeled
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: FCScoutGun
+		LocalOffset: 460,0,450
+		Recoil: 35
+	Captures:
+		CaptureTypes: furnace-facility
+		CaptureDelay: 125
+		ConsumedByCapture: false
+		SabotageThreshold: 0
+	RenderSprites:
+		Image: fc-scout
+	SpawnActorOnDeath:
+		Actor: fc.scout.husk
+	Selectable:
+		Bounds: 1100,1000,0,-200
+
+FC.HAULER:
+	Inherits: ^TrackedVehicle
+	Inherits@selection: ^SelectableEconomicUnit
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+		CameraPitch: 120
+	-MustBeDestroyed:
+	-Capturable:
+	-WithDamageOverlay:
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 10
+		Prerequisites: ~fc.vehicles
+		Description: actor-fc-hauler.description
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: actor-fc-hauler.name
+		GenericName: actor-fc-hauler.name
+	Health:
+		HP: 46000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 72
+	RevealsShroud:
+		Range: 4c0
+	Harvester:
+		Resources: Ore
+		BaleUnloadDelay: 1
+		SearchFromProcRadius: 30
+		SearchFromHarvesterRadius: 15
+		HarvestFacings: 32
+	StoresResources:
+		Capacity: 20
+		Resources: Ore
+	DockClientManager:
+	WithHarvestAnimation:
+		HarvestSequence: idle
+	WithDockingAnimation:
+		DockSequence: idle
+		DockLoopSequence: idle
+	WithStoresResourcesPipsDecoration:
+		Position: BottomLeft
+		Margin: 4,3
+		RequiresSelection: true
+		PipCount: 5
+		ResourceSequences:
+			Ore: pip-yellow
+	RenderSprites:
+		Image: fc-hauler
+		PlayerPalette: furnace-player
+	WithShadow:
+		Offset: 85,128,0
+		ZOffset: -1024
+	SpawnActorOnDeath:
+		Actor: fc.hauler.husk
+	FireWarheadsOnDeath:
+		Weapon: FCVehicleDeath
+		EmptyWeapon: FCVehicleDeath
+	Voiced:
+		VoiceSet: FurnaceVehicle
+
+FC.SIEGE:
+	Inherits: FC.TANK
+	Buildable:
+		BuildPaletteOrder: 40
+		Description: actor-fc-siege.description
+	Valued:
+		Cost: 1400
+	Tooltip:
+		Name: actor-fc-siege.name
+		GenericName: actor-fc-siege.name
+	Health:
+		HP: 34500
+	Mobile:
+		Speed: 55
+		PauseOnCondition: !mobile || build-incomplete || being-captured
+	-Turreted:
+	-WithSpriteTurret:
+	-AttackTurreted:
+	AttackOmni:
+		RequiresCondition: braced && !build-incomplete
+	Armament:
+		Weapon: FCMortar
+		LocalOffset: 0,0,900
+		RequiresCondition: braced && !build-incomplete
+		Recoil: 0
+	GrantConditionOnDeploy:
+		DeployedCondition: braced
+		UndeployedCondition: mobile
+		UndeployOnMove: true
+		DeploySounds: pvphit|audio/mechanism.wav
+		UndeploySounds: pvphit|audio/mechanism.wav
+	WithFacingSpriteBody:
+		RequiresCondition: !braced
+	WithFacingSpriteBody@BRACED:
+		Name: braced
+		Sequence: deployed
+		RequiresCondition: braced
+	WithMakeAnimation:
+		BodyNames: body, braced
+		Condition: build-incomplete
+	RenderSprites:
+		Image: fc-siege
+	SpawnActorOnDeath:
+		Actor: fc.siege.husk
+
+^FCBUILDING:
+	Inherits: ^Building
+	-SpawnActorsOnSell:
+	-Capturable:
+	-CapturableProgressBar:
+	-CapturableProgressBlink:
+	WithShadow:
+		Offset: 85,128,0
+		ZOffset: -1024
+	RenderSprites:
+		PlayerPalette: furnace-player
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Building:
+		BuildSounds: pvphit|audio/mechanism.wav
+	Power:
+		Amount: 0
+	SoundOnDamageTransition:
+		DamagedSounds: pvphit|audio/impact.wav
+		DestroyedSounds: pvphit|audio/impact.wav
+	FireWarheadsOnDeath:
+		Weapon: FCVehicleDeath
+		EmptyWeapon: FCVehicleDeath
+	ProvidesPrerequisite@buildingname:
+
+FC.HQ:
+	Inherits: ^FCBUILDING
+	Inherits@shape: ^3x2Shape
+	Tooltip:
+		Name: actor-fc-hq.name
+	Valued:
+		Cost: 2000
+	Health:
+		HP: 150000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+	BaseBuilding:
+	BaseProvider:
+		Range: 14c0
+	Production:
+		Produces: Building
+		PauseOnCondition: build-incomplete || being-captured || being-demolished
+	Power:
+		Amount: 20
+	ProvidesRadar:
+	RenderSprites:
+		Image: fc-hq
+	Selectable:
+		Bounds: 3072,3072,0,-512
+	-Sellable:
+
+FC.GENERATOR:
+	Inherits: ^FCBUILDING
+	Inherits@shape: ^2x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~fc.hq
+		Description: actor-fc-generator.description
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: actor-fc-generator.name
+	Health:
+		HP: 60000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	Power:
+		Amount: 100
+	RenderSprites:
+		Image: fc-generator
+	Selectable:
+		Bounds: 2048,2600,0,-600
+
+FC.PROCESSOR:
+	Inherits: ^FCBUILDING
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: fc.generator, ~fc.hq
+		Description: actor-fc-processor.description
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: actor-fc-processor.name
+	Health:
+		HP: 90000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx ===
+	Refinery:
+	DockHost:
+		Type: Unload
+		DockAngle: 512
+		DockOffset: 0,1c0,0
+	StoresPlayerResources:
+		Capacity: 3000
+	FreeActor:
+		Actor: fc.hauler
+		SpawnOffset: 1,3
+		Facing: 512
+	CustomSellValue:
+		Value: 500
+	Power:
+		Amount: -30
+	RenderSprites:
+		Image: fc-processor
+	Selectable:
+		Bounds: 3072,2800,0,-500
+
+FC.FACTORY:
+	Inherits: ^FCBUILDING
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 30
+		Prerequisites: fc.processor, ~fc.hq
+		Description: actor-fc-factory.description
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: actor-fc-factory.name
+	Health:
+		HP: 150000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx ===
+	RallyPoint:
+		ForceSetType: Vehicle
+	Exit:
+		ExitCell: 1,3
+		SpawnOffset: 0,1c0,0
+		Facing: 512
+	Production:
+		Produces: Vehicle
+	ProvidesPrerequisite@vehicles:
+		Prerequisite: fc.vehicles
+	Power:
+		Amount: -50
+	RenderSprites:
+		Image: fc-factory
+	Selectable:
+		Bounds: 3072,2800,0,-400
+
+FC.FACILITY:
+	Inherits: ^BasicBuilding
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: actor-fc-facility.name
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	Health:
+		HP: 150000
+	Armor:
+		Type: Concrete
+	CaptureManager:
+	Capturable:
+		Types: furnace-facility
+	CapturableProgressBar:
+	CashTrickler:
+		Amount: 25
+		Interval: 125
+		InitialDelay: 125
+		ShowTicks: true
+	RevealsShroud:
+		Range: 4c0
+	RenderSprites:
+		Image: fc-facility
+		PlayerPalette: furnace-player
+	WithShadow:
+		Offset: 85,128,0
+		ZOffset: -1024
+	Selectable:
+		Bounds: 2048,2600,0,-600
+
+FC.TANK.HUSK:
+	Inherits: ^BasicHusk
+	Inherits@SPRITE: ^SpriteActor
+	Husk:
+		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach
+		Locomotor: tracked
+	Tooltip:
+		Name: actor-fc-tank-husk
+	Targetable:
+		TargetTypes: GroundActor, Husk, NoAutoTarget
+	ChangesHealth:
+		Step: -1000
+		StartIfBelow: 101
+		Delay: 25
+	RenderSprites:
+		Image: fc-tank-wreck
+	WithShadow:
+		Offset: 85,128,0
+		ZOffset: -1024
+
+FC.SCOUT.HUSK:
+	Inherits: FC.TANK.HUSK
+	RenderSprites:
+		Image: fc-scout
+	WithFacingSpriteBody:
+		Sequence: wreck
+
+FC.HAULER.HUSK:
+	Inherits: FC.SCOUT.HUSK
+	RenderSprites:
+		Image: fc-hauler
+
+FC.SIEGE.HUSK:
+	Inherits: FC.SCOUT.HUSK
+	RenderSprites:
+		Image: fc-siege
+
+FC.PIPE:
+	Inherits: ^SpriteActor
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	HiddenUnderShroud:
+		Type: CenterPosition
+	RenderSprites:
+		Image: fc-pipe
+		Palette: player
+	MapEditorData:
+		Categories: Decoration
+
+FC.RUIN:
+	Inherits: FC.PIPE
+	Immobile:
+		OccupiesSpace: true
+	RenderSprites:
+		Image: fc-ruin

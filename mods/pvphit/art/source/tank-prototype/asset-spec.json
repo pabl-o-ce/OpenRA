@@ -1,0 +1,26 @@
+{
+  "name": "PvPHit Ion Tank",
+  "stage": "visual prototype; not integrated into OpenRA",
+  "source": "Original procedural Blender model in build_tank.py",
+  "model": "ion-tank.blend",
+  "preview": "preview.png",
+  "sprite_size": [128, 128],
+  "facings": 32,
+  "frame_order": "Forward (-Y) at frame 0; model rotation advances by 11.25 degrees around +Z per frame",
+  "layers": {
+    "body": "body/00.png through body/31.png",
+    "turret": "turret/00.png through turret/31.png; shares body frame anchor",
+    "assembled": "Eight combined views at frames 00, 04, 08, 12, 16, 20, 24, 28"
+  },
+  "sheet_layout": "8 columns, 4 rows, left-to-right then top-to-bottom; 1024x512 pixels",
+  "png_metadata": {"FrameSize": "128,128", "FrameAmount": 32},
+  "integration_remaining": [
+    "Enable PngSheet in pvphit mod SpriteFormats",
+    "Embed sheet metadata using OpenRA Utility --png-sheet-import",
+    "Configure body and turret sequence filenames and frame ordering; these renders use uniform angular spacing rather than Red Alert classic facings",
+    "Adjust in-game scale and offsets against existing units and terrain",
+    "Add player-color remapping; orange panels are currently fixed prototype colors",
+    "Add an in-game shadow, wreck, build icon, firing sequence and weapon effects",
+    "Run YAML/missing-sprite checks and test aiming, movement and visibility in-game"
+  ]
+}
