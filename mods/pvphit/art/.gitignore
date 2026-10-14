@@ -10,3 +10,6 @@ refined/frames/
 refined/render-status.json
 heavy/frames/
 heavy/render-status.json
+core-buildings/frames/
+core-buildings/render-status.json
+core-buildings/render-status.tmp

@@ -1,0 +1,10 @@
+# Visual-only core building overrides. HQ remains preplaced, not buildable.
+FC.GENERATOR:
+	Buildable:
+		IconPalette: furnace-player
+		IconPaletteIsPlayerPalette: true
+
+FC.PROCESSOR:
+	Buildable:
+		IconPalette: furnace-player
+		IconPaletteIsPlayerPalette: true

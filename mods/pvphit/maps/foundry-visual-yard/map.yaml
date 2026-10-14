@@ -47,6 +47,9 @@ Players:
 		Color: B65BEA
 
 Actors:
+	Floor9_12: fc.yard.hazard
+		Owner: Neutral
+		Location: 9,12
 	Floor10_12: fc.yard.hazard
 		Owner: Neutral
 		Location: 10,12
@@ -68,7 +71,7 @@ Actors:
 	Floor16_12: fc.yard.hazard
 		Owner: Neutral
 		Location: 16,12
-	Floor17_12: fc.yard.drain
+	Floor17_12: fc.yard.hazard
 		Owner: Neutral
 		Location: 17,12
 	Floor18_12: fc.yard.hazard
@@ -83,7 +86,7 @@ Actors:
 	Floor21_12: fc.yard.hazard
 		Owner: Neutral
 		Location: 21,12
-	Floor22_12: fc.yard.road
+	Floor22_12: fc.yard.hazard
 		Owner: Neutral
 		Location: 22,12
 	Floor23_12: fc.yard.hazard
@@ -131,6 +134,12 @@ Actors:
 	Floor37_12: fc.yard.hazard
 		Owner: Neutral
 		Location: 37,12
+	Floor38_12: fc.yard.hazard
+		Owner: Neutral
+		Location: 38,12
+	Floor9_13: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,13
 	Floor10_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,13
@@ -146,13 +155,13 @@ Actors:
 	Floor14_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,13
-	Floor15_13: fc.yard.concrete
+	Floor15_13: fc.yard.drain
 		Owner: Neutral
 		Location: 15,13
 	Floor16_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,13
-	Floor17_13: fc.yard.drain
+	Floor17_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,13
 	Floor18_13: fc.yard.concrete
@@ -167,7 +176,7 @@ Actors:
 	Floor21_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,13
-	Floor22_13: fc.yard.road
+	Floor22_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,13
 	Floor23_13: fc.yard.concrete
@@ -215,6 +224,12 @@ Actors:
 	Floor37_13: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,13
+	Floor38_13: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,13
+	Floor9_14: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,14
 	Floor10_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,14
@@ -230,13 +245,13 @@ Actors:
 	Floor14_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,14
-	Floor15_14: fc.yard.concrete
+	Floor15_14: fc.yard.drain
 		Owner: Neutral
 		Location: 15,14
 	Floor16_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,14
-	Floor17_14: fc.yard.drain
+	Floor17_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,14
 	Floor18_14: fc.yard.concrete
@@ -251,7 +266,7 @@ Actors:
 	Floor21_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,14
-	Floor22_14: fc.yard.road
+	Floor22_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,14
 	Floor23_14: fc.yard.concrete
@@ -299,6 +314,12 @@ Actors:
 	Floor37_14: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,14
+	Floor38_14: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,14
+	Floor9_15: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,15
 	Floor10_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,15
@@ -314,13 +335,13 @@ Actors:
 	Floor14_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,15
-	Floor15_15: fc.yard.concrete
+	Floor15_15: fc.yard.drain
 		Owner: Neutral
 		Location: 15,15
 	Floor16_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,15
-	Floor17_15: fc.yard.drain
+	Floor17_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,15
 	Floor18_15: fc.yard.concrete
@@ -335,7 +356,7 @@ Actors:
 	Floor21_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,15
-	Floor22_15: fc.yard.road
+	Floor22_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,15
 	Floor23_15: fc.yard.concrete
@@ -383,6 +404,12 @@ Actors:
 	Floor37_15: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,15
+	Floor38_15: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,15
+	Floor9_16: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,16
 	Floor10_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,16
@@ -398,13 +425,13 @@ Actors:
 	Floor14_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,16
-	Floor15_16: fc.yard.concrete
+	Floor15_16: fc.yard.drain
 		Owner: Neutral
 		Location: 15,16
 	Floor16_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,16
-	Floor17_16: fc.yard.drain
+	Floor17_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,16
 	Floor18_16: fc.yard.concrete
@@ -419,7 +446,7 @@ Actors:
 	Floor21_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,16
-	Floor22_16: fc.yard.road
+	Floor22_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,16
 	Floor23_16: fc.yard.concrete
@@ -467,6 +494,12 @@ Actors:
 	Floor37_16: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,16
+	Floor38_16: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,16
+	Floor9_17: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,17
 	Floor10_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,17
@@ -482,13 +515,13 @@ Actors:
 	Floor14_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,17
-	Floor15_17: fc.yard.concrete
+	Floor15_17: fc.yard.drain
 		Owner: Neutral
 		Location: 15,17
 	Floor16_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,17
-	Floor17_17: fc.yard.drain
+	Floor17_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,17
 	Floor18_17: fc.yard.concrete
@@ -503,7 +536,7 @@ Actors:
 	Floor21_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,17
-	Floor22_17: fc.yard.road
+	Floor22_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,17
 	Floor23_17: fc.yard.concrete
@@ -551,6 +584,12 @@ Actors:
 	Floor37_17: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,17
+	Floor38_17: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,17
+	Floor9_18: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,18
 	Floor10_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,18
@@ -566,13 +605,13 @@ Actors:
 	Floor14_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,18
-	Floor15_18: fc.yard.concrete
+	Floor15_18: fc.yard.drain
 		Owner: Neutral
 		Location: 15,18
 	Floor16_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,18
-	Floor17_18: fc.yard.drain
+	Floor17_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,18
 	Floor18_18: fc.yard.concrete
@@ -587,7 +626,7 @@ Actors:
 	Floor21_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,18
-	Floor22_18: fc.yard.road
+	Floor22_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,18
 	Floor23_18: fc.yard.concrete
@@ -635,6 +674,12 @@ Actors:
 	Floor37_18: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,18
+	Floor38_18: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,18
+	Floor9_19: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,19
 	Floor10_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,19
@@ -650,13 +695,13 @@ Actors:
 	Floor14_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,19
-	Floor15_19: fc.yard.concrete
+	Floor15_19: fc.yard.drain
 		Owner: Neutral
 		Location: 15,19
 	Floor16_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,19
-	Floor17_19: fc.yard.drain
+	Floor17_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,19
 	Floor18_19: fc.yard.concrete
@@ -671,7 +716,7 @@ Actors:
 	Floor21_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,19
-	Floor22_19: fc.yard.road
+	Floor22_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,19
 	Floor23_19: fc.yard.concrete
@@ -719,6 +764,12 @@ Actors:
 	Floor37_19: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,19
+	Floor38_19: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,19
+	Floor9_20: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,20
 	Floor10_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,20
@@ -734,13 +785,13 @@ Actors:
 	Floor14_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,20
-	Floor15_20: fc.yard.concrete
+	Floor15_20: fc.yard.drain
 		Owner: Neutral
 		Location: 15,20
 	Floor16_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,20
-	Floor17_20: fc.yard.drain
+	Floor17_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,20
 	Floor18_20: fc.yard.concrete
@@ -755,7 +806,7 @@ Actors:
 	Floor21_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,20
-	Floor22_20: fc.yard.road
+	Floor22_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,20
 	Floor23_20: fc.yard.concrete
@@ -803,6 +854,12 @@ Actors:
 	Floor37_20: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,20
+	Floor38_20: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,20
+	Floor9_21: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,21
 	Floor10_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,21
@@ -818,13 +875,13 @@ Actors:
 	Floor14_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,21
-	Floor15_21: fc.yard.concrete
+	Floor15_21: fc.yard.drain
 		Owner: Neutral
 		Location: 15,21
 	Floor16_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,21
-	Floor17_21: fc.yard.drain
+	Floor17_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,21
 	Floor18_21: fc.yard.concrete
@@ -839,7 +896,7 @@ Actors:
 	Floor21_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,21
-	Floor22_21: fc.yard.road
+	Floor22_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,21
 	Floor23_21: fc.yard.concrete
@@ -887,6 +944,12 @@ Actors:
 	Floor37_21: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,21
+	Floor38_21: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,21
+	Floor9_22: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,22
 	Floor10_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,22
@@ -902,13 +965,13 @@ Actors:
 	Floor14_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,22
-	Floor15_22: fc.yard.concrete
+	Floor15_22: fc.yard.drain
 		Owner: Neutral
 		Location: 15,22
 	Floor16_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,22
-	Floor17_22: fc.yard.drain
+	Floor17_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,22
 	Floor18_22: fc.yard.concrete
@@ -923,7 +986,7 @@ Actors:
 	Floor21_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,22
-	Floor22_22: fc.yard.road
+	Floor22_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,22
 	Floor23_22: fc.yard.concrete
@@ -971,6 +1034,12 @@ Actors:
 	Floor37_22: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,22
+	Floor38_22: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,22
+	Floor9_23: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,23
 	Floor10_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,23
@@ -986,13 +1055,13 @@ Actors:
 	Floor14_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,23
-	Floor15_23: fc.yard.concrete
+	Floor15_23: fc.yard.drain
 		Owner: Neutral
 		Location: 15,23
 	Floor16_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,23
-	Floor17_23: fc.yard.drain
+	Floor17_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,23
 	Floor18_23: fc.yard.concrete
@@ -1007,7 +1076,7 @@ Actors:
 	Floor21_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,23
-	Floor22_23: fc.yard.road
+	Floor22_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,23
 	Floor23_23: fc.yard.concrete
@@ -1055,6 +1124,12 @@ Actors:
 	Floor37_23: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,23
+	Floor38_23: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,23
+	Floor9_24: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,24
 	Floor10_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,24
@@ -1070,13 +1145,13 @@ Actors:
 	Floor14_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,24
-	Floor15_24: fc.yard.concrete
+	Floor15_24: fc.yard.drain
 		Owner: Neutral
 		Location: 15,24
 	Floor16_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,24
-	Floor17_24: fc.yard.drain
+	Floor17_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,24
 	Floor18_24: fc.yard.concrete
@@ -1091,7 +1166,7 @@ Actors:
 	Floor21_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,24
-	Floor22_24: fc.yard.road
+	Floor22_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,24
 	Floor23_24: fc.yard.concrete
@@ -1139,6 +1214,12 @@ Actors:
 	Floor37_24: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,24
+	Floor38_24: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,24
+	Floor9_25: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,25
 	Floor10_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,25
@@ -1154,13 +1235,13 @@ Actors:
 	Floor14_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,25
-	Floor15_25: fc.yard.concrete
+	Floor15_25: fc.yard.drain
 		Owner: Neutral
 		Location: 15,25
 	Floor16_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,25
-	Floor17_25: fc.yard.drain
+	Floor17_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,25
 	Floor18_25: fc.yard.concrete
@@ -1175,7 +1256,7 @@ Actors:
 	Floor21_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,25
-	Floor22_25: fc.yard.road
+	Floor22_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,25
 	Floor23_25: fc.yard.concrete
@@ -1223,6 +1304,12 @@ Actors:
 	Floor37_25: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,25
+	Floor38_25: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,25
+	Floor9_26: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,26
 	Floor10_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,26
@@ -1238,13 +1325,13 @@ Actors:
 	Floor14_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,26
-	Floor15_26: fc.yard.concrete
+	Floor15_26: fc.yard.drain
 		Owner: Neutral
 		Location: 15,26
 	Floor16_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,26
-	Floor17_26: fc.yard.drain
+	Floor17_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,26
 	Floor18_26: fc.yard.concrete
@@ -1259,7 +1346,7 @@ Actors:
 	Floor21_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,26
-	Floor22_26: fc.yard.road
+	Floor22_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,26
 	Floor23_26: fc.yard.concrete
@@ -1307,6 +1394,12 @@ Actors:
 	Floor37_26: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,26
+	Floor38_26: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,26
+	Floor9_27: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,27
 	Floor10_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,27
@@ -1322,13 +1415,13 @@ Actors:
 	Floor14_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,27
-	Floor15_27: fc.yard.concrete
+	Floor15_27: fc.yard.drain
 		Owner: Neutral
 		Location: 15,27
 	Floor16_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,27
-	Floor17_27: fc.yard.drain
+	Floor17_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,27
 	Floor18_27: fc.yard.concrete
@@ -1343,7 +1436,7 @@ Actors:
 	Floor21_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,27
-	Floor22_27: fc.yard.road
+	Floor22_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,27
 	Floor23_27: fc.yard.concrete
@@ -1391,6 +1484,12 @@ Actors:
 	Floor37_27: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,27
+	Floor38_27: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,27
+	Floor9_28: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,28
 	Floor10_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,28
@@ -1406,13 +1505,13 @@ Actors:
 	Floor14_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,28
-	Floor15_28: fc.yard.concrete
+	Floor15_28: fc.yard.drain
 		Owner: Neutral
 		Location: 15,28
 	Floor16_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,28
-	Floor17_28: fc.yard.drain
+	Floor17_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,28
 	Floor18_28: fc.yard.concrete
@@ -1427,7 +1526,7 @@ Actors:
 	Floor21_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,28
-	Floor22_28: fc.yard.road
+	Floor22_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,28
 	Floor23_28: fc.yard.concrete
@@ -1475,6 +1574,12 @@ Actors:
 	Floor37_28: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,28
+	Floor38_28: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,28
+	Floor9_29: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,29
 	Floor10_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,29
@@ -1490,13 +1595,13 @@ Actors:
 	Floor14_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,29
-	Floor15_29: fc.yard.concrete
+	Floor15_29: fc.yard.drain
 		Owner: Neutral
 		Location: 15,29
 	Floor16_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,29
-	Floor17_29: fc.yard.drain
+	Floor17_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,29
 	Floor18_29: fc.yard.concrete
@@ -1511,7 +1616,7 @@ Actors:
 	Floor21_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,29
-	Floor22_29: fc.yard.road
+	Floor22_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,29
 	Floor23_29: fc.yard.concrete
@@ -1559,6 +1664,12 @@ Actors:
 	Floor37_29: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,29
+	Floor38_29: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,29
+	Floor9_30: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,30
 	Floor10_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,30
@@ -1574,13 +1685,13 @@ Actors:
 	Floor14_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,30
-	Floor15_30: fc.yard.concrete
+	Floor15_30: fc.yard.drain
 		Owner: Neutral
 		Location: 15,30
 	Floor16_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,30
-	Floor17_30: fc.yard.drain
+	Floor17_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,30
 	Floor18_30: fc.yard.concrete
@@ -1595,7 +1706,7 @@ Actors:
 	Floor21_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,30
-	Floor22_30: fc.yard.road
+	Floor22_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,30
 	Floor23_30: fc.yard.concrete
@@ -1643,6 +1754,12 @@ Actors:
 	Floor37_30: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,30
+	Floor38_30: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,30
+	Floor9_31: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,31
 	Floor10_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,31
@@ -1658,13 +1775,13 @@ Actors:
 	Floor14_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,31
-	Floor15_31: fc.yard.concrete
+	Floor15_31: fc.yard.drain
 		Owner: Neutral
 		Location: 15,31
 	Floor16_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,31
-	Floor17_31: fc.yard.drain
+	Floor17_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,31
 	Floor18_31: fc.yard.concrete
@@ -1679,7 +1796,7 @@ Actors:
 	Floor21_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,31
-	Floor22_31: fc.yard.road
+	Floor22_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,31
 	Floor23_31: fc.yard.concrete
@@ -1727,172 +1844,919 @@ Actors:
 	Floor37_31: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,31
-	Floor10_32: fc.yard.hazard
+	Floor38_31: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,31
+	Floor9_32: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,32
+	Floor10_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 10,32
-	Floor11_32: fc.yard.hazard
+	Floor11_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 11,32
-	Floor12_32: fc.yard.hazard
+	Floor12_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 12,32
-	Floor13_32: fc.yard.hazard
+	Floor13_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 13,32
-	Floor14_32: fc.yard.hazard
+	Floor14_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 14,32
-	Floor15_32: fc.yard.hazard
+	Floor15_32: fc.yard.drain
 		Owner: Neutral
 		Location: 15,32
-	Floor16_32: fc.yard.hazard
+	Floor16_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 16,32
-	Floor17_32: fc.yard.drain
+	Floor17_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 17,32
-	Floor18_32: fc.yard.hazard
+	Floor18_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 18,32
-	Floor19_32: fc.yard.hazard
+	Floor19_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 19,32
-	Floor20_32: fc.yard.hazard
+	Floor20_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 20,32
-	Floor21_32: fc.yard.hazard
+	Floor21_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 21,32
-	Floor22_32: fc.yard.road
+	Floor22_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 22,32
-	Floor23_32: fc.yard.hazard
+	Floor23_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 23,32
-	Floor24_32: fc.yard.hazard
+	Floor24_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 24,32
-	Floor25_32: fc.yard.hazard
+	Floor25_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 25,32
-	Floor26_32: fc.yard.hazard
+	Floor26_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 26,32
-	Floor27_32: fc.yard.hazard
+	Floor27_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 27,32
-	Floor28_32: fc.yard.hazard
+	Floor28_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 28,32
-	Floor29_32: fc.yard.hazard
+	Floor29_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 29,32
-	Floor30_32: fc.yard.hazard
+	Floor30_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 30,32
-	Floor31_32: fc.yard.hazard
+	Floor31_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 31,32
-	Floor32_32: fc.yard.hazard
+	Floor32_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 32,32
-	Floor33_32: fc.yard.hazard
+	Floor33_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 33,32
-	Floor34_32: fc.yard.hazard
+	Floor34_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 34,32
-	Floor35_32: fc.yard.hazard
+	Floor35_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 35,32
-	Floor36_32: fc.yard.hazard
+	Floor36_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 36,32
-	Floor37_32: fc.yard.hazard
+	Floor37_32: fc.yard.concrete
 		Owner: Neutral
 		Location: 37,32
+	Floor38_32: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,32
+	Floor9_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,33
+	Floor10_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,33
+	Floor11_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,33
+	Floor12_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,33
+	Floor13_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,33
+	Floor14_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,33
+	Floor15_33: fc.yard.drain
+		Owner: Neutral
+		Location: 15,33
+	Floor16_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,33
+	Floor17_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,33
+	Floor18_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,33
+	Floor19_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,33
+	Floor20_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,33
+	Floor21_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,33
+	Floor22_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,33
+	Floor23_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,33
+	Floor24_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,33
+	Floor25_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,33
+	Floor26_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,33
+	Floor27_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,33
+	Floor28_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,33
+	Floor29_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,33
+	Floor30_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,33
+	Floor31_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,33
+	Floor32_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,33
+	Floor33_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,33
+	Floor34_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,33
+	Floor35_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,33
+	Floor36_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,33
+	Floor37_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,33
+	Floor38_33: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,33
+	Floor9_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,34
+	Floor10_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,34
+	Floor11_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,34
+	Floor12_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,34
+	Floor13_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,34
+	Floor14_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,34
+	Floor15_34: fc.yard.drain
+		Owner: Neutral
+		Location: 15,34
+	Floor16_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,34
+	Floor17_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,34
+	Floor18_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,34
+	Floor19_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,34
+	Floor20_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,34
+	Floor21_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,34
+	Floor22_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,34
+	Floor23_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,34
+	Floor24_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,34
+	Floor25_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,34
+	Floor26_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,34
+	Floor27_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,34
+	Floor28_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,34
+	Floor29_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,34
+	Floor30_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,34
+	Floor31_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,34
+	Floor32_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,34
+	Floor33_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,34
+	Floor34_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,34
+	Floor35_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,34
+	Floor36_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,34
+	Floor37_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,34
+	Floor38_34: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,34
+	Floor9_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,35
+	Floor10_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,35
+	Floor11_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,35
+	Floor12_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,35
+	Floor13_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,35
+	Floor14_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,35
+	Floor15_35: fc.yard.drain
+		Owner: Neutral
+		Location: 15,35
+	Floor16_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,35
+	Floor17_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,35
+	Floor18_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,35
+	Floor19_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,35
+	Floor20_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,35
+	Floor21_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,35
+	Floor22_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,35
+	Floor23_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,35
+	Floor24_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,35
+	Floor25_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,35
+	Floor26_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,35
+	Floor27_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,35
+	Floor28_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,35
+	Floor29_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,35
+	Floor30_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,35
+	Floor31_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,35
+	Floor32_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,35
+	Floor33_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,35
+	Floor34_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,35
+	Floor35_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,35
+	Floor36_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,35
+	Floor37_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,35
+	Floor38_35: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,35
+	Floor9_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,36
+	Floor10_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,36
+	Floor11_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,36
+	Floor12_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,36
+	Floor13_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,36
+	Floor14_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,36
+	Floor15_36: fc.yard.drain
+		Owner: Neutral
+		Location: 15,36
+	Floor16_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,36
+	Floor17_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,36
+	Floor18_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,36
+	Floor19_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,36
+	Floor20_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,36
+	Floor21_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,36
+	Floor22_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,36
+	Floor23_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,36
+	Floor24_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,36
+	Floor25_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,36
+	Floor26_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,36
+	Floor27_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,36
+	Floor28_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,36
+	Floor29_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,36
+	Floor30_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,36
+	Floor31_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,36
+	Floor32_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,36
+	Floor33_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,36
+	Floor34_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,36
+	Floor35_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,36
+	Floor36_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,36
+	Floor37_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,36
+	Floor38_36: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,36
+	Floor9_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,37
+	Floor10_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,37
+	Floor11_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,37
+	Floor12_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,37
+	Floor13_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,37
+	Floor14_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,37
+	Floor15_37: fc.yard.drain
+		Owner: Neutral
+		Location: 15,37
+	Floor16_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,37
+	Floor17_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,37
+	Floor18_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,37
+	Floor19_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,37
+	Floor20_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,37
+	Floor21_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,37
+	Floor22_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,37
+	Floor23_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,37
+	Floor24_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,37
+	Floor25_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,37
+	Floor26_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,37
+	Floor27_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,37
+	Floor28_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,37
+	Floor29_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,37
+	Floor30_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,37
+	Floor31_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,37
+	Floor32_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,37
+	Floor33_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,37
+	Floor34_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,37
+	Floor35_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,37
+	Floor36_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,37
+	Floor37_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,37
+	Floor38_37: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,37
+	Floor9_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,38
+	Floor10_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,38
+	Floor11_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,38
+	Floor12_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,38
+	Floor13_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,38
+	Floor14_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,38
+	Floor15_38: fc.yard.drain
+		Owner: Neutral
+		Location: 15,38
+	Floor16_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,38
+	Floor17_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,38
+	Floor18_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,38
+	Floor19_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,38
+	Floor20_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,38
+	Floor21_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,38
+	Floor22_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,38
+	Floor23_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,38
+	Floor24_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,38
+	Floor25_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,38
+	Floor26_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,38
+	Floor27_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,38
+	Floor28_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,38
+	Floor29_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,38
+	Floor30_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,38
+	Floor31_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,38
+	Floor32_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,38
+	Floor33_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,38
+	Floor34_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,38
+	Floor35_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,38
+	Floor36_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,38
+	Floor37_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,38
+	Floor38_38: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,38
+	Floor9_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 9,39
+	Floor10_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 10,39
+	Floor11_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 11,39
+	Floor12_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 12,39
+	Floor13_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 13,39
+	Floor14_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 14,39
+	Floor15_39: fc.yard.drain
+		Owner: Neutral
+		Location: 15,39
+	Floor16_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 16,39
+	Floor17_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 17,39
+	Floor18_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 18,39
+	Floor19_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 19,39
+	Floor20_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 20,39
+	Floor21_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 21,39
+	Floor22_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 22,39
+	Floor23_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 23,39
+	Floor24_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 24,39
+	Floor25_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 25,39
+	Floor26_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 26,39
+	Floor27_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 27,39
+	Floor28_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 28,39
+	Floor29_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 29,39
+	Floor30_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 30,39
+	Floor31_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 31,39
+	Floor32_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 32,39
+	Floor33_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 33,39
+	Floor34_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 34,39
+	Floor35_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 35,39
+	Floor36_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 36,39
+	Floor37_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 37,39
+	Floor38_39: fc.yard.concrete
+		Owner: Neutral
+		Location: 38,39
+	Floor9_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 9,40
+	Floor10_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 10,40
+	Floor11_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 11,40
+	Floor12_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 12,40
+	Floor13_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 13,40
+	Floor14_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 14,40
+	Floor15_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 15,40
+	Floor16_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 16,40
+	Floor17_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 17,40
+	Floor18_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 18,40
+	Floor19_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 19,40
+	Floor20_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 20,40
+	Floor21_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 21,40
+	Floor22_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 22,40
+	Floor23_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 23,40
+	Floor24_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 24,40
+	Floor25_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 25,40
+	Floor26_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 26,40
+	Floor27_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 27,40
+	Floor28_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 28,40
+	Floor29_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 29,40
+	Floor30_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 30,40
+	Floor31_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 31,40
+	Floor32_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 32,40
+	Floor33_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 33,40
+	Floor34_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 34,40
+	Floor35_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 35,40
+	Floor36_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 36,40
+	Floor37_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 37,40
+	Floor38_40: fc.yard.hazard
+		Owner: Neutral
+		Location: 38,40
 	HQ: fc.hq
 		Owner: Tester
-		Location: 10,13
+		Location: 10,14
+	HQ1: fc.hq
+		Owner: Blue
+		Location: 16,14
+	HQ2: fc.hq
+		Owner: Yellow
+		Location: 22,14
+	HQ3: fc.hq
+		Owner: Purple
+		Location: 28,14
+	DamagedHQ: fc.hq
+		Owner: Tester
+		Location: 34,14
+		Health: 30
 	Generator: fc.generator
 		Owner: Tester
-		Location: 16,13
+		Location: 10,20
+	Generator1: fc.generator
+		Owner: Blue
+		Location: 16,20
+	Generator2: fc.generator
+		Owner: Yellow
+		Location: 22,20
+	Generator3: fc.generator
+		Owner: Purple
+		Location: 28,20
+	DamagedGenerator: fc.generator
+		Owner: Tester
+		Location: 34,20
+		Health: 30
 	Processor: fc.processor
 		Owner: Tester
-		Location: 10,20
+		Location: 10,26
+	Processor1: fc.processor
+		Owner: Blue
+		Location: 16,26
+	Processor2: fc.processor
+		Owner: Yellow
+		Location: 22,26
+	Processor3: fc.processor
+		Owner: Purple
+		Location: 28,26
+	DamagedProcessor: fc.processor
+		Owner: Tester
+		Location: 34,26
+		Health: 30
 	Factory: fc.factory
 		Owner: Tester
-		Location: 24,13
+		Location: 10,33
 	DamagedFactory: fc.factory
 		Owner: Blue
-		Location: 32,13
+		Location: 17,33
 		Health: 30
 	Tank: fc.tank
 		Owner: Tester
-		Location: 24,23
+		Location: 24,33
 		Facing: 640
 		TurretFacing: 640
-	Target: fc.generator
-		Owner: Blue
-		Location: 33,25
 	Facing0: fc.tank
 		Owner: Tester
-		Location: 12,29
+		Location: 11,38
 		Facing: 0
 		TurretFacing: 0
 	Facing1: fc.tank
 		Owner: Tester
-		Location: 15,29
+		Location: 14,38
 		Facing: 128
 		TurretFacing: 128
 	Facing2: fc.tank
 		Owner: Blue
-		Location: 18,29
+		Location: 17,38
 		Facing: 256
 		TurretFacing: 256
 	Facing3: fc.tank
 		Owner: Blue
-		Location: 21,29
+		Location: 20,38
 		Facing: 384
 		TurretFacing: 384
 	Facing4: fc.tank
 		Owner: Yellow
-		Location: 24,29
+		Location: 23,38
 		Facing: 512
 		TurretFacing: 512
 	Facing5: fc.tank
 		Owner: Yellow
-		Location: 27,29
+		Location: 26,38
 		Facing: 640
 		TurretFacing: 640
 	Facing6: fc.tank
 		Owner: Purple
-		Location: 30,29
+		Location: 29,38
 		Facing: 768
 		TurretFacing: 768
 	Facing7: fc.tank
 		Owner: Purple
-		Location: 33,29
+		Location: 32,38
 		Facing: 896
 		TurretFacing: 896
-	Prop0: fc.yard.pressure-skid
-		Owner: Neutral
-		Location: 19,14
-	Prop1: fc.yard.pipe
-		Owner: Neutral
-		Location: 19,18
-	Prop2: fc.yard.pallet
-		Owner: Neutral
-		Location: 29,18
-	Prop3: fc.yard.barrier
-		Owner: Neutral
-		Location: 28,25
-	Prop4: fc.yard.barrier
-		Owner: Neutral
-		Location: 30,25
-	Prop5: fc.yard.pallet
-		Owner: Neutral
-		Location: 36,20
 
 Rules: pvphit|rules/slice.yaml
 	FC.TANK:
@@ -1904,7 +2768,7 @@ Rules: pvphit|rules/slice.yaml
 		LuaScript:
 			Scripts: yard.lua
 		MissionData:
-			Briefing: Inspect the K-6, Armor Works, player colors, damaged factory, and industrial paving at normal zoom. A scout is produced automatically to exercise the shutter. Move and force-fire the red tanks. Yard props and paving are decorative; this map has no victory condition.
+			Briefing: Core building review: HQ, generator and processor rows show red, blue, yellow, purple and damaged red. Below: heavy factory and tank references. At 30 seconds purple buildings take damage; at 45 seconds they recover. At 50 seconds new buildings assemble on the lower apron. Keep the lab running for two minutes to check repeated deliveries and factory production.
 	Player:
 		-ConquestVictoryConditions:
 		Shroud:

@@ -1,0 +1,52 @@
+{
+  "frame_size": [
+    256,
+    256
+  ],
+  "assets": [
+    "hq",
+    "generator",
+    "processor"
+  ],
+  "frames": {
+    "frames/hq/idle/00.png": "1f37846c287eb5c86ef32c6e3e1f9b3c1dceb5f47ab978fe0298f4580a95ee1a",
+    "frames/hq/idle/01.png": "ba4a1400c334fe16823ec0622680d3f90b3ba7a7fb471169fd8ff5dc8cab21b4",
+    "frames/hq/idle/02.png": "ec7076bc4d93805dad0b2f18bc6340f939d2f79bfb777b22f17335a6635f701d",
+    "frames/hq/idle/03.png": "258dd7647c0ab01108c56f9c1a8f43ba07a51e708aa44f153db1a06d0533406e",
+    "frames/hq/damaged-idle/00.png": "03a5e142f0ad5e5a416e28ad1431299455f0cdcb5e6e73f15dcdcee42b5df3f6",
+    "frames/hq/damaged-idle/01.png": "1f96c25636f4a2764482d3d91ec65d0c7e2a6dfbb16e4071550e5cf0006f0c1b",
+    "frames/hq/damaged-idle/02.png": "d757c52b7b71b2641a729cec97232f15690e3c417196ea5bf591f890f58896b5",
+    "frames/hq/damaged-idle/03.png": "104fafc453779354ac4804b9fa67a3d278896bc63c461a7e20180ef0f724b42c",
+    "frames/hq/make/00.png": "a915fd6298d82f3aa63b0adc91c4cf80ac544a07a522d3541d58308e8e49ca28",
+    "frames/hq/make/01.png": "c76cf113da1bf771ffbd809e40dc0def366e70d0325945355e35dec06f43b023",
+    "frames/hq/make/02.png": "f935424895bd23e9a11fbf992c88b4fa8b96051b23d63019b5f4a0dffc5caa71",
+    "frames/hq/make/03.png": "d4ff289864a4274196d105348b7ca21d3defa10f1f447b44806b4f616c263f66",
+    "frames/hq/make/04.png": "bc86b5ecf117d55179cecf3ecc0142baff1eb07e63e18f044f23b5b16aca0e9f",
+    "frames/generator/idle/00.png": "b5c8ac6cda375e456e2e010bb0c7e34cebf6281eabbd82d1a5f431679ac4db46",
+    "frames/generator/idle/01.png": "d9dd037a0baefed2a0a476d585e8a6de093305b9f4a4a8ffd99361fe34cde7e0",
+    "frames/generator/idle/02.png": "ee102bb2a010e51cf9740c448cb116ba9085b59cb3383d2903dd47318625a5a9",
+    "frames/generator/idle/03.png": "881245ef83ac2b399140d6646fcdc295fe84c7e4a9db00885e4313cb2cecfb09",
+    "frames/generator/damaged-idle/00.png": "da1d1567d80c2491e96e9eb978e085fda5753278d130e1faa8e03b245dbf4c82",
+    "frames/generator/damaged-idle/01.png": "0b6d972712da7e8fa89ab00718704851e14f29fa1529aa2bec9f26f24a5c4193",
+    "frames/generator/damaged-idle/02.png": "a2014625c2713daf58fa7912205f1a6254b954c9c073a489931286e751a5cede",
+    "frames/generator/damaged-idle/03.png": "26eddfd72ce82c414d07709ea26c17fda1b87d9ede38006bc852e2a813275aa1",
+    "frames/generator/make/00.png": "c570874f3cedaba9b01b1b515d564e972fe9a07ecf6d929b65b98849282053ea",
+    "frames/generator/make/01.png": "865fdff3f8ed0c4d67b1cce9a9a41deaed9be04b576219683eb420058c94ad2a",
+    "frames/generator/make/02.png": "dfe31c302f8e3753f0480f601c9dc2728f02c3065f1d9479e887757aaaef189f",
+    "frames/generator/make/03.png": "993e014b07055b165736afe7ca47cd63e24436b3435ead04f44b9074c01c8c4d",
+    "frames/generator/make/04.png": "b3cdebcc8531fc7684ca0294bee524bf966dc55f4e470e3790925da4d5ba4680",
+    "frames/processor/idle/00.png": "6db874a936600d2b9c1cd00f639e63661bbbfffec3b572a4a25fcacf90f0898b",
+    "frames/processor/idle/01.png": "4c599162879449af180ad252edba99090b9f7ff30c6ea8381ff647f09e380658",
+    "frames/processor/idle/02.png": "2fea7618d9d6890f301113bd90324c655efbf1165bf78262da20fc88c51abff1",
+    "frames/processor/idle/03.png": "807b79dddc19748430cef65ddeb5a032df9b627dee7f77611afca285e4eb0d43",
+    "frames/processor/damaged-idle/00.png": "537722adf3d90b4656741dd125c196a4f25ddcde183ddabd856cd914681b84ce",
+    "frames/processor/damaged-idle/01.png": "72a6318060b8a4ab15526dd360097881234f5d2e577e980da7af45672ba63ddb",
+    "frames/processor/damaged-idle/02.png": "d4c1d5140e45d752710a8e7b9c0436ef6790c91834f8f3b8ce2e6f46e1838684",
+    "frames/processor/damaged-idle/03.png": "78fe4b1da979d78fc8e34ed759ef6af89722c683de95b3f902a47280f831a0a1",
+    "frames/processor/make/00.png": "d96dbacc84d29b800e54cbabed597a225699e50192f2f48b0b20d4b46a27cfce",
+    "frames/processor/make/01.png": "eded4312e73017994aca7ca7fc27acb309e0927bdd217325248a54ec82affc51",
+    "frames/processor/make/02.png": "5340db45c2b8e7886248edfc3833937b810ba9b16466084d605aa7d581e70593",
+    "frames/processor/make/03.png": "6079923e958e2588507b4301a22e16111c6ae2c6bf67ed7961a639469dfde0ef",
+    "frames/processor/make/04.png": "c9b3ea3480c010de41bd6914b5b408536b6768a1b16e27450c567f5111c9c8af"
+  }
+}

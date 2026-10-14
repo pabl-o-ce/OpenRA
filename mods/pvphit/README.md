@@ -7,10 +7,14 @@ PvPHit outcome emitter are unchanged.
 
 Review the [in-game roster](docs/roster-preview.png),
 [tank facing samples](docs/tank-facing-preview.png), and [test results](VALIDATION.md).
-The latest Blender MCP pass is shown in the
+The tank/factory Blender MCP pass is shown in the
 [heavy model previews](docs/heavy-models.png) and
 [industrial yard](docs/heavy-yard.png). See the
 [art direction and reproduction notes](docs/heavy-art-direction.md).
+The subsequent Headquarters, Generator and Processor pass has
+[model comparisons](docs/core-building-models.png), a
+[native-zoom yard](docs/core-building-yard.png), and
+[reproduction instructions](docs/core-building-art-direction.md).
 The [earlier model previews](docs/refined-models.png) remain for comparison.
 
 ## Direction
@@ -113,12 +117,14 @@ Keep the laboratory running for about two minutes without spending or destroying
 test actors until `systems suite complete` appears. It has no victory condition.
 Use the mortar manually to test deployment, withdrawal, and forced attacks.
 
-The industrial visual yard shows the refined K-6 and Armor Works alongside
-the earlier blockouts, four player colors, a damaged factory, modular paving,
-drains, pipework, pressure vessels, spare armor crates, and concrete barriers.
-It automatically orders one scout to exercise the factory exit and shutter.
-All yard props and paving are decorative: they do not change collision or the
-inherited terrain's movement costs. This is an art laboratory, not a balanced map.
+The industrial visual yard shows the refined HQ, generator and processor in
+four player colors plus a damaged column, with the heavy K-6 and Armor Works
+below. The purple column takes damage at 30 seconds and recovers at 45 seconds;
+additional buildings assemble at 50 seconds. An automatic scout order exercises
+the factory exit and shutter. Keep it running for two minutes to check repeated
+processor dock departures and production. Paving is decorative; this is an art
+laboratory, not a balanced map. Reproduce the expanded layout with
+`tools/build_core_building_yard.py` (the older yard script restores its old layout).
 
 ## Asset pipeline
 
@@ -172,8 +178,10 @@ green and shifted by `PlayerColorShift` through the separate `furnace-player`
 palette. Cyan charge details remain cyan. Shadows are engine-generated sprite
 shadows; wrecks are simple scorched forms. The refined tank and factory have
 material wear; the factory also has operating fans and a retracting shutter.
-Articulated tracks, more convincing wreck geometry, animations for the other
-buildings, voice acting, and final sound mixing remain future asset work.
+Articulated tracks, more convincing wreck geometry, animations for the remaining
+blockouts, voice acting, and final sound mixing remain future asset work.
+The core HQ, generator and processor now also have operating, construction and
+physical damage states; see the core-building workflow below.
 
 ### Blender MCP refinement
 
@@ -223,6 +231,16 @@ through Blender MCP, preserving the same scale, anchors, facing order and
 gameplay. `sequences/heavy.yaml` loads last; removing this one manifest entry
 restores the previous visuals. Editable sources are in `art/source/heavy/`.
 See [heavy refinement notes](docs/heavy-art-direction.md) for its workflow.
+
+### Core buildings
+
+`tools/core_buildings_visuals.py` builds only the HQ, generator and processor in
+independent Blender MCP scenes. It also loads hand-edited sources for export.
+`tools/pack_core_buildings.py` validates and packs 39 frames, three player-color
+icons and embedded PNG metadata without rewriting other roster assets.
+Editable sources live in `art/source/core-buildings/`; sequence and icon palette
+overrides load last. See [the complete workflow](docs/core-building-art-direction.md)
+for source editing, rendering, the expanded yard and rollback.
 
 ## Implementation boundaries
 

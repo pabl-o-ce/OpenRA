@@ -152,3 +152,66 @@ git diff --check
 ```
 
 See `README.md` for laboratory launch and asset-generation commands.
+
+## Core buildings — 2026-10-14
+
+Verified on `pvphit-release-20250330`, based on `173f4792e7`, with a clean tree
+before work. Local HEAD and the cached origin branch pointed to that commit;
+no local or cached remote `main` existed. Live remote verification could not
+complete: the default SSH configuration had a permission error, and bypassing
+that include reached GitHub but failed public-key authentication. No branch,
+commit or remote configuration was changed.
+
+Blender MCP connected to the live Blender 5.2.2 LTS session before modeling.
+The five supplied tank/factory/roster source files were inspected through MCP.
+Three independent `FC4` building scenes were modeled and rendered through the
+live bridge; the previous scenes and the default Cube/Camera/Light were retained.
+Earlier source files and heavy tank/factory outputs are unchanged.
+
+- All **39 sprite frames** and six model previews completed. Three editable
+  `.blend` files, embedded PNG sheets, frame metadata, three build icons and
+  scripts are retained. HQ remains preplaced, with no new build option.
+- Loaded the three saved sources into separate scenes through Blender MCP and
+  rerendered all 39 frames: **every frame was pixel-identical** to its procedural
+  export. Source loading supports subsequent manual geometry edits.
+- Packing validates dimensions, alpha bounds, complete frame sets, differing
+  operating poses, differing damage states, and exact make-to-idle endpoints.
+  An initial frozen-fan export was caught and corrected before final validation:
+  timeline evaluation now agrees with the saved cooling-fan actions.
+- Full mod `--check-yaml` passed. Missing-sprite checks passed for SNOW, INTERIOR,
+  TEMPERAT and DESERT. Python compilation and `git diff --check` passed.
+- Systems lab reached `FURNACE CHECK PASSED: systems suite complete`, including
+  capture, income, harvesting/unloading and paid scout production/factory exit.
+  Power remained 120 provided / 80 consumed.
+- Expanded visual yard reached `CORE YARD PASSED: repeated unloading and
+  departure; suite complete`. The tracked free hauler completed four dock
+  departures during the final run; resource increases and paid factory output
+  also passed. The processor's footprint, dock offset, facing and spawn remain
+  unchanged, and the apron is visually open during approach and unloading.
+- Native-zoom inspection shows red/blue/yellow/purple ownership panels without
+  recoloring cyan induction collars or amber work lights. Generator and processor
+  sidebar icons remap correctly. HQ's icon is supplied as an asset, not added to
+  the sidebar. Damaged geometry is distinct for all three buildings.
+- The recording shows the purple column taking damage and recovering, and new
+  generator/processor construction progressing from foundation to intact form.
+  Operating loops and the existing factory exit remain active.
+
+The first independent visual-yard display closed before its final assertion.
+A second run managed the display, game and recording together and completed
+successfully. Both runs used isolated support directories, Xvfb and Mesa software
+rendering; normal user settings/account files and the desktop were not changed.
+The outcome emitter was disabled because no match ID was supplied.
+
+Evidence: [model comparison](docs/core-building-models.png),
+[native-size yard](docs/core-building-yard.png),
+[construction capture](docs/core-building-construction.gif),
+[operating capture](docs/core-building-operation.gif), and
+[unloading capture](docs/core-building-unloading.gif).
+The GIFs are enlarged crops from the in-game recording.
+See [reproduction and rollback](docs/core-building-art-direction.md).
+
+This is asset and local gameplay-regression verification, not a new multiplayer,
+balance, hardware-display or backend-settlement acceptance run. Construction
+uses five discrete stages; machinery animation is cosmetic. No engine code,
+competitive map balance, gameplay statistics, account/result integration or
+release configuration changed. No commit, push or release was performed.
