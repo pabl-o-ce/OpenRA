@@ -96,6 +96,7 @@ Rules:
 	pvphit|rules/furnace.yaml
 	pvphit|rules/refined.yaml
 	pvphit|rules/core-buildings.yaml
+	pvphit|rules/vehicles.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -110,6 +111,7 @@ Sequences:
 	pvphit|sequences/refined.yaml
 	pvphit|sequences/heavy.yaml
 	pvphit|sequences/core-buildings.yaml
+	pvphit|sequences/vehicles.yaml
 
 TileSets:
 	ra|tilesets/snow.yaml

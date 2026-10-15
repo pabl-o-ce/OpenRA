@@ -274,3 +274,28 @@ adds the original Directorate symbol; it is not wholly new artwork.
 
 See `VALIDATION.md` for checks performed and remaining limits. No release was
 published and no platform or orchestration configuration was changed.
+
+### Refined support vehicles
+
+The Slag Hauler, Relay Scout and Brace Mortar Carrier now have independent
+editable Blender sources under `art/source/vehicles/`, directional wrecks,
+matching icons and focused `vehicles.yaml` overrides. The scout retains its
+separate turret; the mortar has five deployment stages with exact travel and
+deployed endpoints. Harvest/dock animations remain bound to idle to preserve
+resource timing. See [vehicle models](docs/vehicle-models.png),
+[native-zoom yard](docs/vehicle-yard.png),
+[before/after directions](docs/vehicle-facing-comparison.png), and
+[workflow and art direction](docs/vehicle-art-direction.md).
+
+Use `tools/vehicle_visuals.py` through Blender MCP: `load_sources()` for existing
+hand-edited models, `start_render('previews')` before `start_render('sprites')`.
+The complete batch has 419 frames. `tools/pack_vehicles.py` validates the exports
+and embeds PNG metadata without touching earlier assets.
+`tools/preview_vehicles.py` reproduces the comparison images.
+
+`tools/build_vehicle_yard.py` builds only `foundry-vehicle-yard`; its tracked
+`yard.lua` supplies the checks. Launch with `Launch.Map=foundry-vehicle-yard`
+and `Graphics.ViewportDistance=Native`. The separate map checks capture,
+resource deliveries, artillery range restrictions and all three factory builds,
+then tours full directional and wreck grids. The expanded core-building yard
+is preserved. Consult `VALIDATION.md` for the acceptance results and limitations.

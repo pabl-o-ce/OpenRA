@@ -13,3 +13,8 @@ heavy/render-status.json
 core-buildings/frames/
 core-buildings/render-status.json
 core-buildings/render-status.tmp
+vehicles/frames/
+vehicles/samples/
+vehicles/*-status.json
+vehicles/*-status.tmp
+vehicles/vehicle-pack-*/

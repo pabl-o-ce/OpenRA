@@ -215,3 +215,99 @@ balance, hardware-display or backend-settlement acceptance run. Construction
 uses five discrete stages; machinery animation is cosmetic. No engine code,
 competitive map balance, gameplay statistics, account/result integration or
 release configuration changed. No commit, push or release was performed.
+
+## Support vehicles — 2026-10-14
+
+This pass started from clean `pvphit-release-20250330` at `f8ad287652`. No
+`.codegraph/` directory was present. Blender MCP connected to 5.2.2 LTS and
+reported no running render before work. The roster source datablocks, completed
+heavy/core references, rules, sequences and the fork's animation traits were
+inspected first. The existing FC2/FC3/FC4 and default scenes remain present;
+the active scene was restored after rendering. No existing source, heavy/core
+asset or expanded core-yard file was changed.
+
+Newly performed asset checks:
+
+- Three independent editable sources contain one scene each. The initial
+  silhouette preview was presented before the full batch; the mortar's capped
+  appearance was corrected to an open rim and recessed bore before export.
+- All **419 sprite frames** completed through Blender MCP. The packer checks
+  every state's dimensions, RGBA alpha margin, frame completeness, directional
+  wreck differences, actual five-stage movement, and exact travel/deployed
+  endpoints for every facing. All passed.
+- Loaded all three saved `.blend` files into fresh owned scenes and rerendered
+  all 419 frames: **419/419 pixel-identical**. PNG file hashes differ because of
+  Blender metadata, so the comparison used decoded RGBA pixels.
+- Every scout hull and turret direction is distinct and retains the shared
+  untrimmed canvas. The union of either layer's validated bounds remains inside
+  the frame for all 1,024 hull/turret direction combinations.
+- Packed sheets have embedded `FrameSize` and `FrameAmount` metadata imported
+  by this fork's utility. A deliberately incorrect deployment endpoint and an
+  unembedded PNG were both rejected in isolated negative checks.
+- Full mod `--check-yaml` passed; missing-sprite checks passed for SNOW,
+  INTERIOR, TEMPERAT and DESERT. Python syntax and `git diff --check` passed.
+  The new map generator reproduced its YAML exactly.
+
+Newly performed in-game checks used isolated Xvfb displays, temporary support
+settings and `Graphics.ViewportDistance=Native`, with the display, game and
+recorder managed together. The initial sandbox launch could not create local
+sockets; the permitted isolated rerun worked. No desktop settings/account files
+were changed and no match ID was supplied.
+
+- Native-zoom review covered all 32 body directions, all 32 deployed carrier
+  directions, separate scout turret directions, shadows and all three wreck
+  direction sets. Four player colors remapped ownership panels; induction
+  cyan and work-light amber stayed separate. All three vehicle sidebar icons,
+  including the hauler's explicitly overridden palette, showed red panels.
+- The vehicle yard passed surviving scout capture, free-hauler spawn, repeated
+  harvesting/unloading/departure, and paid production of all three vehicles.
+  The tracked free hauler completed **11 dock departures** during the final
+  visual-tour run. Paid hauler and scout factory-exit checks passed.
+- Scripted checks passed for no undeployed firing, minimum/maximum mortar range
+  and deployed firing within range. Real player input deployed the interactive
+  mortar, force-fired (logged 13,750 damage per hit), then ordered movement.
+  Captures show stabilizers withdrawing before travel and returning cleanly to
+  the travel pose. Early hotkey attempts lacked Xvfb window focus; explicitly
+  focusing the game corrected the input harness.
+- The unchanged systems lab again logged `FURNACE CHECK PASSED: systems suite
+  complete`, including capture, resource delivery and paid scout output.
+- The unchanged core-building yard again logged `CORE YARD PASSED: repeated
+  unloading and departure; suite complete`, with four dock departures, paid
+  production, damage/recovery and construction events.
+
+### Unresolved acceptance issue: produced siege carrier
+
+**The vehicle yard does not pass its complete suite.** A newly produced mortar
+carrier stays at the factory. Source inspection identifies existing wiring in
+`rules/furnace.yaml`: `WithMakeAnimation` grants `build-incomplete` during
+`INotifyCreated`, when both conditional sprite bodies are still disabled. Its
+`Forward` method returns without an animation callback to revoke the condition,
+so `Mobile.PauseOnCondition` keeps the unit immobilized. Map-placed carriers skip
+creation animation and correctly pass deployment/fire/withdrawal checks.
+
+This predates the artwork changes: the relevant gameplay rules and engine code
+are unchanged in this pass. Removing the creation-only grant and cleaning up its
+now-unused condition references is a small YAML fix, but it changes explicitly
+preserved condition wiring. Approval was requested; the fix has not been applied.
+The carrier's paid-production callback fires, but **factory exit remains failed**.
+Do not treat a callback alone as a successful exit.
+
+The test harness also initially tried to queue a build inside the preceding
+production callback, before the queue released its lock; the next request is
+now delayed one tick. Its failure handler now suppresses the final success
+message after any assertion failure (an earlier failing run printed that message
+after `FatalError` scheduled termination). These are laboratory-only changes.
+
+Evidence: [models](docs/vehicle-models.png), [native yard](docs/vehicle-yard.png),
+[before/after directions](docs/vehicle-facing-comparison.png),
+[full native-size direction grids](docs/vehicle-directions-in-game.png),
+[deployment](docs/vehicle-deployment.gif) and
+[withdrawal before travel](docs/vehicle-withdrawal.gif).
+The GIFs are enlarged crops of the native-zoom recording. The direction-grid
+montage reads left-to-right: hauler/scout; traveling/deployed carrier;
+independent scout turret/hauler wreck; scout wreck/carrier wreck.
+
+Harvesting/docking still use idle artwork; no movement or firing loops were
+added. No new multiplayer, balance, backend-settlement or hardware-display
+acceptance was performed. All changes are under `mods/pvphit/`; no commit, push,
+release, deployment or `main` branch creation was performed.

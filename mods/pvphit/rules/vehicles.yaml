@@ -1,0 +1,5 @@
+# FC5 art-only overrides. Harvest/dock bindings and all gameplay traits stay intact.
+FC.HAULER:
+	Buildable:
+		IconPalette: furnace-player
+		IconPaletteIsPlayerPalette: true
