@@ -1,0 +1,21 @@
+# Low-power replacement and opt-in announcement group, scoped to the pvphit mod.
+Speech:
+	Notifications:
+		LowPower: pvphit|audio/presentation-sample/low-power.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 1
+		ConstructionComplete:
+			Group: furnace-announcements
+		UnitReady:
+			Group: furnace-announcements
+		InsufficientFunds:
+			Group: furnace-announcements
+			Priority: 1
+		SilosNeeded:
+			Group: furnace-announcements
+			Priority: 1
+		BaseAttack:
+			Group: furnace-announcements
+			Priority: 2
+			InterruptLowerPriority: true

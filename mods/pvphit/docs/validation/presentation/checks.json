@@ -1,0 +1,170 @@
+{
+  "clips": {
+    "k6-fire-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.58,
+      "peak_sample": 18841,
+      "peak_dbfs": -4.81,
+      "rms_sample": 2166.829,
+      "clipped_samples": 0
+    },
+    "k6-fire-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.58,
+      "peak_sample": 19504,
+      "peak_dbfs": -4.51,
+      "rms_sample": 2164.63,
+      "clipped_samples": 0
+    },
+    "k6-fire-3": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.58,
+      "peak_sample": 19140,
+      "peak_dbfs": -4.67,
+      "rms_sample": 2170.067,
+      "clipped_samples": 0
+    },
+    "k6-impact-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.48,
+      "peak_sample": 13221,
+      "peak_dbfs": -7.88,
+      "rms_sample": 1307.774,
+      "clipped_samples": 0
+    },
+    "k6-impact-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.48,
+      "peak_sample": 13867,
+      "peak_dbfs": -7.47,
+      "rms_sample": 1378.903,
+      "clipped_samples": 0
+    },
+    "k6-impact-3": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.48,
+      "peak_sample": 12183,
+      "peak_dbfs": -8.59,
+      "rms_sample": 1357.276,
+      "clipped_samples": 0
+    },
+    "k6-select-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23,
+      "peak_sample": 5265,
+      "peak_dbfs": -15.88,
+      "rms_sample": 1305.151,
+      "clipped_samples": 0
+    },
+    "k6-select-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23,
+      "peak_sample": 5056,
+      "peak_dbfs": -16.23,
+      "rms_sample": 1305.63,
+      "clipped_samples": 0
+    },
+    "k6-move": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.2,
+      "peak_sample": 5169,
+      "peak_dbfs": -16.04,
+      "rms_sample": 1399.908,
+      "clipped_samples": 0
+    },
+    "k6-attack": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.24,
+      "peak_sample": 5366,
+      "peak_dbfs": -15.72,
+      "rms_sample": 1278.456,
+      "clipped_samples": 0
+    },
+    "k6-action": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.28,
+      "peak_sample": 5354,
+      "peak_dbfs": -15.74,
+      "rms_sample": 1477.94,
+      "clipped_samples": 0
+    },
+    "low-power": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.7,
+      "peak_sample": 5046,
+      "peak_dbfs": -16.25,
+      "rms_sample": 916.514,
+      "clipped_samples": 0
+    }
+  },
+  "weapons": {
+    "FCInduction": "Unchanged except explicit image/audio presentation fields",
+    "FCScoutGun": "Unchanged except explicit image/audio presentation fields",
+    "FCMortar": "Unchanged except explicit image/audio presentation fields"
+  },
+  "captures": {
+    "hidden-v1": {
+      "rate": 44100,
+      "channels": 2,
+      "seconds": 31.26,
+      "peak_sample": 1,
+      "peak_dbfs": -90.31,
+      "rms_sample": 0.5,
+      "clipped_samples": 0,
+      "measured_after_seconds": 8
+    },
+    "fog-v1": {
+      "rate": 44100,
+      "channels": 2,
+      "seconds": 31.26,
+      "peak_sample": 1,
+      "peak_dbfs": -90.31,
+      "rms_sample": 0.5,
+      "clipped_samples": 0,
+      "measured_after_seconds": 8
+    },
+    "visible-v1": {
+      "rate": 44100,
+      "channels": 2,
+      "seconds": 30.82,
+      "peak_sample": 13232,
+      "peak_dbfs": -7.88,
+      "rms_sample": 283.794,
+      "clipped_samples": 0,
+      "measured_after_seconds": 8
+    },
+    "accepted-native": {
+      "rate": 44100,
+      "channels": 2,
+      "seconds": 58.8,
+      "peak_sample": 12574,
+      "peak_dbfs": -8.32,
+      "rms_sample": 555.128,
+      "clipped_samples": 0,
+      "measured_after_seconds": 8
+    },
+    "mute": {
+      "rate": 44100,
+      "channels": 2,
+      "seconds": 57.7,
+      "peak_sample": 1,
+      "peak_dbfs": -90.31,
+      "rms_sample": 0.5,
+      "clipped_samples": 0,
+      "measured_after_seconds": 8
+    }
+  },
+  "reproduction": "Byte-identical fresh-root WAV/PNG/YAML/manifest exports"
+}

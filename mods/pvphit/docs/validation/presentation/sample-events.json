@@ -1,0 +1,38 @@
+[
+  {
+    "wall_seconds": 6.918,
+    "event": "PRESENTATION READY"
+  },
+  {
+    "wall_seconds": 8.271,
+    "event": "PRESENTATION INPUT select"
+  },
+  {
+    "wall_seconds": 12.83,
+    "event": "PRESENTATION INPUT move"
+  },
+  {
+    "wall_seconds": 17.232,
+    "event": "PRESENTATION INPUT attack"
+  },
+  {
+    "wall_seconds": 27.267,
+    "event": "PRESENTATION PASSED: real attack input damaged target"
+  },
+  {
+    "wall_seconds": 28.771,
+    "event": "PRESENTATION LOW POWER: actual generator removal"
+  },
+  {
+    "wall_seconds": 31.949,
+    "event": "PRESENTATION CAPTURE warning"
+  },
+  {
+    "wall_seconds": 45.677,
+    "event": "PRESENTATION CROWDED: twelve additional K6 tanks"
+  },
+  {
+    "wall_seconds": 59.06,
+    "event": "PRESENTATION COMPLETE"
+  }
+]

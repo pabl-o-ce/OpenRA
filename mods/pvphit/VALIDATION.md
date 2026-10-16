@@ -490,3 +490,27 @@ There are no new ambient animation actors, terrain mechanics, unit/economic/weap
 values or victory rules. Shared RA content, engine code, account/result integration,
 website/backend and release configuration were not changed. No commit, push,
 release or deployment was performed.
+
+## Sound and interface sample — 2026-10-16
+
+The first step-5 review milestone is implemented; the full asset batch remains
+pending sample review. The Release build, five announcement-policy tests, full
+YAML lint, four-tileset missing-sprite checks, deterministic sample reproduction
+and resolved weapon comparison passed. Actual OpenAL captures distinguish visible
+firing/destruction from shrouded and explored-but-fogged activity at the same
+camera position. These measurements do not establish subjective sound quality.
+
+The sample recording asserts real force-attack damage and captures an actual
+low-power event with visible text and indicator. Native and UI-scale endpoint
+screenshots are retained. See [the evidence and explicit limits](docs/validation/presentation/README.md).
+No competitive, cross-platform, hardware-accessibility or authenticated-platform
+acceptance is claimed. Step 4's human match/layout/congestion/depletion review
+remains open and the 15–20-minute duration remains a hypothesis.
+
+The unchanged systems, core-building and complete vehicle laboratories passed
+on the changed engine. Vehicle evidence includes actual paid factory exit, all
+three produced carriers' repeated fire/withdraw cycles, docking interruption
+recovery and destruction in six animation states. The fully muted sample also
+completed and preserved the low-power visual warning while output remained at
+the backend dither floor. These are local single-player checks; no new
+multiplayer/replay or environment-routing acceptance run is claimed.

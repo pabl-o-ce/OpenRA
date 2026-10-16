@@ -1,0 +1,30 @@
+Container@TRANSIENTS_PANEL:
+	X: 5
+	Y: WINDOW_HEIGHT - HEIGHT - 55
+	Width: 550
+	Height: 80
+	Logic: IngameTransientNotificationsLogic
+	Children:
+		TextNotificationsDisplay@TRANSIENTS_DISPLAY:
+			Width: PARENT_WIDTH
+			Height: PARENT_HEIGHT
+			DisplayDurationMs: 4000
+			LogLength: 5
+			TransientsTemplate: FURNACE_TRANSIENT_LINE_TEMPLATE
+			HideOverflow: False
+
+Background@FURNACE_TRANSIENT_LINE_TEMPLATE:
+	Background: furnace-notification
+	ClickThrough: true
+	Width: PARENT_WIDTH
+	Height: 20
+	Children:
+		Label@TIME:
+			X: 8
+			Width: 37
+			Height: 20
+		Label@TEXT:
+			X: 8
+			Height: 20
+			WordWrap: true
+			TextColor: F2F1E7

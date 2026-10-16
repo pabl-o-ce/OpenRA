@@ -1,0 +1,102 @@
+^FurnaceConsole:
+	Image: pvphit|art/ui/presentation-sample/console.png
+	Image2x: pvphit|art/ui/presentation-sample/console-2x.png
+	Image3x: pvphit|art/ui/presentation-sample/console-3x.png
+
+sidebar-kiln:
+	Inherits: ^FurnaceConsole
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 240, 224, 190, 47
+		background-supportoverlay: 768, 0, 64, 48
+		background-iconrow: 0, 294, 238, 47
+		background-bottom: 0, 343, 238, 8
+
+sidebar-button-kiln:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 480, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-hover:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 512, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-pressed:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 544, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-highlighted:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 576, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-highlighted-hover:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 608, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-highlighted-pressed:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 640, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-disabled:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 672, 0, 3, 3, 22, 22, 3, 3
+
+sidebar-button-kiln-highlighted-disabled:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 704, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 480, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-hover:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 512, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-pressed:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 544, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-highlighted:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 576, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-highlighted-hover:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 608, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-highlighted-pressed:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 640, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-disabled:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 672, 0, 3, 3, 22, 22, 3, 3
+
+command-button-kiln-highlighted-disabled:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 704, 0, 3, 3, 22, 22, 3, 3
+
+furnace-tooltip:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 480, 40, 4, 4, 24, 24, 4, 4
+
+furnace-notification:
+	Inherits: ^FurnaceConsole
+	PanelRegion: 520, 40, 4, 4, 24, 24, 4, 4
+
+commandbar:
+	Image: pvphit|art/ui/presentation-sample/console.png
+	Image2x: pvphit|art/ui/presentation-sample/console-2x.png
+	Image3x: pvphit|art/ui/presentation-sample/console-3x.png
+	Regions:
+		background: 0, 355, 434, 44
+
+power-icons:
+	Image: pvphit|art/ui/presentation-sample/console.png
+	Image2x: pvphit|art/ui/presentation-sample/console-2x.png
+	Image3x: pvphit|art/ui/presentation-sample/console-3x.png
+	Regions:
+		power-normal: 560, 80, 16, 16
+		power-critical: 580, 80, 16, 16

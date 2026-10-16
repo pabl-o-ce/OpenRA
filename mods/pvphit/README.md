@@ -340,3 +340,14 @@ Do not run obsolete visual-yard or model generators to reproduce this pass.
 See [native sample](docs/validation/environment/native-sample.png),
 [layout and asset workflow](docs/environment-art-direction.md), and
 [acceptance evidence and human playtest protocol](docs/validation/environment/README.md).
+
+### Sound and interface review sample
+
+Step 5 begins with the [Foundry console sample](docs/presentation-art-direction.md):
+12 original K6/command/low-power clips, readable in-game chrome, opt-in sound
+visibility gates and a bounded alert channel. Review the
+[engine recording](docs/validation/presentation/sample.mp4) and
+[native warning view](docs/validation/presentation/native-warning.png) before
+expanding the batch. This is the sample review gate, not completion of step 5;
+voice/music and entry-screen branding remain deferred. See the
+[checks and remaining acceptance](docs/validation/presentation/README.md).

@@ -1,0 +1,77 @@
+{
+  "source": "tools/build_presentation_sample.py",
+  "license": "Repository licensing; no third-party inputs",
+  "provenance": "Original procedural synthesis and chrome; no samples, voices, or inherited artwork.",
+  "rate": 44100,
+  "clips": {
+    "k6-fire-1": {
+      "seconds": 0.58,
+      "peak_dbfs": -4.81,
+      "sha256": "8caf535778d90d6c90e1a2ff521bc497026a4e046426ac5737dbc248297e73fb"
+    },
+    "k6-fire-2": {
+      "seconds": 0.58,
+      "peak_dbfs": -4.51,
+      "sha256": "ee65c9ecd5db8581960098e7b9fb2b724564cf0900925023cbe66cb08bf1986d"
+    },
+    "k6-fire-3": {
+      "seconds": 0.58,
+      "peak_dbfs": -4.67,
+      "sha256": "02e29485831bf5731b28ef6283dd9bd23cca121f83185055d079c89d9b49bc13"
+    },
+    "k6-impact-1": {
+      "seconds": 0.48,
+      "peak_dbfs": -7.88,
+      "sha256": "6c48ea9b2e9865a38bfbe39cf18542c5a8fdabb95f21fd075e19b55245da0257"
+    },
+    "k6-impact-2": {
+      "seconds": 0.48,
+      "peak_dbfs": -7.47,
+      "sha256": "8bb49018d1675aeeadd394fb6b01c8f9569a6c2a7c4e1b3cbfb18d7ad3fa76c2"
+    },
+    "k6-impact-3": {
+      "seconds": 0.48,
+      "peak_dbfs": -8.59,
+      "sha256": "1234b808f00c5a4ce28c788be195a3d879c54ff24bcc775b5dd4d12debaaaa4e"
+    },
+    "k6-select-1": {
+      "seconds": 0.23,
+      "peak_dbfs": -15.88,
+      "sha256": "ebda92ac69cd35482a7bdb688632156cd611c5681eda8ee3137e39e9aa50f967"
+    },
+    "k6-select-2": {
+      "seconds": 0.23,
+      "peak_dbfs": -16.23,
+      "sha256": "6950c257c31b1f30877a9ccb29d6d2bae95603a7ed98fe8ca81f160abaecf60b"
+    },
+    "k6-move": {
+      "seconds": 0.2,
+      "peak_dbfs": -16.04,
+      "sha256": "099c40bddb9ed01cd9a1e31015cb6cbfb67808a428b3216468d6e9f6ef39b446"
+    },
+    "k6-attack": {
+      "seconds": 0.24,
+      "peak_dbfs": -15.72,
+      "sha256": "8d2ad0420c274905b55c2cf5a66574397aceb3916daf2bddc892b90ac6d46f10"
+    },
+    "k6-action": {
+      "seconds": 0.28,
+      "peak_dbfs": -15.74,
+      "sha256": "1053d5efed33853ed617f076638339fe0803eaf50bc1eb06e7be235c723e5546"
+    },
+    "low-power": {
+      "seconds": 0.7,
+      "peak_dbfs": -16.25,
+      "sha256": "c34aa7c48a551a9a81938b98f0c673a6e539e26b19898c409040714c8f558782"
+    }
+  },
+  "palette": {
+    "iron": "242C30",
+    "panel": "343E41",
+    "ceramic": "9B9B8A",
+    "edge": "626E6E",
+    "cyan": "7FC9CA",
+    "amber": "E2B76C"
+  },
+  "source_sha256": "058a964383bb0e55f73a6bf4f5b911b4a473026cccf3f431353d8510b7dc9896"
+}

@@ -40,6 +40,9 @@ namespace OpenRA.Mods.Common.Traits
 		[Desc("Time (in frames) until the weapon can fire again.")]
 		public readonly int FireDelay = 0;
 
+		[Desc("Only play firing sounds when the actor and its position are visible to the rendering player.")]
+		public readonly bool SoundsRequireVisibility = false;
+
 		[Desc("Muzzle position relative to turret or body, (forward, right, up) triples.",
 			"If weapon Burst = 1, it cycles through all listed offsets, otherwise the offset corresponding to current burst is used.")]
 		public readonly WVec[] LocalOffset = Array.Empty<WVec>();
@@ -347,10 +350,11 @@ namespace OpenRA.Mods.Common.Traits
 					if (projectile != null)
 						self.World.Add(projectile);
 
-					if (args.Weapon.Report != null && args.Weapon.Report.Length > 0)
+					var audible = !Info.SoundsRequireVisibility || (!self.World.FogObscures(self) && !self.World.FogObscures(self.CenterPosition));
+					if (audible && args.Weapon.Report != null && args.Weapon.Report.Length > 0)
 						Game.Sound.Play(SoundType.World, args.Weapon.Report, self.World, self.CenterPosition);
 
-					if (burst == args.Weapon.Burst && args.Weapon.StartBurstReport != null && args.Weapon.StartBurstReport.Length > 0)
+					if (audible && burst == args.Weapon.Burst && args.Weapon.StartBurstReport != null && args.Weapon.StartBurstReport.Length > 0)
 						Game.Sound.Play(SoundType.World, args.Weapon.StartBurstReport, self.World, self.CenterPosition);
 
 					Recoil = Info.Recoil;
@@ -383,7 +387,11 @@ namespace OpenRA.Mods.Common.Traits
 					ScheduleDelayedAction(
 						Weapon.AfterFireSoundDelay,
 						Burst,
-						burst => Game.Sound.Play(SoundType.World, Weapon.AfterFireSound, self.World, self.CenterPosition));
+						burst =>
+						{
+							if (!Info.SoundsRequireVisibility || (!self.World.FogObscures(self) && !self.World.FogObscures(self.CenterPosition)))
+								Game.Sound.Play(SoundType.World, Weapon.AfterFireSound, self.World, self.CenterPosition);
+						});
 
 				foreach (var nbc in notifyBurstComplete)
 					nbc.FiredBurst(self, target, this);

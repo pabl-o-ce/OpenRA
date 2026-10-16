@@ -1,0 +1,21 @@
+# Review sample: presentation only; inherited gameplay values are unchanged.
+FC.TANK:
+	Armament:
+		SoundsRequireVisibility: true
+	Voiced:
+		VoiceSet: FurnaceK6Sample
+
+# These actors inherit FC.TANK; retain their prototype commands until sample approval.
+FC.SCOUT:
+	Voiced:
+		VoiceSet: FurnaceVehicle
+
+FC.SIEGE:
+	Voiced:
+		VoiceSet: FurnaceVehicle
+	GrantConditionOnDeploy:
+		SoundsRequireVisibility: true
+
+^FCBUILDING:
+	SoundOnDamageTransition:
+		SoundsRequireVisibility: true

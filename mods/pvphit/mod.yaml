@@ -98,6 +98,7 @@ Rules:
 	pvphit|rules/core-buildings.yaml
 	pvphit|rules/vehicles.yaml
 	pvphit|rules/motion.yaml
+	pvphit|rules/presentation-sample.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -131,13 +132,14 @@ Cursors:
 Chrome:
 	ra|chrome.yaml
 	pvphit|chrome.yaml
+	pvphit|chrome-presentation.yaml
 
 Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
 	common|chrome/ingame.yaml
 	common|chrome/ingame-chat.yaml
-	common|chrome/ingame-transients.yaml
+	pvphit|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-info.yaml
 	common|chrome/ingame-infoscripterror.yaml
@@ -182,7 +184,7 @@ ChromeLayout:
 	ra|chrome/gamesave-loading.yaml
 	common|chrome/dropdowns.yaml
 	common|chrome/musicplayer.yaml
-	common|chrome/tooltips.yaml
+	pvphit|chrome/tooltips.yaml
 	common|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
@@ -214,13 +216,16 @@ Weapons:
 	ra|weapons/superweapons.yaml
 	pvphit|weapons/furnace.yaml
 	pvphit|weapons/motion.yaml
+	pvphit|weapons/presentation-sample.yaml
 
 Voices:
 	ra|audio/voices.yaml
 	pvphit|audio/voices.yaml
+	pvphit|audio/presentation-sample.yaml
 
 Notifications:
 	ra|audio/notifications.yaml
+	pvphit|audio/notifications-sample.yaml
 
 Music:
 	ra|audio/music.yaml

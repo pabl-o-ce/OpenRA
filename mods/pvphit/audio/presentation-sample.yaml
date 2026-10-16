@@ -1,0 +1,8 @@
+FurnaceK6Sample:
+	DefaultVariant: .wav
+	DefaultPrefix: pvphit|audio/presentation-sample/
+	Voices:
+		Select: k6-select-1, k6-select-2
+		Move: k6-move
+		Attack: k6-attack
+		Action: k6-action

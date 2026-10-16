@@ -54,6 +54,9 @@ namespace OpenRA.Mods.Common.Traits
 		[Desc("Play a randomly selected sound from this list when undeploying.")]
 		public readonly string[] UndeploySounds = null;
 
+		[Desc("Only play deployment sounds when the actor and its position are visible to the rendering player.")]
+		public readonly bool SoundsRequireVisibility = false;
+
 		[Desc("Skip make/deploy animation?")]
 		public readonly bool SkipMakeAnimation = false;
 
@@ -257,7 +260,8 @@ namespace OpenRA.Mods.Common.Traits
 			if (!IsValidTerrain(self.Location))
 				return;
 
-			if (Info.DeploySounds != null && Info.DeploySounds.Length > 0)
+			if (Info.DeploySounds != null && Info.DeploySounds.Length > 0
+				&& (!Info.SoundsRequireVisibility || (!self.World.FogObscures(self) && !self.World.FogObscures(self.CenterPosition))))
 				Game.Sound.Play(SoundType.World, Info.DeploySounds, self.World, self.CenterPosition);
 
 			// Revoke condition that is applied while undeployed.
@@ -281,7 +285,8 @@ namespace OpenRA.Mods.Common.Traits
 			if (!init && DeployState != DeployState.Deployed)
 				return;
 
-			if (Info.UndeploySounds != null && Info.UndeploySounds.Length > 0)
+			if (Info.UndeploySounds != null && Info.UndeploySounds.Length > 0
+				&& (!Info.SoundsRequireVisibility || (!self.World.FogObscures(self) && !self.World.FogObscures(self.CenterPosition))))
 				Game.Sound.Play(SoundType.World, Info.UndeploySounds, self.World, self.CenterPosition);
 
 			if (!init)

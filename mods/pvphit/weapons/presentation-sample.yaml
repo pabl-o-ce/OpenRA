@@ -1,0 +1,19 @@
+# No projectile, targeting, damage, timing or range changes.
+FCInduction:
+	Report: pvphit|audio/presentation-sample/k6-fire-1.wav, pvphit|audio/presentation-sample/k6-fire-2.wav, pvphit|audio/presentation-sample/k6-fire-3.wav
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation-sample/k6-impact-1.wav, pvphit|audio/presentation-sample/k6-impact-2.wav, pvphit|audio/presentation-sample/k6-impact-3.wav
+		ImpactSoundRequiresVisibility: true
+
+# Keep the other inherited impact assets outside this sample.
+FCScoutGun:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/impact.wav
+
+FCMortar:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/impact.wav
+
+FCVehicleDeath:
+	Warhead@effect: CreateEffect
+		ImpactSoundRequiresVisibility: true

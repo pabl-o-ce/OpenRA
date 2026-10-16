@@ -45,6 +45,9 @@ namespace OpenRA.Mods.Common.Warheads
 		[Desc("Chance of impact sound to play.")]
 		public readonly int ImpactSoundChance = 100;
 
+		[Desc("Only play the impact sound when its position is visible to the rendering player.")]
+		public readonly bool ImpactSoundRequiresVisibility = false;
+
 		[Desc("Whether to consider actors in determining whether the explosion should happen. If false, only terrain will be considered.")]
 		public readonly bool ImpactActors = true;
 
@@ -131,7 +134,8 @@ namespace OpenRA.Mods.Common.Warheads
 			}
 
 			var impactSound = ImpactSounds.RandomOrDefault(world.LocalRandom);
-			if (impactSound != null && world.LocalRandom.Next(0, 100) < ImpactSoundChance)
+			if (impactSound != null && world.LocalRandom.Next(0, 100) < ImpactSoundChance
+				&& (!ImpactSoundRequiresVisibility || !world.FogObscures(pos)))
 				Game.Sound.Play(SoundType.World, impactSound, pos);
 		}
 

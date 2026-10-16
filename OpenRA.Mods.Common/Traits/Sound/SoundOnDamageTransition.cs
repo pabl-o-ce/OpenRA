@@ -23,6 +23,9 @@ namespace OpenRA.Mods.Common.Traits.Sound
 		[Desc("Play a random sound from this list when destroyed.")]
 		public readonly string[] DestroyedSounds = Array.Empty<string>();
 
+		[Desc("Only play sounds when the actor and its position are visible to the rendering player.")]
+		public readonly bool SoundsRequireVisibility = false;
+
 		[Desc("DamageType(s) that trigger the sounds. Leave empty to always trigger a sound.")]
 		public readonly BitSet<DamageType> DamageTypes = default;
 
@@ -40,6 +43,9 @@ namespace OpenRA.Mods.Common.Traits.Sound
 
 		void INotifyDamageStateChanged.DamageStateChanged(Actor self, AttackInfo e)
 		{
+			if (info.SoundsRequireVisibility && (self.World.FogObscures(self) || self.World.FogObscures(self.CenterPosition)))
+				return;
+
 			if (!info.DamageTypes.IsEmpty && !e.Damage.DamageTypes.Overlaps(info.DamageTypes))
 				return;
 

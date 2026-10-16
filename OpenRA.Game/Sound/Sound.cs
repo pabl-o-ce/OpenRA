@@ -45,6 +45,8 @@ namespace OpenRA
 		ISound video;
 		readonly Dictionary<uint, ISound> currentSounds = new();
 		readonly Dictionary<string, ISound> currentNotifications = new();
+		readonly Dictionary<string, NotificationQueue> notificationQueues = new();
+		bool muted;
 		public bool DummyEngine { get; }
 
 		public Sound(IPlatform platform, SoundSettings soundSettings)
@@ -83,6 +85,7 @@ namespace OpenRA
 
 		public void Initialize(ISoundLoader[] loaders, IReadOnlyFileSystem fileSystem)
 		{
+			ClearNotificationQueues();
 			StopMusic();
 			soundEngine.StopAllSounds();
 
@@ -125,7 +128,15 @@ namespace OpenRA
 
 		public void StopAudio()
 		{
+			ClearNotificationQueues();
 			soundEngine.StopAllSounds();
+		}
+
+		void ClearNotificationQueues()
+		{
+			foreach (var queue in notificationQueues.Values)
+				queue.Clear();
+			notificationQueues.Clear();
 		}
 
 		public void SetLooped(ISound sound, bool looped)
@@ -140,11 +151,14 @@ namespace OpenRA
 
 		public void MuteAudio()
 		{
+			muted = true;
+			ClearNotificationQueues();
 			soundEngine.Volume = 0f;
 		}
 
 		public void UnmuteAudio()
 		{
+			muted = false;
 			soundEngine.Volume = 1f;
 		}
 
@@ -215,6 +229,12 @@ namespace OpenRA
 
 		public void Tick()
 		{
+			if (muted || DisableAllSounds || InternalSoundVolume <= 0)
+				ClearNotificationQueues();
+			else
+				foreach (var queue in notificationQueues.Values)
+					queue.Tick(Game.RunTime);
+
 			// Song finished
 			if (MusicPlaying && music.Complete)
 			{
@@ -323,6 +343,8 @@ namespace OpenRA
 			set
 			{
 				Game.Settings.Sound.SoundVolume = value;
+				if (value <= 0)
+					ClearNotificationQueues();
 				soundEngine.SetSoundVolume(InternalSoundVolume, music, video);
 			}
 		}
@@ -355,7 +377,7 @@ namespace OpenRA
 
 		public float VideoSeekPosition => video?.SeekPosition ?? 0;
 
-		// Returns true if played successfully
+		// Returns true if playback starts or a grouped notification is accepted/coalesced/dropped.
 		public bool PlayPredefined(SoundType soundType, Ruleset ruleset, Player player, Actor voicedActor, string type, string definition, string variant,
 			bool relative, WPos pos, float volumeModifier, bool attenuateVolume)
 		{
@@ -405,7 +427,7 @@ namespace OpenRA
 					prefix = p[id % p.Length];
 			}
 
-			var name = prefix + clip + suffix;
+			var name = pool.UseFullPath ? clip : prefix + clip + suffix;
 			var actorId = voicedActor != null && voicedActor.World.Selection.Contains(voicedActor) ? 0 : id;
 
 			if (!string.IsNullOrEmpty(name) && (player == null || player == player.World.LocalPlayer))
@@ -414,6 +436,20 @@ namespace OpenRA
 				{
 					var volume = InternalSoundVolume * volumeModifier * pool.VolumeModifier;
 					return soundEngine.Play2D(sounds[name], false, relative, pos, volume, attenuateVolume);
+				}
+
+				if (voicedActor == null && !string.IsNullOrEmpty(pool.Group))
+				{
+					// Consumed notifications must not be retried by production callers after mute/coalescing.
+					if (muted || InternalSoundVolume <= 0)
+						return true;
+					if (!notificationQueues.TryGetValue(pool.Group, out var queue))
+					{
+						queue = new NotificationQueue(soundEngine.StopSound);
+						notificationQueues.Add(pool.Group, queue);
+					}
+
+					return queue.Enqueue(type + ":" + definition, pool.Priority, pool.InterruptLowerPriority, Game.RunTime, PlaySound);
 				}
 
 				if (pool.Type == SoundPool.InterruptType.Overlap)

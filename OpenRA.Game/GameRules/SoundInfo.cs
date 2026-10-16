@@ -55,6 +55,12 @@ namespace OpenRA.GameRules
 
 				var names = FieldLoader.GetValue<string[]>(t.Key, t.Value.Value);
 				var sp = new SoundPool(volumeModifier, interruptType, names);
+				foreach (var field in new[] { nameof(SoundPool.Group), nameof(SoundPool.Priority), nameof(SoundPool.InterruptLowerPriority), nameof(SoundPool.UseFullPath) })
+				{
+					var node = t.Value.NodeWithKeyOrDefault(field);
+					if (node != null)
+						FieldLoader.LoadField(sp, field, node.Value.Value);
+				}
 				ret.Add(t.Key, sp);
 			}
 
@@ -68,6 +74,11 @@ namespace OpenRA.GameRules
 		public const InterruptType DefaultInterruptType = InterruptType.DoNotPlay;
 		public readonly float VolumeModifier;
 		public readonly InterruptType Type;
+		// Optional announcement arbitration. Ungrouped definitions retain legacy behavior.
+		public readonly string Group = null;
+		public readonly int Priority = 0;
+		public readonly bool InterruptLowerPriority = false;
+		public readonly bool UseFullPath = false;
 		readonly string[] clips;
 		readonly List<string> liveclips = new();
 
