@@ -1,0 +1,17 @@
+{
+  "pipeline": "generate followed by current-engine map refresh",
+  "identical": true,
+  "sha256": {
+    "mods/pvphit/maps/pressure-station-nine/map.bin": "9e3229aa83349d2c0ee12608caf02ddd42e698d71b0fb56568bffc9613c0a59d",
+    "mods/pvphit/maps/pressure-station-nine/map.png": "9547985e63f047b4233367c605e3416375c5c47e7d7ca1d5f88ad5e86d631e5f",
+    "mods/pvphit/maps/pressure-station-nine/map.yaml": "0293f2aa44cc71f27f86320555a38cacae3307810a5b8fcee76aa7c81891406b",
+    "mods/pvphit/maps/foundry-environment-sample/map.bin": "e2baa33ab5cccbe61f31accfaed8ee90fc4ce2b2f0494683cd2b4fb26f166a2e",
+    "mods/pvphit/maps/foundry-environment-sample/map.png": "3a97902da19dcce5f39cd01db9c24695817133cacf5a1a48e2266f874d9f71a8",
+    "mods/pvphit/maps/foundry-environment-sample/map.yaml": "69ba179db8ef47851df6caa71c684f346d0f427c0d70fefa127f7b10d48722d1",
+    "mods/pvphit/maps/foundry-environment-sample/sample.lua": "fb86ed340570dd3d670d29bf6eb44132e7889b5aa6da72ff79a2602efa231110",
+    "mods/pvphit/maps/foundry-environment-checks/checks.lua": "52b970ff08a887d7d4d3f5234293cfd192e0222ee8eeca35884e757e403341f5",
+    "mods/pvphit/maps/foundry-environment-checks/map.bin": "9e3229aa83349d2c0ee12608caf02ddd42e698d71b0fb56568bffc9613c0a59d",
+    "mods/pvphit/maps/foundry-environment-checks/map.png": "9547985e63f047b4233367c605e3416375c5c47e7d7ca1d5f88ad5e86d631e5f",
+    "mods/pvphit/maps/foundry-environment-checks/map.yaml": "9de0acb9973d5130f8f07770fd95118e22ff22cd9ba67d7353e08c80148976d2"
+  }
+}

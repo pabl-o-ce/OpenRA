@@ -157,7 +157,8 @@ Player:
             text+=f'{name}:\n\tBuildable:\n\t\tPrerequisites: ~disabled\n'
     (MOD/'rules/slice.yaml').write_text(text)
 
-def battlefield():
+def legacy_battlefield():
+    # Historical Step 1 layout. Not called by the CLI; retained for source history.
     path=MOD/'maps/pressure-station-nine'
     path.mkdir(parents=True,exist_ok=True)
     terrain(path/'map.bin',98,((23,44,4),(74,53,4),(35,23,5),(62,74,5)))
@@ -209,6 +210,10 @@ Actors:
     text+='FluentMessages: pvphit|fluent/slice.ftl\nRules: pvphit|rules/slice.yaml\n'
     (path/'map.yaml').write_text(text)
 
+def battlefield(output_root=MOD):
+    from build_environment_maps import battlefield as current_battlefield
+    current_battlefield(output_root)
+
 def systems_lab():
     path=MOD/'maps/foundry-systems-lab'
     path.mkdir(parents=True,exist_ok=True)
@@ -228,7 +233,19 @@ def systems_lab():
     (path/'map.yaml').write_text(text)
 
 if __name__ == '__main__':
-    proving_ground()
-    slice_rules()
-    battlefield()
-    systems_lab()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--target', required=True, choices=(
+        'tank-proving-ground', 'slice-rules', 'pressure-station-nine', 'foundry-systems-lab'))
+    parser.add_argument('--output-root', type=Path, default=MOD,
+                        help='Mod-shaped destination; rules are always read from the checkout')
+    args = parser.parse_args()
+    if args.target == 'pressure-station-nine':
+        battlefield(args.output_root)
+    else:
+        # These historical generators read existing lab files and inherited rules.
+        # Keep them scoped to their original destination rather than copying stale inputs.
+        if args.output_root.resolve() != MOD.resolve():
+            parser.error('--output-root is supported for pressure-station-nine only')
+        {'tank-proving-ground': proving_ground, 'slice-rules': slice_rules,
+         'foundry-systems-lab': systems_lab}[args.target]()

@@ -1,0 +1,82 @@
+{
+  "full": {
+    "variant": "full",
+    "renderer": "Linux Xvfb llvmpipe; 30 FPS cap",
+    "captures": [
+      {
+        "seconds": 20,
+        "rss_kib": 806308,
+        "capture": "20.png"
+      },
+      {
+        "seconds": 30,
+        "rss_kib": 798004,
+        "capture": "30.png"
+      },
+      {
+        "seconds": 40,
+        "rss_kib": 798060,
+        "capture": "40.png"
+      }
+    ]
+  },
+  "no-props": {
+    "variant": "no-props",
+    "renderer": "Linux Xvfb llvmpipe; 30 FPS cap",
+    "captures": [
+      {
+        "seconds": 20,
+        "rss_kib": 805632,
+        "capture": "20.png"
+      },
+      {
+        "seconds": 30,
+        "rss_kib": 797040,
+        "capture": "30.png"
+      },
+      {
+        "seconds": 40,
+        "rss_kib": 797396,
+        "capture": "40.png"
+      }
+    ]
+  },
+  "overlay_readings": {
+    "full": {
+      "render_ms": [
+        12.6,
+        12.9,
+        25.0
+      ],
+      "tick_ms": [
+        0.2,
+        0.1,
+        0.2
+      ],
+      "fps": [
+        30,
+        30,
+        29
+      ]
+    },
+    "no-props": {
+      "render_ms": [
+        11.9,
+        11.8,
+        11.8
+      ],
+      "tick_ms": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "fps": [
+        30,
+        30,
+        30
+      ]
+    }
+  },
+  "scope": "Three overlay snapshots per serial run; same view; Linux llvmpipe, 30 FPS cap. A 25 ms full-scene spike was observed; not a statistical or hardware performance guarantee.",
+  "layout_note": "Measured before the final three-cell inward move of the contested fields; the same ground kit and 103 static prop actors were used in both comparisons."
+}

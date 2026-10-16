@@ -1,0 +1,32 @@
+{
+  "broken-manifold.png": {
+    "rgba_pixel_difference": 0
+  },
+  "extraction-skid.png": {
+    "rgba_pixel_difference": 0
+  },
+  "pipe-elbow.png": {
+    "rgba_pixel_difference": 0
+  },
+  "pipe-end.png": {
+    "rgba_pixel_difference": 0
+  },
+  "pipe-ew.png": {
+    "rgba_pixel_difference": 0
+  },
+  "pipe-ns.png": {
+    "rgba_pixel_difference": 0
+  },
+  "wall-a.png": {
+    "rgba_pixel_difference": 0
+  },
+  "wall-b.png": {
+    "rgba_pixel_difference": 0
+  },
+  "wall-c.png": {
+    "rgba_pixel_difference": 0
+  },
+  "wall-d.png": {
+    "rgba_pixel_difference": 0
+  }
+}

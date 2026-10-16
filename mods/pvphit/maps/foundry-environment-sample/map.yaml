@@ -1,0 +1,129 @@
+MapFormat: 12
+
+RequiresMod: pvphit
+
+Title: Furnace Covenant — Environment Sample
+
+Author: PvPHit
+
+Tileset: TEMPERAT
+
+MapSize: 48,48
+
+Bounds: 1,1,46,46
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: kiln
+	PlayerReference@Tester:
+		Name: Tester
+		Playable: True
+		Required: True
+		AllowBots: False
+		LockFaction: True
+		Faction: kiln
+		Color: E65036
+	PlayerReference@Blue:
+		Name: Blue
+		NonCombatant: True
+		Faction: kiln
+		Color: 4099EE
+	PlayerReference@Yellow:
+		Name: Yellow
+		NonCombatant: True
+		Faction: kiln
+		Color: EDDD44
+	PlayerReference@Purple:
+		Name: Purple
+		NonCombatant: True
+		Faction: kiln
+		Color: B65BEA
+
+Actors:
+	HQ: fc.hq
+		Owner: Tester
+		Location: 17,10
+	Generator: fc.generator
+		Owner: Tester
+		Location: 24,10
+	Processor: fc.processor
+		Owner: Tester
+		Location: 13,23
+	Factory: fc.factory
+		Owner: Tester
+		Location: 33,11
+	Tank: fc.tank
+		Owner: Tester
+		Location: 22,19
+	Scout: fc.scout
+		Owner: Tester
+		Location: 19,26
+	Siege: fc.siege
+		Owner: Tester
+		Location: 26,31
+	Facility: fc.facility
+		Owner: Neutral
+		Location: 25,24
+	Target: fc.generator
+		Owner: Blue
+		Location: 33,30
+	SampleProp0: fc.env.wall-a
+		Owner: Neutral
+		Location: 8,34
+	SampleProp1: fc.env.wall-b
+		Owner: Neutral
+		Location: 11,34
+	SampleProp2: fc.env.wall-c
+		Owner: Neutral
+		Location: 14,34
+	SampleProp3: fc.env.wall-d
+		Owner: Neutral
+		Location: 17,34
+	SampleProp4: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 20,34
+	SampleProp5: fc.env.pipe-ns
+		Owner: Neutral
+		Location: 23,34
+	SampleProp6: fc.env.pipe-elbow
+		Owner: Neutral
+		Location: 26,34
+	SampleProp7: fc.env.pipe-end
+		Owner: Neutral
+		Location: 29,34
+	SampleProp8: fc.env.extraction-skid
+		Owner: Neutral
+		Location: 32,34
+	SampleProp9: fc.env.broken-manifold
+		Owner: Neutral
+		Location: 35,34
+
+Rules: pvphit|rules/slice.yaml, pvphit|rules/environment.yaml
+	FC.TANK:
+		Turreted:
+			RealignDelay: -1
+	World:
+		-SpawnStartingUnits:
+		-MapStartingLocations:
+		LuaScript:
+			Scripts: sample.lua
+		MissionData:
+			Briefing: Inspect ash, paving transitions, slag and low props at native zoom. Capture, harvesting and paid siege production run automatically. This laboratory has no victory condition.
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: false
+			ExploredMapCheckboxEnabled: true
+			FogCheckboxLocked: true
+			ExploredMapCheckboxLocked: true
+
+FluentMessages: pvphit|fluent/slice.ftl
+
+Sequences: pvphit|sequences/environment.yaml

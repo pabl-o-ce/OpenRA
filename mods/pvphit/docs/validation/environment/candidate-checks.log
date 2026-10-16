@@ -1,0 +1,136 @@
+Platform is Linux (X64)
+Engine version is {DEV_VERSION}
+Runtime: .NET CLR 6.0.36
+Using SDL 2 with OpenGL (Modern) renderer
+Desktop resolution: 1280x1000
+Using resolution: 1280x1000
+Using window scale 1.00
+OpenGL renderer: llvmpipe (LLVM 23.1.1, 256 bits)
+OpenGL version: 4.6 (Core Profile) Mesa 26.2.4-arch1.1
+Using default sound device
+Internal mods:
+	cnc ({DEV_VERSION})
+	pvphit-content ({DEV_VERSION})
+	cnc-content ({DEV_VERSION})
+	ra-content ({DEV_VERSION})
+	ts-content ({DEV_VERSION})
+	ra ({DEV_VERSION})
+	d2k-content ({DEV_VERSION})
+	pvphit ({DEV_VERSION})
+	all ({DEV_VERSION})
+	d2k ({DEV_VERSION})
+	ts ({DEV_VERSION})
+External mods:
+Loading mod: pvphit
+PvPHit outcome emitter disabled: PVPHIT_MATCH_ID is not set to a UUID
+[2026-10-15T20:29:41] Game started.
+Lua debug: ENVIRONMENT YARD: trial 1 fc.scout home
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 1 west 60 east 61
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 1
+Lua debug: ENVIRONMENT YARD: trial 2 fc.scout north-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 2 west 330 east 332
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 2
+Lua debug: ENVIRONMENT YARD: trial 3 fc.scout south-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 3 west 306 east 303
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 3
+Lua debug: ENVIRONMENT YARD: trial 4 fc.scout north-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 4 west 398 east 392
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 4
+Lua debug: ENVIRONMENT YARD: trial 5 fc.scout south-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 5 west 368 east 373
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 5
+Lua debug: ENVIRONMENT YARD: trial 6 fc.tank home
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 6 west 95 east 97
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 6
+Lua debug: ENVIRONMENT YARD: trial 7 fc.tank north-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 7 west 557 east 566
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 7
+Lua debug: ENVIRONMENT YARD: trial 8 fc.tank south-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 8 west 527 east 517
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 8
+Lua debug: ENVIRONMENT YARD: trial 9 fc.tank north-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 9 west 676 east 670
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 9
+Lua debug: ENVIRONMENT YARD: trial 10 fc.tank south-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 10 west 634 east 637
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 10
+Lua debug: ENVIRONMENT YARD: trial 11 fc.siege home
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 11 west 120 east 123
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 11
+Lua debug: ENVIRONMENT YARD: trial 12 fc.siege north-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 12 west 723 east 737
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 12
+Lua debug: ENVIRONMENT YARD: trial 13 fc.siege south-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 13 west 687 east 673
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 13
+Lua debug: ENVIRONMENT YARD: trial 14 fc.siege north-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 14 west 878 east 873
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 14
+Lua debug: ENVIRONMENT YARD: trial 15 fc.siege south-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 15 west 828 east 830
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 15
+Lua debug: ENVIRONMENT YARD PASSED: side 1 opening processor supplied hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 2 opening processor supplied hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.hauler
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 1
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 1
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.scout
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.scout
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 2
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 2
+Lua debug: ENVIRONMENT YARD: side 1 output 1 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 1 reached destination
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.tank
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.tank
+Lua debug: ENVIRONMENT YARD: side 1 output 2 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 2 reached destination
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 3
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 3
+Lua debug: ENVIRONMENT YARD PASSED: three twelve-tank groups completed groups-out
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 1
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 1
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD: side 1 output 3 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 3 reached destination
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 4
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 4
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 2
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 2
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 5
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 5
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 3
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 3
+Lua debug: ENVIRONMENT YARD: side 1 output 4 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 4 reached destination
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 6
+Lua debug: ENVIRONMENT YARD PASSED: three twelve-tank groups completed groups-back
+Lua debug: VEHICLE INPUT: deploy cycle 1
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 6
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 4
+Lua debug: ENVIRONMENT YARD PASSED: candidate siege damage unchanged
+Lua debug: VEHICLE INPUT: withdraw cycle 1
+Lua debug: ENVIRONMENT YARD PASSED: withdrawal completed before translation
+Lua debug: ENVIRONMENT YARD PASSED: scout reached siege position around wall
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 4
+Lua debug: ENVIRONMENT YARD PASSED: candidate station capture preserves scout
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 7
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 7
+Lua debug: ENVIRONMENT YARD: side 1 output 5 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 5 reached destination
+Lua debug: ENVIRONMENT YARD PASSED: side 1 production exit 1
+Lua debug: ENVIRONMENT YARD PASSED: side 1 production exit 2
+Lua debug: ENVIRONMENT YARD PASSED: side 1 production exit 3
+Lua debug: ENVIRONMENT YARD PASSED: side 1 production exit 4
+Lua debug: ENVIRONMENT YARD PASSED: side 1 production exit 5
+Lua debug: ENVIRONMENT YARD PASSED: side 1 two haulers completed at least ten aggregate deliveries
+Lua debug: ENVIRONMENT YARD PASSED: side 2 production exit 1
+Lua debug: ENVIRONMENT YARD PASSED: side 2 production exit 2
+Lua debug: ENVIRONMENT YARD PASSED: side 2 production exit 3
+Lua debug: ENVIRONMENT YARD PASSED: side 2 production exit 4
+Lua debug: ENVIRONMENT YARD PASSED: side 2 production exit 5
+Lua debug: ENVIRONMENT YARD PASSED: side 2 two haulers completed at least ten aggregate deliveries
+Lua debug: ENVIRONMENT YARD PASSED: candidate systems suite complete

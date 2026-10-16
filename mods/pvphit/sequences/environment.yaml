@@ -1,0 +1,61 @@
+# Single-frame RGBA props; ground belongs to the terrain layer.
+
+fc-env-wall-a:
+	idle:
+		Filename: pvphit|art/environment/props/wall-a.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-wall-b:
+	idle:
+		Filename: pvphit|art/environment/props/wall-b.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-wall-c:
+	idle:
+		Filename: pvphit|art/environment/props/wall-c.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-wall-d:
+	idle:
+		Filename: pvphit|art/environment/props/wall-d.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-pipe-ew:
+	idle:
+		Filename: pvphit|art/environment/props/pipe-ew.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-pipe-ns:
+	idle:
+		Filename: pvphit|art/environment/props/pipe-ns.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-pipe-elbow:
+	idle:
+		Filename: pvphit|art/environment/props/pipe-elbow.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-pipe-end:
+	idle:
+		Filename: pvphit|art/environment/props/pipe-end.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-extraction-skid:
+	idle:
+		Filename: pvphit|art/environment/props/extraction-skid.png
+		Scale: 0.5
+		Offset: 0,-7
+
+fc-env-broken-manifold:
+	idle:
+		Filename: pvphit|art/environment/props/broken-manifold.png
+		Scale: 0.5
+		Offset: 0,-7

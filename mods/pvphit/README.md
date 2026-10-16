@@ -54,9 +54,14 @@ required base structures or force a surrender; station ownership is not a
 separate victory condition. Surviving vehicles do not postpone elimination.
 
 The intended match length is 15–20 minutes, **not yet a measured balance result**.
-The 96×96 battlefield uses inherited terrain with original slag, pipe sections,
-and ruined walls. Resource fields, starts, and blocking wall positions have
-rotational symmetry. Pipe artwork is decorative; walls block one cell.
+The 96×96 battlefield is an ashbound industrial transfer yard, using original
+24-pixel ground templates added to inherited TEMPERAT. Broad paving connects two
+base pads, a central armor apron and northern/southern pressure compounds.
+Home slag sits south/inboard of each headquarters; the two larger fields are
+contested. Paving and ash both retain Clear movement/buildability. Low pipes and
+machinery are decorative; ruined walls block one cell, without projectile cover.
+The Step 3 battlefield is archived for comparison. Layout checks do not establish
+competitive balance. See [environment workflow](docs/environment-art-direction.md).
 
 Validation uses ignored, isolated runtime/content/settings under `mods/pvphit/.work/`.
 The repeatable commands and prerequisites are in
@@ -118,6 +123,10 @@ laboratory, not a balanced map. Reproduce the expanded layout with
 
 ## Asset pipeline
 
+The following early pipeline sections are historical. For current exports use
+the step-specific movement and environment workflows; do not rebuild the roster
+from its blockout sources. The manifest's later overrides select the active art.
+
 Editable sources and reproducible scripts live with the mod:
 
 - `art/source/tank-prototype/`: preserved copy of the supplied tank and its
@@ -138,7 +147,7 @@ Run from the repository root after building `OpenRA.Utility`:
 ALSOFT_DRIVERS=null blender -noaudio --background --python mods/pvphit/tools/render_tank.py
 ALSOFT_DRIVERS=null blender -noaudio --background --python mods/pvphit/tools/render_roster.py
 ENGINE_DIR="$PWD" python3 mods/pvphit/tools/pack_assets.py --dotnet dotnet
-python3 mods/pvphit/tools/build_maps.py
+python3 mods/pvphit/tools/build_maps.py --target pressure-station-nine
 ENGINE_DIR="$PWD" dotnet bin/OpenRA.Utility.dll pvphit --map refresh '^(tank-proving-ground|foundry-systems-lab|pressure-station-nine)$'
 ```
 
@@ -312,3 +321,22 @@ The vehicle yard now produces three siege carriers, verifies actual exit and
 six firing/withdrawal cycles, and exercises docking interruption and destruction
 in animation states. Its directional tour begins at 305 seconds; final assertions
 run at 360 seconds. See [validation results](VALIDATION.md) for measured coverage.
+
+### Ashbound transfer yard
+
+Step 4 adds a bounded ground/prop kit and revises Pressure Station Nine's layout.
+Original TEMPERAT definitions are preserved in a mod-local derived tileset; RA
+files and the completed roster are unchanged. The kit contains 24 ground frames
+and ten static Blender prop variants. No ambient animations or new terrain
+mechanics are enabled.
+
+`tools/build_environment_maps.py --target sample` generates the independent
+native-scale review yard. `--target battlefield` writes only Pressure Station
+Nine; `--target checks` builds a separate candidate-layout laboratory. Each
+accepts `--output-root` for staging. The old `build_maps.py` entry point now
+requires an explicit target and delegates the battlefield to its current generator.
+Do not run obsolete visual-yard or model generators to reproduce this pass.
+
+See [native sample](docs/validation/environment/native-sample.png),
+[layout and asset workflow](docs/environment-art-direction.md), and
+[acceptance evidence and human playtest protocol](docs/validation/environment/README.md).

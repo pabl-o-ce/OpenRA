@@ -410,3 +410,83 @@ Movement is a fixed-speed cosmetic loop rather than distance-integrated running
 gear. Major sound work, voices, music, cargo-state visuals and UI work remain for
 later as requested. No account, match-result, website, backend, release/version or
 platform behavior was changed. No commit, push, release or deployment was made.
+
+## Ashbound transfer yard — 2026-10-15
+
+Pressure Station Nine now has original ash/paving ground, damaged concrete,
+flush drains, low pressure hardware and four short blocking wall clusters.
+The playable bounds remain 96×96. Starts share the same y coordinate; home
+deposits move south/inboard and larger deposits become northern/southern contested
+fields. Both station anchors remain unchanged and horizontally centered.
+The exact Step 3 battlefield is preserved as an archive for comparison.
+
+### Observed checks
+
+- Current-engine YAML lint and missing-sprite checks passed, including all four
+  tilesets. The mod-local TEMPERAT definition preserves the complete original
+  definition byte-for-byte before its 24 added templates. RA files and existing
+  maps' original terrain artwork are preserved.
+- The native environment sample passed actual produced-siege arrival, surviving
+  capture and harvesting. The PNG terrain path was reviewed in-game, including
+  transitions, minimap colors and sorting beneath the roster.
+- Static checks preserve two 49-cell and two 81-cell deposits. Applying the
+  engine's neighbor-density formula gives 398/686 units per home/expansion:
+  54,200 nominal credits, unchanged from baseline. All added ground uses Clear
+  semantics; no road-speed or buildability change was introduced.
+- Geometric home access matches exactly; corresponding expansion distances
+  differ by at most one cell. Fifteen controlled engine arrival comparisons
+  (scout/tank/siege to five destinations) passed with a maximum difference of
+  **2.5%** in the retained final run. This does not characterize every pathfinder
+  tie, player layout or traffic condition.
+- The candidate lab passed three twelve-tank groups over north/central/south
+  routes and back using separated rally cells. An earlier compact parking grid
+  boxed one tank out of its exact destination; that failed fixture/log is retained.
+  Both sides produced a hauler, scout, tank and two siege
+  carriers; all ten outputs reached separate destination cells.
+- Two haulers on each side completed **at least ten aggregate deliveries**.
+  Counts require resource increases followed
+  by departure. Storage is periodically cleared only in this laboratory.
+- Real deploy/withdraw input exercised a candidate siege position. Damage stayed
+  13,750 against the test target; withdrawal finished before translation. A scout
+  reached minimum-range proximity around the wall. Station capture preserved
+  the scout. The walls have no projectile-blocking or cover traits.
+- Actual paid sidebar production and placement orders accepted the reference
+  generator/processor/factory opening on both starts. This supplements static
+  footprint, two-cell adjacency, HQ-radius and south-apron checks.
+- Existing vehicle, systems and core-building laboratories passed again unchanged,
+  including repeated siege production and six deploy/fire/withdraw cycles. Resolved
+  weapon comparisons matched the Step 3 baselines except the existing artwork
+  Image fields. Earlier source/export and test-map hashes are preserved.
+- All ten modeled props reproduced with **zero RGBA differences** from saved
+  Blender sources through Blender MCP's background tool. The live localhost:9876
+  bridge was unavailable; no live scene or existing motion source was overwritten.
+- Fresh generation plus current-engine map refresh reproduced all three
+  new/updated maps byte-identically, including previews. Generators now require
+  explicit targets; the prior multi-map build entry point is no longer implicit.
+- Native captures cover both station compounds, the central apron, base access
+  and a selected K6 at a shroud edge. The static-prop comparison retained all
+  six timing snapshots: full-scene render 12.6/12.9/25.0 ms versus
+  11.9/11.8/11.8 ms without props on llvmpipe, with a 30 FPS cap. The spike is
+  retained; these few snapshots are not a hardware performance guarantee.
+
+Evidence: [layout](docs/environment-layout.svg),
+[native sample](docs/validation/environment/native-sample.png),
+[siege and flank crop](docs/validation/environment/siege-flank.gif),
+[workflow](docs/environment-art-direction.md), and
+[logs, measurements, baseline and human-match protocol](docs/validation/environment/README.md).
+
+### Remaining acceptance
+
+No two-human competitive matches were performed. Match duration, positional
+advantage, station control and resource-flow balance remain unproven; the
+15–20-minute target is still a hypothesis. The retained CSV is intentionally
+empty. Human paired matches, alternative construction layouts, congested/depleted
+resource scenarios and hardware-display accessibility/performance review remain.
+No new multiplayer/replay determinism claim is made by this pass; Step 3's local
+controller-plus-observer/replay evidence retains its original limited scope.
+Cross-platform behavior and authenticated PvPHit settlement remain unproven.
+
+There are no new ambient animation actors, terrain mechanics, unit/economic/weapon
+values or victory rules. Shared RA content, engine code, account/result integration,
+website/backend and release configuration were not changed. No commit, push,
+release or deployment was performed.

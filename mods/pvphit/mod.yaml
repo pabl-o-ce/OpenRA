@@ -122,7 +122,7 @@ Sequences:
 TileSets:
 	ra|tilesets/snow.yaml
 	ra|tilesets/interior.yaml
-	ra|tilesets/temperat.yaml
+	pvphit|tilesets/temperat-industrial.yaml
 	ra|tilesets/desert.yaml
 
 Cursors:

@@ -1,0 +1,37 @@
+{
+  "tile_size": [
+    24,
+    24
+  ],
+  "scale": 1,
+  "terrain_type": "Clear",
+  "inherited_sha256": "a6e2f2421e6562e29e0640445655fafb874a7d79dc0846d48fbe90f37882f779",
+  "templates": {
+    "ash-0": 60000,
+    "ash-1": 60001,
+    "ash-2": 60002,
+    "ash-3": 60003,
+    "paving-0": 60004,
+    "paving-1": 60005,
+    "paving-2": 60006,
+    "paving-3": 60007,
+    "damaged-0": 60008,
+    "damaged-1": 60009,
+    "edge-n": 60010,
+    "edge-e": 60011,
+    "edge-s": 60012,
+    "edge-w": 60013,
+    "outer-ne": 60014,
+    "outer-se": 60015,
+    "outer-sw": 60016,
+    "outer-nw": 60017,
+    "inner-ne": 60018,
+    "inner-se": 60019,
+    "inner-sw": 60020,
+    "inner-nw": 60021,
+    "drain-ns": 60022,
+    "drain-ew": 60023
+  },
+  "ground_sha256": "17afe39545dc360609a491f489b0975d441222706e87d44ebb7e6061ce887f19",
+  "generator_sha256": "e11d4120bfb4d93b53a5f2cb51e5a4af702779d62c5bcaa8f309ae763049fd4c"
+}

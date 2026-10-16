@@ -41,134 +41,325 @@ Actors:
 		Location: 14,48
 	EastSpawn: mpspawn
 		Owner: Neutral
-		Location: 83,49
+		Location: 83,48
 	NorthFacility: fc.facility
 		Owner: Neutral
 		Location: 48,18
 	SouthFacility: fc.facility
 		Owner: Neutral
 		Location: 48,78
-	Ruin0: fc.ruin
+	ServiceWall0: fc.env.wall-a
+		Owner: Neutral
+		Location: 37,36
+	ServiceWall1: fc.env.wall-c
+		Owner: Neutral
+		Location: 38,36
+	ServiceWall2: fc.env.wall-a
 		Owner: Neutral
 		Location: 39,36
-	Ruin1: fc.ruin
+	ServiceWall3: fc.env.wall-c
 		Owner: Neutral
-		Location: 58,61
-	Ruin2: fc.ruin
+		Location: 40,36
+	ServiceWall4: fc.env.wall-a
 		Owner: Neutral
 		Location: 41,36
-	Ruin3: fc.ruin
+	ServiceWall5: fc.env.wall-c
 		Owner: Neutral
-		Location: 56,61
-	Ruin4: fc.ruin
-		Owner: Neutral
-		Location: 43,36
-	Ruin5: fc.ruin
-		Owner: Neutral
-		Location: 54,61
-	Ruin6: fc.ruin
-		Owner: Neutral
-		Location: 45,36
-	Ruin7: fc.ruin
-		Owner: Neutral
-		Location: 52,61
-	Ruin8: fc.ruin
-		Owner: Neutral
-		Location: 47,36
-	Ruin9: fc.ruin
-		Owner: Neutral
-		Location: 50,61
-	Ruin10: fc.ruin
-		Owner: Neutral
-		Location: 49,36
-	Ruin11: fc.ruin
-		Owner: Neutral
-		Location: 48,61
-	Ruin12: fc.ruin
-		Owner: Neutral
-		Location: 51,36
-	Ruin13: fc.ruin
-		Owner: Neutral
-		Location: 46,61
-	Ruin14: fc.ruin
-		Owner: Neutral
-		Location: 53,36
-	Ruin15: fc.ruin
-		Owner: Neutral
-		Location: 44,61
-	Ruin16: fc.ruin
+		Location: 42,36
+	ServiceWall6: fc.env.wall-a
 		Owner: Neutral
 		Location: 55,36
-	Ruin17: fc.ruin
+	ServiceWall7: fc.env.wall-c
 		Owner: Neutral
-		Location: 42,61
-	Ruin18: fc.ruin
+		Location: 56,36
+	ServiceWall8: fc.env.wall-a
 		Owner: Neutral
 		Location: 57,36
-	Ruin19: fc.ruin
+	ServiceWall9: fc.env.wall-c
+		Owner: Neutral
+		Location: 58,36
+	ServiceWall10: fc.env.wall-a
+		Owner: Neutral
+		Location: 59,36
+	ServiceWall11: fc.env.wall-c
+		Owner: Neutral
+		Location: 60,36
+	ServiceWall12: fc.env.wall-a
+		Owner: Neutral
+		Location: 37,61
+	ServiceWall13: fc.env.wall-c
+		Owner: Neutral
+		Location: 38,61
+	ServiceWall14: fc.env.wall-a
+		Owner: Neutral
+		Location: 39,61
+	ServiceWall15: fc.env.wall-c
 		Owner: Neutral
 		Location: 40,61
-	Pipe0: fc.pipe
+	ServiceWall16: fc.env.wall-a
 		Owner: Neutral
-		Location: 30,14
-	Pipe1: fc.pipe
+		Location: 41,61
+	ServiceWall17: fc.env.wall-c
 		Owner: Neutral
-		Location: 67,83
-	Pipe2: fc.pipe
+		Location: 42,61
+	ServiceWall18: fc.env.wall-a
 		Owner: Neutral
-		Location: 34,14
-	Pipe3: fc.pipe
+		Location: 55,61
+	ServiceWall19: fc.env.wall-c
 		Owner: Neutral
-		Location: 63,83
-	Pipe4: fc.pipe
+		Location: 56,61
+	ServiceWall20: fc.env.wall-a
 		Owner: Neutral
-		Location: 38,14
-	Pipe5: fc.pipe
+		Location: 57,61
+	ServiceWall21: fc.env.wall-c
 		Owner: Neutral
-		Location: 59,83
-	Pipe6: fc.pipe
+		Location: 58,61
+	ServiceWall22: fc.env.wall-a
 		Owner: Neutral
-		Location: 42,14
-	Pipe7: fc.pipe
+		Location: 59,61
+	ServiceWall23: fc.env.wall-c
 		Owner: Neutral
-		Location: 55,83
-	Pipe8: fc.pipe
+		Location: 60,61
+	NorthPipe0: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 46,14
-	Pipe9: fc.pipe
+		Location: 31,11
+	SouthPipe0: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 51,83
-	Pipe10: fc.pipe
+		Location: 66,86
+	NorthPipe1: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 50,14
-	Pipe11: fc.pipe
+		Location: 32,11
+	SouthPipe1: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 47,83
-	Pipe12: fc.pipe
+		Location: 65,86
+	NorthPipe2: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 54,14
-	Pipe13: fc.pipe
+		Location: 33,11
+	SouthPipe2: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 43,83
-	Pipe14: fc.pipe
+		Location: 64,86
+	NorthPipe3: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 58,14
-	Pipe15: fc.pipe
+		Location: 34,11
+	SouthPipe3: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 39,83
-	Pipe16: fc.pipe
+		Location: 63,86
+	NorthPipe4: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 62,14
-	Pipe17: fc.pipe
+		Location: 35,11
+	SouthPipe4: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 35,83
-	Pipe18: fc.pipe
+		Location: 62,86
+	NorthPipe5: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 66,14
-	Pipe19: fc.pipe
+		Location: 36,11
+	SouthPipe5: fc.env.pipe-ew
 		Owner: Neutral
-		Location: 31,83
+		Location: 61,86
+	NorthPipe6: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 37,11
+	SouthPipe6: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 60,86
+	NorthPipe7: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 38,11
+	SouthPipe7: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 59,86
+	NorthPipe8: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 39,11
+	SouthPipe8: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 58,86
+	NorthPipe9: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 40,11
+	SouthPipe9: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 57,86
+	NorthPipe10: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 41,11
+	SouthPipe10: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 56,86
+	NorthPipe11: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 42,11
+	SouthPipe11: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 55,86
+	NorthPipe12: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 43,11
+	SouthPipe12: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 54,86
+	NorthPipe13: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 44,11
+	SouthPipe13: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 53,86
+	NorthPipe14: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 45,11
+	SouthPipe14: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 52,86
+	NorthPipe15: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 46,11
+	SouthPipe15: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 51,86
+	NorthPipe16: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 47,11
+	SouthPipe16: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 50,86
+	NorthPipe17: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 48,11
+	SouthPipe17: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 49,86
+	NorthPipe18: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 49,11
+	SouthPipe18: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 48,86
+	NorthPipe19: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 50,11
+	SouthPipe19: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 47,86
+	NorthPipe20: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 51,11
+	SouthPipe20: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 46,86
+	NorthPipe21: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 52,11
+	SouthPipe21: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 45,86
+	NorthPipe22: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 53,11
+	SouthPipe22: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 44,86
+	NorthPipe23: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 54,11
+	SouthPipe23: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 43,86
+	NorthPipe24: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 55,11
+	SouthPipe24: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 42,86
+	NorthPipe25: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 56,11
+	SouthPipe25: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 41,86
+	NorthPipe26: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 57,11
+	SouthPipe26: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 40,86
+	NorthPipe27: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 58,11
+	SouthPipe27: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 39,86
+	NorthPipe28: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 59,11
+	SouthPipe28: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 38,86
+	NorthPipe29: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 60,11
+	SouthPipe29: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 37,86
+	NorthPipe30: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 61,11
+	SouthPipe30: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 36,86
+	NorthPipe31: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 62,11
+	SouthPipe31: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 35,86
+	NorthPipe32: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 63,11
+	SouthPipe32: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 34,86
+	NorthPipe33: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 64,11
+	SouthPipe33: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 33,86
+	NorthPipe34: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 65,11
+	SouthPipe34: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 32,86
+	NorthPipe35: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 66,11
+	SouthPipe35: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 31,86
+	NorthPipe36: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 67,11
+	SouthPipe36: fc.env.pipe-ew
+		Owner: Neutral
+		Location: 30,86
+	NorthTerminal: fc.env.pipe-end
+		Owner: Neutral
+		Location: 68,11
+	SouthTerminal: fc.env.pipe-elbow
+		Owner: Neutral
+		Location: 29,86
+	NorthSkid: fc.env.extraction-skid
+		Owner: Neutral
+		Location: 41,22
+	SouthSkid: fc.env.extraction-skid
+		Owner: Neutral
+		Location: 56,75
+	Manifold: fc.env.broken-manifold
+		Owner: Neutral
+		Location: 66,81
 
-Rules: pvphit|rules/slice.yaml
+Rules: pvphit|rules/slice.yaml, pvphit|rules/environment.yaml
 
 FluentMessages: pvphit|fluent/slice.ftl
+
+Sequences: pvphit|sequences/environment.yaml

@@ -1,0 +1,384 @@
+Platform is Linux (X64)
+Engine version is {DEV_VERSION}
+Runtime: .NET CLR 6.0.36
+Using SDL 2 with OpenGL (Modern) renderer
+Desktop resolution: 1280x1000
+Using resolution: 1280x1000
+Using window scale 1.00
+OpenGL renderer: llvmpipe (LLVM 23.1.1, 256 bits)
+OpenGL version: 4.6 (Core Profile) Mesa 26.2.4-arch1.1
+Using default sound device
+Internal mods:
+	cnc ({DEV_VERSION})
+	pvphit-content ({DEV_VERSION})
+	cnc-content ({DEV_VERSION})
+	ra-content ({DEV_VERSION})
+	ts-content ({DEV_VERSION})
+	ra ({DEV_VERSION})
+	d2k-content ({DEV_VERSION})
+	pvphit ({DEV_VERSION})
+	all ({DEV_VERSION})
+	d2k ({DEV_VERSION})
+	ts ({DEV_VERSION})
+External mods:
+Loading mod: pvphit
+PvPHit outcome emitter disabled: PVPHIT_MATCH_ID is not set to a UUID
+[2026-10-15T19:45:56] Game started.
+Lua debug: VEHICLE YARD PASSED: processor spawned free hauler
+Lua debug: VEHICLE YARD PASSED: factory accepted fc.hauler
+Lua debug: VEHICLE YARD PASSED: undeployed siege cannot fire
+Lua debug: VEHICLE YARD PASSED: mortar minimum range enforced
+Lua debug: VEHICLE ECONOMY: 271 resources 25
+Lua debug: VEHICLE ECONOMY: 272 resources 49
+Lua debug: VEHICLE ECONOMY: 273 resources 72
+Lua debug: VEHICLE ECONOMY: 274 resources 95
+Lua debug: VEHICLE ECONOMY: 275 resources 119
+Lua debug: VEHICLE ECONOMY: 276 resources 142
+Lua debug: VEHICLE ECONOMY: 277 resources 165
+Lua debug: VEHICLE ECONOMY: 278 resources 189
+Lua debug: VEHICLE ECONOMY: 279 resources 212
+Lua debug: VEHICLE ECONOMY: 280 resources 235
+Lua debug: VEHICLE ECONOMY: 281 resources 259
+Lua debug: VEHICLE ECONOMY: 282 resources 282
+Lua debug: VEHICLE ECONOMY: 283 resources 305
+Lua debug: VEHICLE ECONOMY: 284 resources 329
+Lua debug: VEHICLE ECONOMY: 285 resources 352
+Lua debug: VEHICLE ECONOMY: 286 resources 375
+Lua debug: VEHICLE ECONOMY: 287 resources 399
+Lua debug: VEHICLE ECONOMY: 288 resources 422
+Lua debug: VEHICLE ECONOMY: 289 resources 445
+Lua debug: VEHICLE ECONOMY: 290 resources 469
+Lua debug: VEHICLE YARD: dock departure 1 tick 300
+Lua debug: VEHICLE YARD PASSED: mortar maximum range enforced
+Lua debug: VEHICLE YARD PASSED: scout captured station without consumption
+Lua debug: VEHICLE ECONOMY: 634 resources 25
+Lua debug: VEHICLE ECONOMY: 635 resources 49
+Lua debug: VEHICLE ECONOMY: 636 resources 72
+Lua debug: VEHICLE ECONOMY: 637 resources 95
+Lua debug: VEHICLE ECONOMY: 638 resources 119
+Lua debug: VEHICLE ECONOMY: 639 resources 142
+Lua debug: VEHICLE ECONOMY: 640 resources 165
+Lua debug: VEHICLE ECONOMY: 641 resources 189
+Lua debug: VEHICLE ECONOMY: 642 resources 212
+Lua debug: VEHICLE ECONOMY: 643 resources 235
+Lua debug: VEHICLE ECONOMY: 644 resources 259
+Lua debug: VEHICLE ECONOMY: 645 resources 282
+Lua debug: VEHICLE ECONOMY: 646 resources 305
+Lua debug: VEHICLE ECONOMY: 647 resources 329
+Lua debug: VEHICLE ECONOMY: 648 resources 352
+Lua debug: VEHICLE ECONOMY: 649 resources 375
+Lua debug: VEHICLE ECONOMY: 650 resources 399
+Lua debug: VEHICLE ECONOMY: 651 resources 422
+Lua debug: VEHICLE ECONOMY: 652 resources 445
+Lua debug: VEHICLE ECONOMY: 653 resources 469
+Lua debug: VEHICLE YARD: dock departure 2 tick 669
+Lua debug: VEHICLE YARD PASSED: deployed mortar fires within range
+Lua debug: VEHICLE YARD PASSED: paid factory produced fc.hauler
+Lua debug: VEHICLE YARD PASSED: factory accepted fc.scout
+Lua debug: VEHICLE ECONOMY: 974 resources 25
+Lua debug: VEHICLE ECONOMY: 975 resources 48
+Lua debug: VEHICLE ECONOMY: 976 resources 72
+Lua debug: VEHICLE ECONOMY: 977 resources 95
+Lua debug: VEHICLE ECONOMY: 978 resources 118
+Lua debug: VEHICLE ECONOMY: 979 resources 142
+Lua debug: VEHICLE ECONOMY: 980 resources 165
+Lua debug: VEHICLE ECONOMY: 981 resources 188
+Lua debug: VEHICLE ECONOMY: 982 resources 212
+Lua debug: VEHICLE ECONOMY: 983 resources 235
+Lua debug: VEHICLE ECONOMY: 984 resources 258
+Lua debug: VEHICLE ECONOMY: 985 resources 282
+Lua debug: VEHICLE ECONOMY: 986 resources 305
+Lua debug: VEHICLE ECONOMY: 987 resources 328
+Lua debug: VEHICLE ECONOMY: 988 resources 352
+Lua debug: VEHICLE ECONOMY: 989 resources 375
+Lua debug: VEHICLE ECONOMY: 990 resources 398
+Lua debug: VEHICLE ECONOMY: 991 resources 422
+Lua debug: VEHICLE ECONOMY: 992 resources 445
+Lua debug: VEHICLE ECONOMY: 993 resources 468
+Lua debug: VEHICLE YARD: dock departure 3 tick 1009
+Lua debug: VEHICLE YARD PASSED: paid factory produced fc.scout
+Lua debug: VEHICLE YARD PASSED: factory accepted fc.siege
+Lua debug: VEHICLE ECONOMY: 1371 resources 25
+Lua debug: VEHICLE ECONOMY: 1372 resources 48
+Lua debug: VEHICLE ECONOMY: 1373 resources 71
+Lua debug: VEHICLE ECONOMY: 1374 resources 95
+Lua debug: VEHICLE ECONOMY: 1375 resources 118
+Lua debug: VEHICLE ECONOMY: 1376 resources 141
+Lua debug: VEHICLE ECONOMY: 1377 resources 165
+Lua debug: VEHICLE ECONOMY: 1378 resources 188
+Lua debug: VEHICLE ECONOMY: 1379 resources 211
+Lua debug: VEHICLE ECONOMY: 1380 resources 235
+Lua debug: VEHICLE ECONOMY: 1381 resources 258
+Lua debug: VEHICLE ECONOMY: 1382 resources 281
+Lua debug: VEHICLE ECONOMY: 1383 resources 305
+Lua debug: VEHICLE ECONOMY: 1384 resources 328
+Lua debug: VEHICLE ECONOMY: 1385 resources 351
+Lua debug: VEHICLE ECONOMY: 1386 resources 375
+Lua debug: VEHICLE ECONOMY: 1387 resources 398
+Lua debug: VEHICLE ECONOMY: 1388 resources 421
+Lua debug: VEHICLE ECONOMY: 1389 resources 445
+Lua debug: VEHICLE ECONOMY: 1390 resources 468
+Lua debug: VEHICLE YARD: dock departure 4 tick 1406
+Lua debug: VEHICLE ECONOMY: 1734 resources 25
+Lua debug: VEHICLE ECONOMY: 1735 resources 48
+Lua debug: VEHICLE ECONOMY: 1736 resources 71
+Lua debug: VEHICLE ECONOMY: 1737 resources 95
+Lua debug: VEHICLE ECONOMY: 1738 resources 118
+Lua debug: VEHICLE ECONOMY: 1739 resources 141
+Lua debug: VEHICLE ECONOMY: 1740 resources 165
+Lua debug: VEHICLE ECONOMY: 1741 resources 188
+Lua debug: VEHICLE ECONOMY: 1742 resources 211
+Lua debug: VEHICLE ECONOMY: 1743 resources 235
+Lua debug: VEHICLE ECONOMY: 1744 resources 258
+Lua debug: VEHICLE ECONOMY: 1745 resources 281
+Lua debug: VEHICLE ECONOMY: 1746 resources 305
+Lua debug: VEHICLE ECONOMY: 1747 resources 328
+Lua debug: VEHICLE ECONOMY: 1748 resources 351
+Lua debug: VEHICLE ECONOMY: 1749 resources 375
+Lua debug: VEHICLE ECONOMY: 1750 resources 398
+Lua debug: VEHICLE ECONOMY: 1751 resources 421
+Lua debug: VEHICLE ECONOMY: 1752 resources 445
+Lua debug: VEHICLE ECONOMY: 1753 resources 468
+Lua debug: VEHICLE YARD: dock departure 5 tick 1769
+Lua debug: VEHICLE YARD PASSED: paid factory produced fc.siege
+Lua debug: VEHICLE YARD PASSED: factory accepted fc.siege
+Lua debug: VEHICLE ECONOMY: 2129 resources 25
+Lua debug: VEHICLE ECONOMY: 2130 resources 48
+Lua debug: VEHICLE ECONOMY: 2131 resources 71
+Lua debug: VEHICLE ECONOMY: 2132 resources 95
+Lua debug: VEHICLE ECONOMY: 2133 resources 118
+Lua debug: VEHICLE ECONOMY: 2134 resources 141
+Lua debug: VEHICLE ECONOMY: 2135 resources 165
+Lua debug: VEHICLE ECONOMY: 2136 resources 188
+Lua debug: VEHICLE ECONOMY: 2137 resources 211
+Lua debug: VEHICLE ECONOMY: 2138 resources 235
+Lua debug: VEHICLE ECONOMY: 2139 resources 258
+Lua debug: VEHICLE ECONOMY: 2140 resources 281
+Lua debug: VEHICLE ECONOMY: 2141 resources 305
+Lua debug: VEHICLE ECONOMY: 2142 resources 328
+Lua debug: VEHICLE ECONOMY: 2143 resources 351
+Lua debug: VEHICLE ECONOMY: 2144 resources 375
+Lua debug: VEHICLE ECONOMY: 2145 resources 398
+Lua debug: VEHICLE ECONOMY: 2146 resources 421
+Lua debug: VEHICLE ECONOMY: 2147 resources 445
+Lua debug: VEHICLE ECONOMY: 2148 resources 468
+Lua debug: VEHICLE YARD: dock departure 6 tick 2158
+Lua debug: VEHICLE ECONOMY: 2498 resources 25
+Lua debug: VEHICLE ECONOMY: 2499 resources 48
+Lua debug: VEHICLE ECONOMY: 2500 resources 71
+Lua debug: VEHICLE ECONOMY: 2501 resources 95
+Lua debug: VEHICLE ECONOMY: 2502 resources 118
+Lua debug: VEHICLE ECONOMY: 2503 resources 141
+Lua debug: VEHICLE ECONOMY: 2504 resources 165
+Lua debug: VEHICLE ECONOMY: 2505 resources 188
+Lua debug: VEHICLE ECONOMY: 2506 resources 211
+Lua debug: VEHICLE ECONOMY: 2507 resources 235
+Lua debug: VEHICLE ECONOMY: 2508 resources 258
+Lua debug: VEHICLE ECONOMY: 2509 resources 281
+Lua debug: VEHICLE ECONOMY: 2510 resources 305
+Lua debug: VEHICLE ECONOMY: 2511 resources 328
+Lua debug: VEHICLE ECONOMY: 2512 resources 351
+Lua debug: VEHICLE ECONOMY: 2513 resources 375
+Lua debug: VEHICLE ECONOMY: 2514 resources 398
+Lua debug: VEHICLE ECONOMY: 2515 resources 421
+Lua debug: VEHICLE ECONOMY: 2516 resources 445
+Lua debug: VEHICLE ECONOMY: 2517 resources 468
+Lua debug: VEHICLE YARD: dock departure 7 tick 2527
+Lua debug: VEHICLE YARD PASSED: paid factory produced fc.siege
+Lua debug: VEHICLE YARD PASSED: factory accepted fc.siege
+Lua debug: VEHICLE ECONOMY: 2854 resources 25
+Lua debug: VEHICLE ECONOMY: 2855 resources 48
+Lua debug: VEHICLE ECONOMY: 2856 resources 71
+Lua debug: VEHICLE ECONOMY: 2857 resources 95
+Lua debug: VEHICLE ECONOMY: 2858 resources 118
+Lua debug: VEHICLE ECONOMY: 2859 resources 141
+Lua debug: VEHICLE ECONOMY: 2860 resources 165
+Lua debug: VEHICLE ECONOMY: 2861 resources 188
+Lua debug: VEHICLE ECONOMY: 2862 resources 211
+Lua debug: VEHICLE ECONOMY: 2863 resources 235
+Lua debug: VEHICLE ECONOMY: 2864 resources 258
+Lua debug: VEHICLE ECONOMY: 2865 resources 281
+Lua debug: VEHICLE ECONOMY: 2866 resources 305
+Lua debug: VEHICLE ECONOMY: 2867 resources 328
+Lua debug: VEHICLE ECONOMY: 2868 resources 351
+Lua debug: VEHICLE ECONOMY: 2869 resources 375
+Lua debug: VEHICLE ECONOMY: 2870 resources 398
+Lua debug: VEHICLE ECONOMY: 2871 resources 421
+Lua debug: VEHICLE ECONOMY: 2872 resources 445
+Lua debug: VEHICLE ECONOMY: 2873 resources 468
+Lua debug: VEHICLE YARD: dock departure 8 tick 2889
+Lua debug: VEHICLE ECONOMY: 3254 resources 25
+Lua debug: VEHICLE ECONOMY: 3255 resources 48
+Lua debug: VEHICLE ECONOMY: 3256 resources 72
+Lua debug: VEHICLE ECONOMY: 3257 resources 95
+Lua debug: VEHICLE ECONOMY: 3258 resources 118
+Lua debug: VEHICLE ECONOMY: 3259 resources 142
+Lua debug: VEHICLE ECONOMY: 3260 resources 165
+Lua debug: VEHICLE ECONOMY: 3261 resources 188
+Lua debug: VEHICLE ECONOMY: 3262 resources 212
+Lua debug: VEHICLE ECONOMY: 3263 resources 235
+Lua debug: VEHICLE ECONOMY: 3264 resources 258
+Lua debug: VEHICLE ECONOMY: 3265 resources 282
+Lua debug: VEHICLE ECONOMY: 3266 resources 305
+Lua debug: VEHICLE ECONOMY: 3267 resources 328
+Lua debug: VEHICLE ECONOMY: 3268 resources 352
+Lua debug: VEHICLE ECONOMY: 3269 resources 375
+Lua debug: VEHICLE ECONOMY: 3270 resources 398
+Lua debug: VEHICLE ECONOMY: 3271 resources 422
+Lua debug: VEHICLE ECONOMY: 3272 resources 445
+Lua debug: VEHICLE ECONOMY: 3273 resources 468
+Lua debug: VEHICLE YARD: dock departure 9 tick 3289
+Lua debug: VEHICLE YARD PASSED: paid factory produced fc.siege
+Lua debug: VEHICLE ECONOMY: 3708 resources 25
+Lua debug: VEHICLE ECONOMY: 3709 resources 50
+Lua debug: VEHICLE ECONOMY: 3710 resources 75
+Lua debug: VEHICLE ECONOMY: 3711 resources 100
+Lua debug: VEHICLE ECONOMY: 3712 resources 125
+Lua debug: VEHICLE ECONOMY: 3713 resources 150
+Lua debug: VEHICLE ECONOMY: 3714 resources 175
+Lua debug: VEHICLE ECONOMY: 3715 resources 200
+Lua debug: VEHICLE ECONOMY: 3716 resources 225
+Lua debug: VEHICLE ECONOMY: 3717 resources 250
+Lua debug: VEHICLE ECONOMY: 3718 resources 275
+Lua debug: VEHICLE ECONOMY: 3719 resources 300
+Lua debug: VEHICLE ECONOMY: 3720 resources 325
+Lua debug: VEHICLE ECONOMY: 3721 resources 350
+Lua debug: VEHICLE ECONOMY: 3722 resources 375
+Lua debug: VEHICLE ECONOMY: 3723 resources 400
+Lua debug: VEHICLE ECONOMY: 3724 resources 425
+Lua debug: VEHICLE ECONOMY: 3725 resources 450
+Lua debug: VEHICLE ECONOMY: 3726 resources 475
+Lua debug: VEHICLE ECONOMY: 3727 resources 500
+Lua debug: VEHICLE YARD: dock departure 10 tick 3737
+Lua debug: VEHICLE INPUT: deploy cycle 1
+Lua debug: VEHICLE YARD PASSED: produced mortar damage preserved
+Lua debug: VEHICLE INPUT: withdraw cycle 1
+Lua debug: VEHICLE YARD PASSED: withdrawal completes before translation
+Lua debug: VEHICLE YARD PASSED: produced carrier withdrew and moved, cycle 1
+Lua debug: VEHICLE INPUT: deploy cycle 2
+Lua debug: VEHICLE YARD PASSED: produced mortar damage preserved
+Lua debug: VEHICLE INPUT: withdraw cycle 2
+Lua debug: VEHICLE YARD PASSED: withdrawal completes before translation
+Lua debug: VEHICLE YARD PASSED: produced carrier withdrew and moved, cycle 2
+Lua debug: VEHICLE INPUT: deploy cycle 3
+Lua debug: VEHICLE ECONOMY: 4558 resources 525
+Lua debug: VEHICLE ECONOMY: 4559 resources 550
+Lua debug: VEHICLE ECONOMY: 4560 resources 575
+Lua debug: VEHICLE ECONOMY: 4561 resources 600
+Lua debug: VEHICLE ECONOMY: 4562 resources 625
+Lua debug: VEHICLE ECONOMY: 4563 resources 650
+Lua debug: VEHICLE ECONOMY: 4564 resources 675
+Lua debug: VEHICLE ECONOMY: 4565 resources 700
+Lua debug: VEHICLE ECONOMY: 4566 resources 725
+Lua debug: VEHICLE ECONOMY: 4567 resources 750
+Lua debug: VEHICLE ECONOMY: 4568 resources 775
+Lua debug: VEHICLE ECONOMY: 4569 resources 800
+Lua debug: VEHICLE ECONOMY: 4570 resources 825
+Lua debug: VEHICLE ECONOMY: 4571 resources 850
+Lua debug: VEHICLE ECONOMY: 4572 resources 875
+Lua debug: VEHICLE ECONOMY: 4573 resources 900
+Lua debug: VEHICLE ECONOMY: 4574 resources 925
+Lua debug: VEHICLE ECONOMY: 4575 resources 950
+Lua debug: VEHICLE ECONOMY: 4576 resources 975
+Lua debug: VEHICLE ECONOMY: 4577 resources 1000
+Lua debug: VEHICLE YARD: dock departure 11 tick 4587
+Lua debug: VEHICLE YARD PASSED: produced mortar damage preserved
+Lua debug: VEHICLE INPUT: withdraw cycle 3
+Lua debug: VEHICLE YARD PASSED: withdrawal completes before translation
+Lua debug: VEHICLE YARD PASSED: produced carrier withdrew and moved, cycle 3
+Lua debug: VEHICLE INPUT: deploy cycle 4
+Lua debug: VEHICLE YARD PASSED: produced mortar damage preserved
+Lua debug: VEHICLE INPUT: withdraw cycle 4
+Lua debug: VEHICLE YARD PASSED: withdrawal completes before translation
+Lua debug: VEHICLE YARD PASSED: produced carrier withdrew and moved, cycle 4
+Lua debug: VEHICLE INPUT: deploy cycle 5
+Lua debug: VEHICLE YARD PASSED: produced mortar damage preserved
+Lua debug: VEHICLE INPUT: withdraw cycle 5
+Lua debug: VEHICLE YARD PASSED: withdrawal completes before translation
+Lua debug: VEHICLE ECONOMY: 5329 resources 1025
+Lua debug: VEHICLE ECONOMY: 5330 resources 1050
+Lua debug: VEHICLE ECONOMY: 5331 resources 1075
+Lua debug: VEHICLE ECONOMY: 5332 resources 1100
+Lua debug: VEHICLE ECONOMY: 5333 resources 1125
+Lua debug: VEHICLE ECONOMY: 5334 resources 1150
+Lua debug: VEHICLE ECONOMY: 5335 resources 1175
+Lua debug: VEHICLE ECONOMY: 5336 resources 1200
+Lua debug: VEHICLE ECONOMY: 5337 resources 1225
+Lua debug: VEHICLE ECONOMY: 5338 resources 1250
+Lua debug: VEHICLE ECONOMY: 5339 resources 1275
+Lua debug: VEHICLE ECONOMY: 5340 resources 1300
+Lua debug: VEHICLE ECONOMY: 5341 resources 1325
+Lua debug: VEHICLE ECONOMY: 5342 resources 1350
+Lua debug: VEHICLE ECONOMY: 5343 resources 1375
+Lua debug: VEHICLE ECONOMY: 5344 resources 1400
+Lua debug: VEHICLE ECONOMY: 5345 resources 1425
+Lua debug: VEHICLE ECONOMY: 5346 resources 1450
+Lua debug: VEHICLE ECONOMY: 5347 resources 1475
+Lua debug: VEHICLE ECONOMY: 5348 resources 1500
+Lua debug: VEHICLE YARD: dock departure 12 tick 5358
+Lua debug: VEHICLE YARD PASSED: produced carrier withdrew and moved, cycle 5
+Lua debug: VEHICLE INPUT: deploy cycle 6
+Lua debug: VEHICLE YARD PASSED: produced mortar damage preserved
+Lua debug: VEHICLE INPUT: withdraw cycle 6
+Lua debug: VEHICLE YARD PASSED: withdrawal completes before translation
+Lua debug: VEHICLE YARD PASSED: produced carrier withdrew and moved, cycle 6
+Lua debug: VEHICLE INPUT: deploy cycle 7
+Lua debug: VEHICLE YARD PASSED: death during tank firing
+Lua debug: VEHICLE YARD PASSED: death during scout movement
+Lua debug: VEHICLE YARD PASSED: death during siege deployment
+Lua debug: VEHICLE INPUT: deploy cycle 8
+Lua debug: VEHICLE INPUT: withdraw cycle 8
+Lua debug: VEHICLE YARD PASSED: death during siege withdrawal
+Lua debug: VEHICLE ECONOMY: 6110 resources 25
+Lua debug: VEHICLE INPUT: dock interruption
+Lua debug: VEHICLE ECONOMY: 6111 resources 50
+Lua debug: VEHICLE ECONOMY: 6112 resources 75
+Lua debug: VEHICLE ECONOMY: 6113 resources 100
+Lua debug: VEHICLE ECONOMY: 6114 resources 125
+Lua debug: VEHICLE ECONOMY: 6115 resources 150
+Lua debug: VEHICLE ECONOMY: 6116 resources 175
+Lua debug: VEHICLE ECONOMY: 6117 resources 200
+Lua debug: VEHICLE ECONOMY: 6118 resources 225
+Lua debug: VEHICLE ECONOMY: 6119 resources 250
+Lua debug: VEHICLE ECONOMY: 6120 resources 275
+Lua debug: VEHICLE ECONOMY: 6121 resources 300
+Lua debug: VEHICLE ECONOMY: 6122 resources 325
+Lua debug: VEHICLE ECONOMY: 6123 resources 350
+Lua debug: VEHICLE ECONOMY: 6124 resources 375
+Lua debug: VEHICLE ECONOMY: 6125 resources 400
+Lua debug: VEHICLE ECONOMY: 6126 resources 425
+Lua debug: VEHICLE ECONOMY: 6127 resources 450
+Lua debug: VEHICLE ECONOMY: 6128 resources 475
+Lua debug: VEHICLE ECONOMY: 6129 resources 500
+Lua debug: VEHICLE YARD: dock departure 13 tick 6139
+Lua debug: VEHICLE ECONOMY: 6203 resources 525
+Lua debug: VEHICLE ECONOMY: 6204 resources 550
+Lua debug: VEHICLE ECONOMY: 6205 resources 575
+Lua debug: VEHICLE ECONOMY: 6206 resources 600
+Lua debug: VEHICLE ECONOMY: 6207 resources 625
+Lua debug: VEHICLE ECONOMY: 6208 resources 650
+Lua debug: VEHICLE ECONOMY: 6209 resources 675
+Lua debug: VEHICLE ECONOMY: 6210 resources 700
+Lua debug: VEHICLE YARD PASSED: hauler accepted movement interrupt at dock
+Lua debug: VEHICLE YARD PASSED: death during hauler harvesting
+Lua debug: VEHICLE ECONOMY: 6869 resources 725
+Lua debug: VEHICLE YARD PASSED: death during hauler unloading
+Lua debug: VEHICLE VIEW: hauler directions
+Lua debug: VEHICLE VIEW: scout directions
+Lua debug: VEHICLE VIEW: siege directions
+Lua debug: VEHICLE VIEW: deployed directions
+Lua debug: VEHICLE VIEW: independent scout turrets
+Lua debug: VEHICLE VIEW: hauler wrecks
+Lua debug: VEHICLE VIEW: scout wrecks
+Lua debug: VEHICLE VIEW: siege wrecks
+Lua debug: VEHICLE YARD: visual tour complete
+Lua debug: VEHICLE YARD PASSED: repeated harvesting, unloading and departure
+Lua debug: VEHICLE YARD PASSED: produced vehicle 1 cleared factory and reached destination
+Lua debug: VEHICLE YARD PASSED: produced vehicle 2 cleared factory and reached destination
+Lua debug: VEHICLE YARD PASSED: produced vehicle 3 cleared factory and reached destination
+Lua debug: VEHICLE YARD PASSED: produced vehicle 4 cleared factory and reached destination
+Lua debug: VEHICLE YARD PASSED: produced vehicle 5 cleared factory and reached destination
+Lua debug: VEHICLE YARD PASSED: hauler departed after dock interruption and resumed harvesting
+Lua debug: VEHICLE YARD PASSED: six animation-state destruction checks completed
+Lua debug: VEHICLE YARD PASSED: three produced carriers each deployed, fired and withdrew twice
+Lua debug: VEHICLE YARD PASSED: systems suite complete

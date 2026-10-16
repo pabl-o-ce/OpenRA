@@ -1,0 +1,71 @@
+# Environment-only actors. No cover, projectile blocking or resource behavior.
+
+^FCENVPROP:
+	Inherits: ^SpriteActor
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	HiddenUnderShroud:
+		Type: CenterPosition
+	RenderSprites:
+		Palette: player
+	MapEditorData:
+		Categories: Decoration
+
+FC.ENV.WALL-A:
+	Inherits: ^FCENVPROP
+	Immobile:
+		OccupiesSpace: true
+	RenderSprites:
+		Image: fc-env-wall-a
+
+FC.ENV.WALL-B:
+	Inherits: ^FCENVPROP
+	Immobile:
+		OccupiesSpace: true
+	RenderSprites:
+		Image: fc-env-wall-b
+
+FC.ENV.WALL-C:
+	Inherits: ^FCENVPROP
+	Immobile:
+		OccupiesSpace: true
+	RenderSprites:
+		Image: fc-env-wall-c
+
+FC.ENV.WALL-D:
+	Inherits: ^FCENVPROP
+	Immobile:
+		OccupiesSpace: true
+	RenderSprites:
+		Image: fc-env-wall-d
+
+FC.ENV.PIPE-EW:
+	Inherits: ^FCENVPROP
+	RenderSprites:
+		Image: fc-env-pipe-ew
+
+FC.ENV.PIPE-NS:
+	Inherits: ^FCENVPROP
+	RenderSprites:
+		Image: fc-env-pipe-ns
+
+FC.ENV.PIPE-ELBOW:
+	Inherits: ^FCENVPROP
+	RenderSprites:
+		Image: fc-env-pipe-elbow
+
+FC.ENV.PIPE-END:
+	Inherits: ^FCENVPROP
+	RenderSprites:
+		Image: fc-env-pipe-end
+
+FC.ENV.EXTRACTION-SKID:
+	Inherits: ^FCENVPROP
+	RenderSprites:
+		Image: fc-env-extraction-skid
+
+FC.ENV.BROKEN-MANIFOLD:
+	Inherits: ^FCENVPROP
+	RenderSprites:
+		Image: fc-env-broken-manifold

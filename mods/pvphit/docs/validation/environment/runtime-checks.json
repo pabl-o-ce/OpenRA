@@ -1,0 +1,134 @@
+{
+  "scope": "One Linux/Xvfb scripted run; not human balance evidence",
+  "tick_ms": 40,
+  "starting_staging_cells": [
+    [
+      14,
+      51
+    ],
+    [
+      83,
+      51
+    ]
+  ],
+  "arrival_measurements": [
+    {
+      "unit": "scout",
+      "destination": "home",
+      "west_ticks": 60,
+      "east_ticks": 61,
+      "difference_percent": 1.67
+    },
+    {
+      "unit": "scout",
+      "destination": "north_expansion",
+      "west_ticks": 330,
+      "east_ticks": 332,
+      "difference_percent": 0.61
+    },
+    {
+      "unit": "scout",
+      "destination": "south_expansion",
+      "west_ticks": 306,
+      "east_ticks": 303,
+      "difference_percent": 0.99
+    },
+    {
+      "unit": "scout",
+      "destination": "north_station",
+      "west_ticks": 398,
+      "east_ticks": 392,
+      "difference_percent": 1.53
+    },
+    {
+      "unit": "scout",
+      "destination": "south_station",
+      "west_ticks": 368,
+      "east_ticks": 373,
+      "difference_percent": 1.36
+    },
+    {
+      "unit": "tank",
+      "destination": "home",
+      "west_ticks": 95,
+      "east_ticks": 97,
+      "difference_percent": 2.11
+    },
+    {
+      "unit": "tank",
+      "destination": "north_expansion",
+      "west_ticks": 557,
+      "east_ticks": 566,
+      "difference_percent": 1.62
+    },
+    {
+      "unit": "tank",
+      "destination": "south_expansion",
+      "west_ticks": 527,
+      "east_ticks": 517,
+      "difference_percent": 1.93
+    },
+    {
+      "unit": "tank",
+      "destination": "north_station",
+      "west_ticks": 676,
+      "east_ticks": 670,
+      "difference_percent": 0.9
+    },
+    {
+      "unit": "tank",
+      "destination": "south_station",
+      "west_ticks": 634,
+      "east_ticks": 637,
+      "difference_percent": 0.47
+    },
+    {
+      "unit": "siege",
+      "destination": "home",
+      "west_ticks": 120,
+      "east_ticks": 123,
+      "difference_percent": 2.5
+    },
+    {
+      "unit": "siege",
+      "destination": "north_expansion",
+      "west_ticks": 723,
+      "east_ticks": 737,
+      "difference_percent": 1.94
+    },
+    {
+      "unit": "siege",
+      "destination": "south_expansion",
+      "west_ticks": 687,
+      "east_ticks": 673,
+      "difference_percent": 2.08
+    },
+    {
+      "unit": "siege",
+      "destination": "north_station",
+      "west_ticks": 878,
+      "east_ticks": 873,
+      "difference_percent": 0.57
+    },
+    {
+      "unit": "siege",
+      "destination": "south_station",
+      "west_ticks": 828,
+      "east_ticks": 830,
+      "difference_percent": 0.24
+    }
+  ],
+  "dock_departures": {
+    "2/1": 7,
+    "1/1": 7,
+    "1/2": 4,
+    "2/2": 4
+  },
+  "tank_groups": {
+    "groups": 3,
+    "tanks_per_group": 12,
+    "directions": "out and back",
+    "rally_cell_spacing": 2
+  },
+  "suite_complete": true
+}

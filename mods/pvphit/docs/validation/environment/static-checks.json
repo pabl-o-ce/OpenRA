@@ -1,0 +1,131 @@
+{
+  "scope": "Static geometry; not locomotor timing or balance proof",
+  "resources": [
+    {
+      "center": [
+        23.0,
+        53.0
+      ],
+      "cells": 49,
+      "recalculated_units": 398,
+      "credits": 9950
+    },
+    {
+      "center": [
+        48.0,
+        29.0
+      ],
+      "cells": 81,
+      "recalculated_units": 686,
+      "credits": 17150
+    },
+    {
+      "center": [
+        49.0,
+        68.0
+      ],
+      "cells": 81,
+      "recalculated_units": 686,
+      "credits": 17150
+    },
+    {
+      "center": [
+        74.0,
+        53.0
+      ],
+      "cells": 49,
+      "recalculated_units": 398,
+      "credits": 9950
+    }
+  ],
+  "total_credits": 54200,
+  "geometric_paths": {
+    "west": {
+      "home": 5.8284,
+      "north_expansion": 37.8701,
+      "south_expansion": 36.799,
+      "north_station": 45.8406,
+      "south_station": 43.7696
+    },
+    "east": {
+      "home": 5.8284,
+      "north_expansion": 38.8701,
+      "south_expansion": 35.799,
+      "north_station": 45.8406,
+      "south_station": 43.7696
+    }
+  },
+  "opening_layouts": {
+    "west": [
+      [
+        17,
+        45,
+        2,
+        2
+      ],
+      [
+        20,
+        42,
+        3,
+        3
+      ],
+      [
+        13,
+        51,
+        3,
+        3
+      ],
+      [
+        10,
+        47,
+        2,
+        2
+      ],
+      [
+        10,
+        51,
+        2,
+        2
+      ]
+    ],
+    "east": [
+      [
+        79,
+        45,
+        2,
+        2
+      ],
+      [
+        75,
+        42,
+        3,
+        3
+      ],
+      [
+        82,
+        51,
+        3,
+        3
+      ],
+      [
+        86,
+        47,
+        2,
+        2
+      ],
+      [
+        86,
+        51,
+        2,
+        2
+      ]
+    ]
+  },
+  "blocking_wall_cells": 24,
+  "decorative_actors": 79,
+  "station_apron_clearance_cells": 4,
+  "baseline_archive_preserved": true,
+  "inherited_templates_preserved": true,
+  "unrelated_files_preserved": true,
+  "reproduction": true
+}
