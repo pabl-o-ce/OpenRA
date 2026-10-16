@@ -18,3 +18,14 @@ vehicles/samples/
 vehicles/*-status.json
 vehicles/*-status.tmp
 vehicles/vehicle-pack-*/
+motion/frames/
+motion/samples/
+motion/*-status.json
+motion/*-status.tmp
+motion/sprites-*.json
+motion/samples-*.json
+motion-effects/frames/
+motion-effects/render-status.json
+motion/.pack-*/
+motion-effects/.pack-*/
+motion-effects/render-status.tmp

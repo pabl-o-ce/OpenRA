@@ -1,0 +1,30 @@
+# FC6 presentation. Simulation statistics and existing recoil values are retained.
+FC.TANK:
+	WithMoveAnimation:
+		ValidMovementTypes: Horizontal, Turn
+	FireWarheadsOnDeath:
+		Weapon: FCTankDeath
+		EmptyWeapon: FCTankDeath
+
+FC.SCOUT:
+	FireWarheadsOnDeath:
+		Weapon: FCScoutDeath
+		EmptyWeapon: FCScoutDeath
+
+FC.HAULER:
+	FireWarheadsOnDeath:
+		Weapon: FCHaulerDeath
+		EmptyWeapon: FCHaulerDeath
+
+FC.SIEGE:
+	WithMoveAnimation:
+		RequiresCondition: mobile
+	WithAttackAnimation:
+		Body: braced
+		Sequence: fire
+		DelayRelativeTo: Attack
+		Delay: 0
+		RequiresCondition: braced
+	FireWarheadsOnDeath:
+		Weapon: FCSiegeDeath
+		EmptyWeapon: FCSiegeDeath

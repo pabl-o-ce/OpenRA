@@ -1,0 +1,27 @@
+ReloadDelay: 110
+Range: 9c512
+Report: pvphit|audio/mortar.wav
+ValidTargets: Ground, GroundActor
+Projectile: Bullet
+	Speed: 210
+	Image: fc-bolt
+	Palette: effect
+	Shadow: false
+	LaunchAngle: 160
+Warhead@damage: SpreadDamage
+	Spread: 384
+	Damage: 11000
+	ValidTargets: GroundActor
+	Versus:
+		None: 30
+		Wood: 65
+		Light: 65
+		Heavy: 45
+		Concrete: 125
+	DamageTypes: ExplosionDeath
+Warhead@effect: CreateEffect
+	Image: fc-impact
+	Explosions: idle
+	ImpactSounds: pvphit|audio/impact.wav
+	ValidTargets: Ground, GroundActor
+MinRange: 2c0

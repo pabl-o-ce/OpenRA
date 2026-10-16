@@ -5,7 +5,8 @@ from build_maps import MOD, terrain
 def main():
     path = MOD/'maps/foundry-vehicle-yard'
     path.mkdir(parents=True,exist_ok=True)
-    terrain(path/'map.bin',112,((7,27,3),))
+    # The second field supports the late interruption/death tests after the original field depletes.
+    terrain(path/'map.bin',112,((7,27,3),(5,43,4)))
     base = (MOD/'maps/foundry-systems-lab/map.yaml').read_text()
     header = base.split('Actors:')[0].replace('Foundry Systems Lab','Vehicle Review Yard')
     header = header.replace('MapSize: 48,48','MapSize: 112,112').replace('Bounds: 1,1,46,46','Bounds: 1,1,110,110')
@@ -13,7 +14,7 @@ def main():
     rules = rules.replace('pvphit|maps/tank-proving-ground/systems.lua','yard.lua')
     start = rules.index('\t\t\tBriefing:')
     end = rules.index('\n',start)
-    rules = rules[:start]+'\t\t\tBriefing: FC5 vehicle review. First inspect the working yard, capture and factory exits. Select the mortar and press F; move to withdraw. After 150 seconds the camera tours all 32 directions, deployed carriers, independent scout turrets and wrecks. No victory condition.'+rules[end:]
+    rules = rules[:start]+'\t\t\tBriefing: FC6 vehicle animation review. First inspect the working yard, capture and factory exits. Select the mortar and press F; move to withdraw. After 305 seconds the camera tours all 32 directions, deployed carriers, independent scout turrets and wrecks. No victory condition.'+rules[end:]
     # Review husks persist for the complete camera tour; gameplay husks are unchanged.
     rules = rules.replace('\tWorld:', '\tFC.TANK.HUSK:\n\t\t-ChangesHealth:\n\tWorld:')
     # Parked color samples; the working processor still spawns the real hauler.

@@ -188,16 +188,16 @@ FC.SIEGE:
 		HP: 34500
 	Mobile:
 		Speed: 55
-		PauseOnCondition: !mobile || build-incomplete || being-captured
+		PauseOnCondition: !mobile || being-captured
 	-Turreted:
 	-WithSpriteTurret:
 	-AttackTurreted:
 	AttackOmni:
-		RequiresCondition: braced && !build-incomplete
+		RequiresCondition: braced
 	Armament:
 		Weapon: FCMortar
 		LocalOffset: 0,0,900
-		RequiresCondition: braced && !build-incomplete
+		RequiresCondition: braced
 		Recoil: 0
 	GrantConditionOnDeploy:
 		DeployedCondition: braced
@@ -213,7 +213,8 @@ FC.SIEGE:
 		RequiresCondition: braced
 	WithMakeAnimation:
 		BodyNames: body, braced
-		Condition: build-incomplete
+		# Deployment has its own completion callbacks and mobile/braced conditions.
+		# A creation-time condition can leak before either conditional body enables.
 	RenderSprites:
 		Image: fc-siege
 	SpawnActorOnDeath:

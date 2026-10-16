@@ -275,9 +275,9 @@ were changed and no match ID was supplied.
   unloading and departure; suite complete`, with four dock departures, paid
   production, damage/recovery and construction events.
 
-### Unresolved acceptance issue: produced siege carrier
+### Historical step-2 issue: produced siege carrier (fixed in step 3)
 
-**The vehicle yard does not pass its complete suite.** A newly produced mortar
+**At the end of step 2, the vehicle yard did not pass its complete suite.** A newly produced mortar
 carrier stays at the factory. Source inspection identifies existing wiring in
 `rules/furnace.yaml`: `WithMakeAnimation` grants `build-incomplete` during
 `INotifyCreated`, when both conditional sprite bodies are still disabled. Its
@@ -288,8 +288,8 @@ creation animation and correctly pass deployment/fire/withdrawal checks.
 This predates the artwork changes: the relevant gameplay rules and engine code
 are unchanged in this pass. Removing the creation-only grant and cleaning up its
 now-unused condition references is a small YAML fix, but it changes explicitly
-preserved condition wiring. Approval was requested; the fix has not been applied.
-The carrier's paid-production callback fires, but **factory exit remains failed**.
+preserved condition wiring. At that milestone approval was requested and the fix was not applied.
+The carrier's paid-production callback fired, but **factory exit remained failed**.
 Do not treat a callback alone as a successful exit.
 
 The test harness also initially tried to queue a build inside the preceding
@@ -307,7 +307,106 @@ The GIFs are enlarged crops of the native-zoom recording. The direction-grid
 montage reads left-to-right: hauler/scout; traveling/deployed carrier;
 independent scout turret/hauler wreck; scout wreck/carrier wreck.
 
-Harvesting/docking still use idle artwork; no movement or firing loops were
-added. No new multiplayer, balance, backend-settlement or hardware-display
+At the end of step 2, harvesting/docking still used idle artwork; no movement
+or firing loops had been added. No new multiplayer, balance, backend-settlement or hardware-display
 acceptance was performed. All changes are under `mods/pvphit/`; no commit, push,
 release, deployment or `main` branch creation was performed.
+
+
+## Movement, firing and destruction — 2026-10-15
+
+The produced siege stall is fixed. The final standalone vehicle yard and both
+clients of the local multiplayer yard passed their complete suites on the
+rebuilt current engine. This supersedes the historical step-2 acceptance issue.
+
+### Implementation and preserved behavior
+
+- Removed only the siege's creation-time `build-incomplete` grant/references.
+  `WithMakeAnimation`, both conditional bodies, deployment callbacks and reverse
+  withdrawal remain. Actual production exit is asserted by arrival at a separate
+  destination, not by the production callback.
+- Four-frame travel loops cover hauler, scout, K6 and siege. Hauler harvest
+  strokes and unloading gate motion use existing traits. Dock opening/closing
+  still use one-frame idle, retaining callback duration. Cargo quantity is not
+  represented by the cosmetic hopper residue.
+- Scout ballistic, K6 induction and pressure-mortar flashes, projectile images,
+  impacts and brief death effects are original Blender exports. Siege body recoil
+  is shot-driven on its braced body; AttackOmni and existing turret/recoil behavior
+  remain. No extra damage warheads, sounds or physical debris were added.
+- Directional support wrecks remain; the K6 wreck now has a collapsed turret and
+  displaced armor. Gameplay husk lifetime, collision, pathing and visibility
+  rules are unchanged. The yard's existing persistent-husk override is test-only.
+- One engine change outside the mod adds a null-safe current-sequence read to
+  `WithMoveAnimation`. The old dereference crashed when the map's initially
+  deployed carrier had never enabled its travel body. The rebuilt yard exercises
+  this case. No new engine trait, aiming mechanic or platform change was needed.
+
+### Observed checks
+
+- Release build: zero errors; three existing SDK warnings about the net6 target.
+  Full current-engine YAML lint, including the updated test map, and all four
+  tilesets' missing-sprite checks passed.
+- Vehicle yard: paid hauler, scout and three successive siege carriers all
+  cleared the factory and reached their assigned cells. Each carrier deployed,
+  hit for the unchanged 13,750 damage and withdrew/moved twice. Movement remained
+  blocked during withdrawal. Undeployed fire and minimum/maximum range checks passed.
+- Repeated hauler delivery/departure passed. A real move order interrupted docking,
+  the hauler departed and resumed harvesting. Destruction passed during scout
+  movement, K6 firing, siege deployment, siege withdrawal, hauler harvesting and
+  hauler unloading. Six state checks completed before the 360-second final assertion. The final
+  harvest check required five ticks at exactly the same world position, avoiding
+  false positives while merely crossing a resource cell.
+- The extended test initially exhausted its original ore patch before the late
+  hauler checks. A second field was added only to the vehicle yard. An earlier
+  before/after animation run matched **200 resource updates and ten dock departure
+  ticks exactly** through tick 3,800. Opening/closing sequences and all economic
+  trait values remain unchanged; see the retained economy comparison.
+- Systems lab and current core-building yard passed again on the rebuilt engine.
+  The latter completed four dock departures, paid scout production and building
+  damage/recovery/construction checks. Regenerating both yards with their current
+  generators produced byte-identical files.
+- Two local clients (one controller, one observer) completed the vehicle suite
+  through an unadvertised dedicated server with sync reports enabled. Their
+  **358 Lua log lines were identical**, including economy ticks and assertions;
+  neither reported a desync. The server recording and its exact map are retained.
+- Replay verification passed with no live input: all 358 Lua lines matched both
+  clients exactly, including the final suite-complete assertion. The final
+  standalone yard additionally tightens the harvest-death trigger to compare
+  exact world positions; the retained multiplayer/replay map predates that
+  test-only refinement.
+- All 1,312 vehicle frames and 192 effect frames passed export validation. Checks
+  cover canvas/alpha bounds, animation differences, 32 directions, facing-major
+  ordering, exact siege deployment/fire endpoints and engine PNG sheet metadata.
+  Freshly loading all four saved animation sources reproduced **328 sampled
+  frames with zero RGBA pixel differences**. The four original refined sources
+  are byte-identical to reviewed commit `b51f61542c2012f5f1a37d9a4b74304182162ce9`.
+- Resolved weapon comparisons matched every field except `Image` for FCInduction,
+  FCScoutGun and FCMortar: damage, ranges, reload and projectile flight are unchanged.
+  Native-size direction boards and the in-game directional tour cover silhouettes,
+  four player colors, full-canvas anchors and independent turret aim.
+
+Evidence and reproduction: [native in-game yard](docs/vehicle-motion-yard.png),
+[firing and withdrawal](docs/vehicle-fire-withdrawal.gif),
+[destruction in game](docs/vehicle-destruction-in-game.gif),
+[dock interruption](docs/hauler-docking-in-game.gif),
+[workflow](docs/movement-art-direction.md), [retained logs, baseline weapons, hashes and replay](docs/validation/motion/),
+[movement](docs/vehicle-movement.gif), [working sequences](docs/vehicle-working.gif),
+[weapon effect timings](docs/vehicle-weapon-effects.gif),
+[death effect timings](docs/vehicle-death-effects.gif),
+[K6 wreck directions](docs/tank-motion-wrecks.png), and
+[independent K6 aim samples](docs/tank-independent-aim.png).
+The gameplay GIFs are crops of native pixels from the verified replay, without
+resizing. The effect/direction previews show rendered assets at native scale;
+they are not recordings of simulated projectile flight. Source/frame hashes accompany the
+packed sheets under `art/motion/` and `art/motion-effects/`.
+
+### Limits and scope
+
+These are Linux/Xvfb/llvmpipe tests on one machine, including one controlling
+player plus an observer. They do not establish cross-platform determinism,
+latency tolerance, competitive balance or hardware-display performance. The state
+checks cover the listed scenarios, not every possible order/death combination.
+Movement is a fixed-speed cosmetic loop rather than distance-integrated running
+gear. Major sound work, voices, music, cargo-state visuals and UI work remain for
+later as requested. No account, match-result, website, backend, release/version or
+platform behavior was changed. No commit, push, release or deployment was made.

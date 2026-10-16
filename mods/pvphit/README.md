@@ -58,20 +58,10 @@ The 96×96 battlefield uses inherited terrain with original slag, pipe sections,
 and ruined walls. Resource fields, starts, and blocking wall positions have
 rotational symmetry. Pipe artwork is decorative; walls block one cell.
 
-For the current workspace, the verification session installed an isolated .NET
-runtime and RA content under `/tmp`. While those temporary directories exist,
-this command opens the systems laboratory without changing the user's normal
-OpenRA settings or account files:
-
-```sh
-/tmp/furnace-dotnet/dotnet bin/OpenRA.dll \
-  Engine.EngineDir=/home/cye/Dev/OpenRA \
-  Engine.SupportDir=/tmp/furnace-support \
-  Game.Mod=pvphit Launch.Map=foundry-systems-lab
-```
-
-These temporary dependencies may disappear after a reboot. A permanent install
-should use the repository's supported runtime and content setup.
+Validation uses ignored, isolated runtime/content/settings under `mods/pvphit/.work/`.
+The repeatable commands and prerequisites are in
+[the motion workflow](docs/movement-art-direction.md). These files are local test
+fixtures, not a replacement for the repository's supported installation process.
 
 | Structure | Cost | Power | Function |
 | --- | ---: | ---: | --- |
@@ -281,8 +271,8 @@ The Slag Hauler, Relay Scout and Brace Mortar Carrier now have independent
 editable Blender sources under `art/source/vehicles/`, directional wrecks,
 matching icons and focused `vehicles.yaml` overrides. The scout retains its
 separate turret; the mortar has five deployment stages with exact travel and
-deployed endpoints. Harvest/dock animations remain bound to idle to preserve
-resource timing. See [vehicle models](docs/vehicle-models.png),
+deployed endpoints. The subsequent motion pass adds harvesting and unloading
+loops while keeping docking opening/closing callbacks at their original duration. See [vehicle models](docs/vehicle-models.png),
 [native-zoom yard](docs/vehicle-yard.png),
 [before/after directions](docs/vehicle-facing-comparison.png), and
 [workflow and art direction](docs/vehicle-art-direction.md).
@@ -299,3 +289,26 @@ and `Graphics.ViewportDistance=Native`. The separate map checks capture,
 resource deliveries, artillery range restrictions and all three factory builds,
 then tours full directional and wreck grids. The expanded core-building yard
 is preserved. Consult `VALIDATION.md` for the acceptance results and limitations.
+
+### Movement, weapons and destruction
+
+The hauler, scout, K6 and siege carrier have four-frame movement loops. The
+hauler collector and unloading gate animate; its hopper residue remains cosmetic.
+Ballistic, induction and pressure weapons have distinct shot-driven flashes,
+projectiles and impacts. Short death effects lead into the directional wrecks,
+including a revised K6 wreck. Weapon statistics and husk behavior are unchanged.
+
+The factory-produced siege stall is corrected without removing deployment's
+`WithMakeAnimation`. One engine null guard also protects `WithMoveAnimation`
+when a conditional body has never played a sequence.
+
+Use the saved animation copies in `art/source/motion/` for this pass. Original
+refined sources remain preserved. See [native directions](docs/vehicle-motion-directions.png),
+[movement](docs/vehicle-movement.gif), [working loops](docs/vehicle-working.gif),
+[weapon effects](docs/vehicle-weapon-effects.gif), and [source/export instructions](docs/movement-art-direction.md).
+[Gameplay footage](docs/vehicle-fire-withdrawal.gif) shows firing and withdrawal
+at native zoom; [the final yard](docs/vehicle-motion-yard.png) retains four colors.
+The vehicle yard now produces three siege carriers, verifies actual exit and
+six firing/withdrawal cycles, and exercises docking interruption and destruction
+in animation states. Its directional tour begins at 305 seconds; final assertions
+run at 360 seconds. See [validation results](VALIDATION.md) for measured coverage.

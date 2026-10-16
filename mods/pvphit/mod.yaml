@@ -97,6 +97,7 @@ Rules:
 	pvphit|rules/refined.yaml
 	pvphit|rules/core-buildings.yaml
 	pvphit|rules/vehicles.yaml
+	pvphit|rules/motion.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -112,6 +113,11 @@ Sequences:
 	pvphit|sequences/heavy.yaml
 	pvphit|sequences/core-buildings.yaml
 	pvphit|sequences/vehicles.yaml
+	pvphit|sequences/motion-hauler.yaml
+	pvphit|sequences/motion-scout.yaml
+	pvphit|sequences/motion-siege.yaml
+	pvphit|sequences/motion-tank.yaml
+	pvphit|sequences/motion-effects.yaml
 
 TileSets:
 	ra|tilesets/snow.yaml
@@ -207,6 +213,7 @@ Weapons:
 	ra|weapons/smallcaliber.yaml
 	ra|weapons/superweapons.yaml
 	pvphit|weapons/furnace.yaml
+	pvphit|weapons/motion.yaml
 
 Voices:
 	ra|audio/voices.yaml

@@ -1,5 +1,12 @@
-# FC5 art-only overrides. Harvest/dock bindings and all gameplay traits stay intact.
+# Support vehicle artwork and timing-neutral working animations.
 FC.HAULER:
 	Buildable:
 		IconPalette: furnace-player
 		IconPaletteIsPlayerPalette: true
+	WithMoveAnimation:
+		ValidMovementTypes: Horizontal, Turn
+	WithHarvestAnimation:
+		HarvestSequence: harvest
+	WithDockingAnimation:
+		DockSequence: idle
+		DockLoopSequence: unload

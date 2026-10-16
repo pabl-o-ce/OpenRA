@@ -3795,7 +3795,7 @@ Rules: pvphit|rules/slice.yaml
 		LuaScript:
 			Scripts: yard.lua
 		MissionData:
-			Briefing: FC5 vehicle review. First inspect the working yard, capture and factory exits. Select the mortar and press F; move to withdraw. After 150 seconds the camera tours all 32 directions, deployed carriers, independent scout turrets and wrecks. No victory condition.
+			Briefing: FC6 vehicle animation review. First inspect the working yard, capture and factory exits. Select the mortar and press F; move to withdraw. After 305 seconds the camera tours all 32 directions, deployed carriers, independent scout turrets and wrecks. No victory condition.
 	Player:
 		-ConquestVictoryConditions:
 		Shroud:

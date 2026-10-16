@@ -1,0 +1,8 @@
+Engine version is {DEV_VERSION}
+Runtime: .NET CLR 6.0.36
+OpenGL renderer: llvmpipe (LLVM 23.1.1, 256 bits)
+Lua debug: FURNACE CHECK PASSED: capture, surviving scout, and income
+Lua debug: Power: 120 provided / 80 consumed
+Lua debug: FURNACE CHECK PASSED: harvesting and refinery delivery
+Lua debug: FURNACE CHECK PASSED: paid production and factory exit
+Lua debug: FURNACE CHECK PASSED: systems suite complete

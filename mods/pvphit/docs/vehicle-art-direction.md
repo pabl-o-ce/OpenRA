@@ -29,11 +29,12 @@ ownership masks. Wrecks lose lit and ownership surfaces and change geometry:
 hopper walls/gate/blade bend, scout turret/wheels/mast shift, and the mortar
 cradle/crown collapse. Each wreck retains its vehicle's 32 directional views.
 
-The hauler still uses idle artwork for harvesting and docking. This is deliberate:
+The original FC5 hauler used idle artwork for harvesting and docking.
 WithHarvestAnimation reacts to harvested bales, while WithDockingAnimation gates
 unloading on completion of its opening animation and reverses it before departure.
-Dedicated motion would need separate timing acceptance. No cosmetic machinery
-loop is presented as a harvesting or unloading event.
+The later FC6 pass adds harvest/unload motion and validates economic timing while
+retaining the original one-frame opening/closing callbacks. See
+[movement art direction](movement-art-direction.md) for the current sources.
 
 ## Blender MCP workflow
 
@@ -110,12 +111,12 @@ owned outputs are replaced. The export manifest records source/frame hashes and
 rendering/facing parameters. Earlier asset sheets and sequences are not rewritten.
 
 `foundry-vehicle-yard` is a separate laboratory. The first view includes heavy
-references, four ownership colors, a working processor, capture scout, three
-paid factory builds and an interactive mortar/target. The parked hauler color
+references, four ownership colors, a working processor, capture scout, paid hauler/scout builds plus three successive
+paid siege builds and an interactive mortar/target. The parked hauler color
 samples are map-only display actors; the free hauler and produced hauler use
 the real actor. Separate checks exercise minimum/maximum artillery range and
-firing while undeployed. At 150 seconds the camera tours the complete facing,
-deployed, turret and wreck grids; the final system assertion runs at 195 seconds.
+firing while undeployed. At 305 seconds the camera tours the complete facing,
+deployed, turret and wreck grids; the final system assertion runs at 360 seconds.
 The yard keeps its wrecks alive for this tour through a map-only override.
 
 Use isolated support/settings and `Graphics.ViewportDistance=Native`. Keep Xvfb,
@@ -127,15 +128,17 @@ regression checks. Do not run the obsolete `build_visual_yard.py` generator.
 
 ## Rollback
 
-Remove `rules/vehicles.yaml` and `sequences/vehicles.yaml` from `mod.yaml` to
-restore the original vehicle artwork. Heavy tank/factory and core-building
+For an FC5-only checkout, remove `rules/vehicles.yaml` and
+`sequences/vehicles.yaml` from `mod.yaml` to restore the earlier artwork. In the
+current checkout, the later motion rules/sequences/weapons also override those
+assets; remove that presentation layer together before evaluating an art rollback. Heavy tank/factory and core-building
 assets remain selected. The vehicle review map can be removed independently;
 its generator never writes either existing laboratory. See `VALIDATION.md` for
 newly performed checks and known limits.
 
-**Current acceptance limit:** the new yard exposes an existing produced-carrier
-stall caused by the creation-time `WithMakeAnimation` condition grant. The
-condition fix is pending approval; the full vehicle suite currently fails its
-siege factory-exit assertion. Map-placed siege deployment/fire/withdrawal checks
-passed. See the support-vehicle section of `VALIDATION.md` before treating this
-milestone as complete.
+**Step 3 update:** the creation-time condition leak is corrected while retaining
+`WithMakeAnimation` for deployment. New motion sources, working sequences and
+weapon/death effects are described in [movement art direction](movement-art-direction.md).
+The original refined sources and exports remain available; the new sequence
+overrides select the motion sheets. See `VALIDATION.md` for the current acceptance
+results rather than the historical step-2 limitation.

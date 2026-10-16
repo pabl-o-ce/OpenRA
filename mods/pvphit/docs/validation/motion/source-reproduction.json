@@ -1,0 +1,16 @@
+{
+  "fresh_saved_source_samples": {
+    "hauler": 104,
+    "siege": 128,
+    "tank": 56,
+    "scout": 40
+  },
+  "mismatches": [],
+  "comparison": "decoded RGBA pixels",
+  "source_files": {
+    "art/source/motion/hauler.blend": "a055fae3a1354f5eebdd8d9edd82f4790cbe861f9b547e451b30ee9b3863bc67",
+    "art/source/motion/siege.blend": "493b50af2e32d6055fb5bd05bdbec9d4b344f88b4973f0ecf754ef02097f0a9c",
+    "art/source/motion/tank.blend": "41433dc9799641c5ffd6be412dd5d18d3ea32b6136d76fcb8245610bc4779079",
+    "art/source/motion/scout.blend": "9f8af8014208e0215cf89ee270eead92b3b3848567672b8c7a2f52513d569b78"
+  }
+}

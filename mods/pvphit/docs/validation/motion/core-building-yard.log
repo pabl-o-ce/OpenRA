@@ -1,0 +1,12 @@
+Engine version is {DEV_VERSION}
+Runtime: .NET CLR 6.0.36
+OpenGL renderer: llvmpipe (LLVM 23.1.1, 256 bits)
+Lua debug: CORE YARD: dock departure 1
+Lua debug: CORE YARD PASSED: heavy factory produced a scout
+Lua debug: CORE YARD: purple buildings damaged
+Lua debug: CORE YARD: dock departure 2
+Lua debug: CORE YARD: purple buildings restored
+Lua debug: CORE YARD: construction animations started
+Lua debug: CORE YARD: dock departure 3
+Lua debug: CORE YARD: dock departure 4
+Lua debug: CORE YARD PASSED: repeated unloading and departure; suite complete

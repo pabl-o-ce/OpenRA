@@ -56,13 +56,15 @@ namespace OpenRA.Mods.Common.Traits.Render
 			if (!IsTraitDisabled && (types & Info.ValidMovementTypes) != 0)
 				playAnim = true;
 
-			if (!playAnim && wsb.DefaultAnimation.CurrentSequence.Name == Info.MoveSequence)
+			// A conditional body may never have been enabled (e.g. a deployed unit's travel body).
+			var currentSequence = wsb.DefaultAnimation.CurrentSequence?.Name;
+			if (!playAnim && currentSequence == Info.MoveSequence)
 			{
 				wsb.CancelCustomAnimation(self);
 				return;
 			}
 
-			if (playAnim && wsb.DefaultAnimation.CurrentSequence.Name != Info.MoveSequence)
+			if (playAnim && currentSequence != Info.MoveSequence)
 				wsb.PlayCustomAnimationRepeating(self, Info.MoveSequence);
 		}
 

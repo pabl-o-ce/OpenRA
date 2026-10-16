@@ -1,0 +1,14 @@
+{
+  "clients": 2,
+  "roles": [
+    "controller",
+    "observer"
+  ],
+  "identical_lua_lines": 358,
+  "lua_sha256": "0ba2f5d3b33c873a5d1ee0759a6c23abb2be10aa6191bcf4600133c927050c4b",
+  "replay_sha256": "bd3e7e6f8ef62a186faa2abf588a89a2fcf6bc258b9241a95b9986e1edecd6f4",
+  "map_uid": "8a037ddd987da9a24cda00ef012667639b263291",
+  "scope": "same Linux machine, software renderer, local server; not cross-platform or competitive balance validation",
+  "replay_lua_lines": 358,
+  "replay_lua_matches_both_clients": true
+}

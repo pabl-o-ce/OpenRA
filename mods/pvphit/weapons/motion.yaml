@@ -1,0 +1,38 @@
+# Artwork overrides only: projectile physics, targeting and damage are inherited.
+FCInduction:
+	Projectile: Bullet
+		Image: fc-tank-shot
+	Warhead@effect: CreateEffect
+		Image: fc-tank-impact
+
+FCScoutGun:
+	Projectile: Bullet
+		Image: fc-scout-shot
+	Warhead@effect: CreateEffect
+		Image: fc-scout-impact
+
+FCMortar:
+	Projectile: Bullet
+		Image: fc-siege-shot
+	Warhead@effect: CreateEffect
+		Image: fc-siege-impact
+
+FCTankDeath:
+	Inherits: FCVehicleDeath
+	Warhead@effect: CreateEffect
+		Image: fc-tank-death
+
+FCScoutDeath:
+	Inherits: FCVehicleDeath
+	Warhead@effect: CreateEffect
+		Image: fc-scout-death
+
+FCHaulerDeath:
+	Inherits: FCVehicleDeath
+	Warhead@effect: CreateEffect
+		Image: fc-hauler-death
+
+FCSiegeDeath:
+	Inherits: FCVehicleDeath
+	Warhead@effect: CreateEffect
+		Image: fc-siege-death

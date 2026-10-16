@@ -1,0 +1,11 @@
+Exact match before tick 3800: 200 resource updates; 10 dock departures.
+Lua debug: VEHICLE YARD: dock departure 1 tick 300
+Lua debug: VEHICLE YARD: dock departure 2 tick 669
+Lua debug: VEHICLE YARD: dock departure 3 tick 1009
+Lua debug: VEHICLE YARD: dock departure 4 tick 1406
+Lua debug: VEHICLE YARD: dock departure 5 tick 1769
+Lua debug: VEHICLE YARD: dock departure 6 tick 2158
+Lua debug: VEHICLE YARD: dock departure 7 tick 2527
+Lua debug: VEHICLE YARD: dock departure 8 tick 2889
+Lua debug: VEHICLE YARD: dock departure 9 tick 3289
+Lua debug: VEHICLE YARD: dock departure 10 tick 3737
