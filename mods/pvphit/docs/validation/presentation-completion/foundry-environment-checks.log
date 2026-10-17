@@ -1,0 +1,200 @@
+Platform is Linux (X64)
+Engine version is {DEV_VERSION}
+Runtime: .NET CLR 6.0.36
+Using SDL 2 with OpenGL (Modern) renderer
+Desktop resolution: 1280x1000
+Using resolution: 1280x1000
+Using window scale 1.00
+OpenGL renderer: llvmpipe (LLVM 23.1.1, 256 bits)
+OpenGL version: 4.6 (Core Profile) Mesa 26.2.4-arch1.1
+Using default sound device
+Internal mods:
+	cnc ({DEV_VERSION})
+	pvphit-content ({DEV_VERSION})
+	cnc-content ({DEV_VERSION})
+	ra-content ({DEV_VERSION})
+	ts-content ({DEV_VERSION})
+	ra ({DEV_VERSION})
+	d2k-content ({DEV_VERSION})
+	pvphit ({DEV_VERSION})
+	all ({DEV_VERSION})
+	d2k ({DEV_VERSION})
+	ts ({DEV_VERSION})
+External mods:
+Loading mod: pvphit
+PvPHit outcome emitter disabled: PVPHIT_MATCH_ID is not set to a UUID
+[2026-10-16T17:56:29] Game started.
+Lua debug: ENVIRONMENT YARD: trial 1 fc.scout home
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 1 west 60 east 61
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 1
+Lua debug: ENVIRONMENT YARD: trial 2 fc.scout north-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 2 west 330 east 332
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 2
+Lua debug: ENVIRONMENT YARD: trial 3 fc.scout south-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 3 west 306 east 303
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 3
+Lua debug: ENVIRONMENT YARD: trial 4 fc.scout north-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 4 west 398 east 392
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 4
+Lua debug: ENVIRONMENT YARD: trial 5 fc.scout south-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 5 west 368 east 373
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 5
+Lua debug: ENVIRONMENT YARD: trial 6 fc.tank home
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 6 west 95 east 97
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 6
+Lua debug: ENVIRONMENT YARD: trial 7 fc.tank north-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 7 west 557 east 566
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 7
+Lua debug: ENVIRONMENT YARD: trial 8 fc.tank south-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 8 west 527 east 517
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 8
+Lua debug: ENVIRONMENT YARD: trial 9 fc.tank north-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 9 west 676 east 670
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 9
+Lua debug: ENVIRONMENT YARD: trial 10 fc.tank south-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 10 west 634 east 637
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 10
+Lua debug: ENVIRONMENT YARD: trial 11 fc.siege home
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 11 west 120 east 123
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 11
+Lua debug: ENVIRONMENT YARD: trial 12 fc.siege north-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 12 west 723 east 737
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 12
+Lua debug: ENVIRONMENT YARD: trial 13 fc.siege south-expansion
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 13 west 687 east 673
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 13
+Lua debug: ENVIRONMENT YARD: trial 14 fc.siege north-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 14 west 878 east 873
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 14
+Lua debug: ENVIRONMENT YARD: trial 15 fc.siege south-station
+Lua debug: ENVIRONMENT YARD: arrival ticks trial 15 west 828 east 830
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 15
+Lua debug: ENVIRONMENT YARD PASSED: side 1 opening processor supplied hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 2 opening processor supplied hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.hauler
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 1
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 1
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.scout
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.scout
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 2
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 2
+Lua debug: ENVIRONMENT YARD: side 1 output 1 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 1 reached destination
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.tank
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.tank
+Lua debug: ENVIRONMENT YARD: side 1 output 2 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 2 reached destination
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 3
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 3
+Lua debug: ENVIRONMENT YARD PASSED: three twelve-tank groups completed groups-out
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 1
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 1
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD: side 1 output 3 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 3 reached destination
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 4
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 4
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 2
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 2
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 5
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 5
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 3
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 3
+Lua debug: ENVIRONMENT YARD: side 1 output 4 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 4 reached destination
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 6
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 6
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 4
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 4
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 7
+Lua debug: ENVIRONMENT YARD: side 2 hauler 1 trips 7
+Lua debug: ENVIRONMENT YARD: side 1 output 5 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 output 5 reached destination
+Lua debug: ENVIRONMENT YARD: side 2 hauler 2 trips 5
+Lua debug: ENVIRONMENT YARD: side 1 hauler 2 trips 5
+Lua debug: ENVIRONMENT YARD: side 1 hauler 1 trips 8
+Lua debug: ENVIRONMENT YARD: stranded tank 31 at 30,59
+Fatal Lua Error: ENVIRONMENT YARD FAILED: tank group timeout groups-back
+   at OpenRA.Scripting.ScriptContext.FatalError(String message)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Eluant.LuaRuntime.MethodWrapper.Invoke(Object[] parms)
+   at Eluant.LuaRuntime.MakeManagedCall(IntPtr state, MethodWrapper wrapper)
+   at Eluant.LuaRuntime.MethodWrapperCallCallback(IntPtr state)
+   at Eluant.LuaRuntime.MethodWrapperCallCallbackWrapper(IntPtr state)
+   at Eluant.LuaApi.lua_pcall(IntPtr L, Int32 nargs, Int32 nresults, Int32 errfunc)
+   at Eluant.LuaApi.lua_pcall(IntPtr L, Int32 nargs, Int32 nresults, Int32 errfunc)
+   at Eluant.LuaRuntime.Call(IList`1 args)
+   at Eluant.LuaRuntime.Call(LuaFunction fn, IList`1 args)
+   at Eluant.LuaFunction.Call(IList`1 args)
+   at Eluant.LuaFunction.Call(LuaValue[] args)
+   at OpenRA.Scripting.ScriptContext.Tick()
+   at OpenRA.TraitDictionary.TraitContainer`1.ApplyToAllTimed(Action`2 action, String text)
+   at OpenRA.World.Tick()
+   at OpenRA.Game.InnerLogicTick(OrderManager orderManager)
+   at OpenRA.Game.LogicTick()
+   at OpenRA.Game.Loop()
+   at OpenRA.Game.Run()
+   at OpenRA.Game.InitializeAndRun(String[] args)
+   at OpenRA.Launcher.Program.Main(String[] args)
+
+Exception of type `System.Reflection.TargetInvocationException`: Exception has been thrown by the target of an invocation.
+Inner
+  Exception of type `System.Reflection.TargetInvocationException`: Exception has been thrown by the target of an invocation.
+  Inner
+    Exception of type `System.Reflection.TargetInvocationException`: Exception has been thrown by the target of an invocation.
+    Inner
+      Exception of type `System.NullReferenceException`: Object reference not set to an instance of an object.
+         at OpenRA.Mods.Common.Widgets.Logic.ScriptErrorLogic..ctor(Widget widget, World world) in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/ScriptErrorLogic.cs:line 30
+       at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at OpenRA.ObjectCreator.CreateUsingArgs(ConstructorInfo ctor, Dictionary`2 args) in /home/cye/Dev/OpenRA/OpenRA.Game/ObjectCreator.cs:line 144
+   at OpenRA.ObjectCreator.CreateObject[T](String className, Dictionary`2 args) in /home/cye/Dev/OpenRA/OpenRA.Game/ObjectCreator.cs:line 109
+   at OpenRA.Widgets.Widget.<>c__DisplayClass28_0.<PostInit>b__0(String l) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/Widget.cs:line 317
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at OpenRA.Widgets.Widget.PostInit(WidgetArgs args) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/Widget.cs:line 317
+   at OpenRA.WidgetLoader.LoadWidget(WidgetArgs args, Widget parent, MiniYamlNode node) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/WidgetLoader.cs:line 75
+   at OpenRA.WidgetLoader.LoadWidget(WidgetArgs args, Widget parent, String w) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/WidgetLoader.cs:line 45
+   at OpenRA.Game.LoadWidget(World world, String id, Widget parent, WidgetArgs args) in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 167
+   at OpenRA.Mods.Common.Widgets.Logic.GameInfoLogic.SetupObjectivesPanel(ButtonWidget objectivesTabButton, Widget objectivesPanelContainer) in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/GameInfoLogic.cs:line 144
+   at OpenRA.Mods.Common.Widgets.Logic.GameInfoLogic..ctor(Widget widget, ModData modData, World world, IngameInfoPanel initialPanel, Action`1 hideMenu, Action closeMenu) in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/GameInfoLogic.cs:line 125
+     at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at OpenRA.ObjectCreator.CreateUsingArgs(ConstructorInfo ctor, Dictionary`2 args) in /home/cye/Dev/OpenRA/OpenRA.Game/ObjectCreator.cs:line 144
+   at OpenRA.ObjectCreator.CreateObject[T](String className, Dictionary`2 args) in /home/cye/Dev/OpenRA/OpenRA.Game/ObjectCreator.cs:line 109
+   at OpenRA.Widgets.Widget.<>c__DisplayClass28_0.<PostInit>b__0(String l) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/Widget.cs:line 317
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at OpenRA.Widgets.Widget.PostInit(WidgetArgs args) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/Widget.cs:line 317
+   at OpenRA.WidgetLoader.LoadWidget(WidgetArgs args, Widget parent, MiniYamlNode node) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/WidgetLoader.cs:line 75
+   at OpenRA.WidgetLoader.LoadWidget(WidgetArgs args, Widget parent, String w) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/WidgetLoader.cs:line 45
+   at OpenRA.Game.LoadWidget(World world, String id, Widget parent, WidgetArgs args) in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 167
+   at OpenRA.Mods.Common.Widgets.Logic.IngameMenuLogic..ctor(Widget widget, ModData modData, World world, Action onExit, WorldRenderer worldRenderer, IngameInfoPanel initialPanel, Dictionary`2 logicArgs) in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/IngameMenuLogic.cs:line 223
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at OpenRA.ObjectCreator.CreateUsingArgs(ConstructorInfo ctor, Dictionary`2 args) in /home/cye/Dev/OpenRA/OpenRA.Game/ObjectCreator.cs:line 144
+   at OpenRA.ObjectCreator.CreateObject[T](String className, Dictionary`2 args) in /home/cye/Dev/OpenRA/OpenRA.Game/ObjectCreator.cs:line 109
+   at OpenRA.Widgets.Widget.<>c__DisplayClass28_0.<PostInit>b__0(String l) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/Widget.cs:line 317
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at OpenRA.Widgets.Widget.PostInit(WidgetArgs args) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/Widget.cs:line 317
+   at OpenRA.WidgetLoader.LoadWidget(WidgetArgs args, Widget parent, MiniYamlNode node) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/WidgetLoader.cs:line 75
+   at OpenRA.WidgetLoader.LoadWidget(WidgetArgs args, Widget parent, String w) in /home/cye/Dev/OpenRA/OpenRA.Game/Widgets/WidgetLoader.cs:line 45
+   at OpenRA.Game.LoadWidget(World world, String id, Widget parent, WidgetArgs args) in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 167
+   at OpenRA.Mods.Common.Widgets.Logic.MenuButtonsChromeLogic.OpenMenuPanel(MenuButtonWidget button, WidgetArgs widgetArgs) in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/MenuButtonsChromeLogic.cs:line 120
+   at OpenRA.Mods.Common.Widgets.Logic.MenuButtonsChromeLogic.<>c__DisplayClass5_2.<.ctor>b__1() in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/MenuButtonsChromeLogic.cs:line 45
+   at OpenRA.Sync.<>c__DisplayClass13_0.<RunUnsynced>b__0() in /home/cye/Dev/OpenRA/OpenRA.Game/Sync.cs:line 167
+   at OpenRA.Sync.RunUnsynced[T](Boolean checkSyncHash, World world, Func`1 fn) in /home/cye/Dev/OpenRA/OpenRA.Game/Sync.cs:line 203
+   at OpenRA.Sync.RunUnsynced(World world, Action fn) in /home/cye/Dev/OpenRA/OpenRA.Game/Sync.cs:line 168
+   at OpenRA.Mods.Common.Widgets.Logic.LoadIngamePlayerOrObserverUILogic.<>c__DisplayClass1_0.<.ctor>b__0() in /home/cye/Dev/OpenRA/OpenRA.Mods.Common/Widgets/Logic/Ingame/LoadIngamePlayerOrObserverUILogic.cs:line 78
+   at OpenRA.Scripting.ScriptContext.<FatalError>b__22_0(World w) in /home/cye/Dev/OpenRA/OpenRA.Game/Scripting/ScriptContext.cs:line 279
+   at OpenRA.World.Tick() in /home/cye/Dev/OpenRA/OpenRA.Game/World.cs:line 463
+   at OpenRA.Game.InnerLogicTick(OrderManager orderManager) in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 651
+   at OpenRA.Game.LogicTick() in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 666
+   at OpenRA.Game.Loop() in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 835
+   at OpenRA.Game.Run() in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 888
+   at OpenRA.Game.InitializeAndRun(String[] args) in /home/cye/Dev/OpenRA/OpenRA.Game/Game.cs:line 313
+   at OpenRA.Launcher.Program.Main(String[] args) in /home/cye/Dev/OpenRA/OpenRA.Launcher/Program.cs:line 46
+

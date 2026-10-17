@@ -1,0 +1,30 @@
+# Audio overrides only. FCInduction and FCVehicleDeath already opt into visibility gating.
+FCScoutGun:
+	Report: pvphit|audio/presentation/scout-fire-1.wav, pvphit|audio/presentation/scout-fire-2.wav, pvphit|audio/presentation/scout-fire-3.wav
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/scout-impact-1.wav, pvphit|audio/presentation/scout-impact-2.wav, pvphit|audio/presentation/scout-impact-3.wav
+
+FCMortar:
+	Report: pvphit|audio/presentation/siege-fire-1.wav, pvphit|audio/presentation/siege-fire-2.wav, pvphit|audio/presentation/siege-fire-3.wav
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/siege-impact-1.wav, pvphit|audio/presentation/siege-impact-2.wav, pvphit|audio/presentation/siege-impact-3.wav
+
+FCVehicleDeath:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/death-building-1.wav, pvphit|audio/presentation/death-building-2.wav
+
+FCTankDeath:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/death-tank.wav
+
+FCScoutDeath:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/death-scout.wav
+
+FCHaulerDeath:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/death-hauler.wav
+
+FCSiegeDeath:
+	Warhead@effect: CreateEffect
+		ImpactSounds: pvphit|audio/presentation/death-siege.wav

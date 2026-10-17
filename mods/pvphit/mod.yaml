@@ -99,6 +99,7 @@ Rules:
 	pvphit|rules/vehicles.yaml
 	pvphit|rules/motion.yaml
 	pvphit|rules/presentation-sample.yaml
+	pvphit|rules/presentation.yaml
 
 Sequences:
 	ra|sequences/ships.yaml
@@ -133,6 +134,7 @@ Chrome:
 	ra|chrome.yaml
 	pvphit|chrome.yaml
 	pvphit|chrome-presentation.yaml
+	pvphit|chrome-identity.yaml
 
 Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll
 
@@ -149,7 +151,7 @@ ChromeLayout:
 	common|chrome/ingame-info-lobby-options.yaml
 	common|chrome/ingame-menu.yaml
 	ra|chrome/ingame-observer.yaml
-	ra|chrome/ingame-player.yaml
+	pvphit|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-debug-hpf.yaml
@@ -217,15 +219,18 @@ Weapons:
 	pvphit|weapons/furnace.yaml
 	pvphit|weapons/motion.yaml
 	pvphit|weapons/presentation-sample.yaml
+	pvphit|weapons/presentation.yaml
 
 Voices:
 	ra|audio/voices.yaml
 	pvphit|audio/voices.yaml
 	pvphit|audio/presentation-sample.yaml
+	pvphit|audio/presentation.yaml
 
 Notifications:
 	ra|audio/notifications.yaml
 	pvphit|audio/notifications-sample.yaml
+	pvphit|audio/notifications.yaml
 
 Music:
 	ra|audio/music.yaml
@@ -242,9 +247,9 @@ Hotkeys:
 	ra|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
-	Image: ra|uibits/loadscreen.png
-	Image2x: ra|uibits/loadscreen-2x.png
-	Image3x: ra|uibits/loadscreen-3x.png
+	Image: pvphit|art/ui/presentation/identity.png
+	Image2x: pvphit|art/ui/presentation/identity-2x.png
+	Image3x: pvphit|art/ui/presentation/identity-3x.png
 
 PlayerDatabase:
 	Profile: https://pvphit.com/api/openra/info/

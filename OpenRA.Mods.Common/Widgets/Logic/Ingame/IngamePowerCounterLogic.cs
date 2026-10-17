@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System.Collections.Generic;
 using System.Globalization;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
@@ -25,8 +26,9 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 		const string Infinite = "label-infinite-power";
 
 		[ObjectCreator.UseCtor]
-		public IngamePowerCounterLogic(Widget widget, ModData modData, World world)
+		public IngamePowerCounterLogic(Widget widget, ModData modData, World world, Dictionary<string, MiniYaml> logicArgs)
 		{
+			var compactDisplay = logicArgs.TryGetValue("CompactDisplay", out var compact) && FieldLoader.GetValue<bool>("CompactDisplay", compact.Value);
 			var developerMode = world.LocalPlayer.PlayerActor.Trait<DeveloperMode>();
 
 			var powerManager = world.LocalPlayer.PlayerActor.Trait<PowerManager>();
@@ -36,7 +38,8 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 
 			powerIcon.GetImageName = () => powerManager.ExcessPower < 0 ? "power-critical" : "power-normal";
 			power.GetColor = () => powerManager.ExcessPower < 0 ? Color.Red : Color.White;
-			power.GetText = () => developerMode.UnlimitedPower ? unlimitedCapacity : powerManager.ExcessPower.ToString(NumberFormatInfo.CurrentInfo);
+			power.GetText = () => developerMode.UnlimitedPower ? unlimitedCapacity : compactDisplay
+				? IngameCashCounterLogic.CompactValue(powerManager.ExcessPower) : powerManager.ExcessPower.ToString(NumberFormatInfo.CurrentInfo);
 
 			var tooltipTextCached = new CachedTransform<(int, int?), string>(((int Usage, int? Capacity) args) =>
 			{

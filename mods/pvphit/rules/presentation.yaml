@@ -1,0 +1,30 @@
+# Presentation-only completion overrides. Keep original gameplay and sample sources.
+FC.SCOUT:
+	Voiced:
+		VoiceSet: FurnaceScout
+
+FC.SIEGE:
+	Voiced:
+		VoiceSet: FurnaceSiege
+	GrantConditionOnDeploy:
+		DeploySounds: pvphit|audio/presentation/deploy.wav
+		UndeploySounds: pvphit|audio/presentation/withdraw.wav
+
+FC.HAULER:
+	Voiced:
+		VoiceSet: FurnaceHauler
+	ResourceActivitySounds:
+		HarvestSounds: pvphit|audio/presentation/harvest-1.wav, pvphit|audio/presentation/harvest-2.wav
+		SoundsRequireVisibility: true
+
+FC.PROCESSOR:
+	ResourceActivitySounds:
+		TransferSounds: pvphit|audio/presentation/transfer-1.wav, pvphit|audio/presentation/transfer-2.wav
+		SoundsRequireVisibility: true
+
+^FCBUILDING:
+	Building:
+		BuildSounds: pvphit|audio/presentation/construction.wav
+	SoundOnDamageTransition:
+		DamagedSounds: pvphit|audio/presentation-sample/k6-impact-1.wav
+		DestroyedSounds:

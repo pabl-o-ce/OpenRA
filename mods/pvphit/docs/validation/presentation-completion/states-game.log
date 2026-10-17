@@ -1,0 +1,46 @@
+Platform is Linux (X64)
+Engine version is {DEV_VERSION}
+Runtime: .NET CLR 6.0.36
+Using SDL 2 with OpenGL (Modern) renderer
+Desktop resolution: 1280x1000
+Using resolution: 1280x1000
+Using window scale 1.00
+OpenGL renderer: llvmpipe (LLVM 23.1.1, 256 bits)
+OpenGL version: 4.6 (Core Profile) Mesa 26.2.4-arch1.1
+Using default sound device
+Internal mods:
+	cnc ({DEV_VERSION})
+	pvphit-content ({DEV_VERSION})
+	cnc-content ({DEV_VERSION})
+	ra-content ({DEV_VERSION})
+	ts-content ({DEV_VERSION})
+	ra ({DEV_VERSION})
+	d2k-content ({DEV_VERSION})
+	pvphit ({DEV_VERSION})
+	all ({DEV_VERSION})
+	d2k ({DEV_VERSION})
+	ts ({DEV_VERSION})
+External mods:
+Loading mod: pvphit
+PvPHit outcome emitter disabled: PVPHIT_MATCH_ID is not set to a UUID
+[2026-10-16T18:01:23] Game started.
+Lua debug: PRESENTATION READY
+Lua debug: PRESENTATION INPUT select
+Lua debug: PRESENTATION INPUT deploy
+Lua debug: PRESENTATION PASSED: real deploy input and siege damage
+Lua debug: PRESENTATION CAPTURE warning
+Lua debug: PRESENTATION INPUT mute
+Lua debug: PRESENTATION INPUT hold
+Lua debug: PRESENTATION CAPTURE held
+Lua debug: PRESENTATION INPUT unmute
+Lua debug: PRESENTATION INPUT resume
+Lua debug: PRESENTATION UNMUTED fresh warning
+Lua debug: PRESENTATION PASSED: actual resource transfer 1182
+Lua debug: PRESENTATION STORAGE full; rejected transfers must not sound
+Lua debug: PRESENTATION PASSED: paid scout produced
+Lua debug: PRESENTATION STORAGE reopened
+Lua debug: PRESENTATION INPUT withdraw
+Lua debug: PRESENTATION INPUT chat
+Lua debug: PRESENTATION CAPTURE longtext
+Lua debug: PRESENTATION PASSED: accepted transfers recovered
+Lua debug: PRESENTATION COMPLETE

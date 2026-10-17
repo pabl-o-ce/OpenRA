@@ -1,0 +1,88 @@
+{
+  "hidden": {
+    "rate": 44100,
+    "channels": 2,
+    "seconds": 47.1,
+    "peak_sample": 1,
+    "peak_dbfs": -90.31,
+    "rms_sample": 0.5,
+    "clipped_samples": 0,
+    "measured_after_seconds": 17.72
+  },
+  "fog": {
+    "rate": 44100,
+    "channels": 2,
+    "seconds": 36.72,
+    "peak_sample": 1,
+    "peak_dbfs": -90.31,
+    "rms_sample": 0.5,
+    "clipped_samples": 0,
+    "measured_after_seconds": 13.544
+  },
+  "visible": {
+    "rate": 44100,
+    "channels": 2,
+    "seconds": 42.72,
+    "peak_sample": 31236,
+    "peak_dbfs": -0.42,
+    "rms_sample": 409.045,
+    "clipped_samples": 0,
+    "measured_after_seconds": 15.129000000000001
+  },
+  "muted": {
+    "rate": 44100,
+    "channels": 2,
+    "seconds": 56.7,
+    "peak_sample": 1,
+    "peak_dbfs": -90.31,
+    "rms_sample": 0.5,
+    "clipped_samples": 0,
+    "measured_after_seconds": 8
+  },
+  "gated-deployment-hidden": {
+    "start_seconds": 21.462,
+    "end_seconds": 23.462,
+    "peak_sample": 1,
+    "rms_sample": 0.499,
+    "clipped_samples": 0,
+    "note": "Deployment window only; earlier select-all UI announcement excluded. Own actor has no RevealsShroud in hidden fixture."
+  },
+  "gated-deployment-visible": {
+    "start_seconds": 20.217,
+    "end_seconds": 22.217,
+    "peak_sample": 1125,
+    "rms_sample": 67.161,
+    "clipped_samples": 0,
+    "note": "Deployment window only; earlier select-all UI announcement excluded. Own actor has no RevealsShroud in hidden fixture."
+  },
+  "PRESENTATION PHASE visible": {
+    "start_seconds": 14.335,
+    "end_seconds": 25.611,
+    "peak_sample": 3992,
+    "rms_sample": 150.32
+  },
+  "PRESENTATION PHASE lostvision": {
+    "start_seconds": 29.611,
+    "end_seconds": 41.4,
+    "peak_sample": 1,
+    "rms_sample": 0.5
+  },
+  "PRESENTATION PHASE regained": {
+    "start_seconds": 45.4,
+    "end_seconds": 60.806,
+    "peak_sample": 3905,
+    "rms_sample": 125.3
+  },
+  "PRESENTATION PHASE distant": {
+    "start_seconds": 64.806,
+    "end_seconds": 75.859,
+    "peak_sample": 642,
+    "rms_sample": 23.42
+  },
+  "PRESENTATION PHASE returned": {
+    "start_seconds": 79.859,
+    "end_seconds": 92.265,
+    "peak_sample": 3905,
+    "rms_sample": 127.0
+  }
+}

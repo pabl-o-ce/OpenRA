@@ -1,0 +1,10 @@
+[2026-10-16T17:46:50] Starting dedicated server for mod: pvphit
+PvPHit outcome emitter disabled: PVPHIT_MATCH_ID is not set to a UUID
+[2026-10-16T17:47:01] client-0 has joined the game.
+[2026-10-16T17:47:09] client-1 has joined the game.
+[2026-10-16T17:47:10] Game started.
+[2026-10-16T17:49:17] client-0 has disconnected.
+[2026-10-16T17:49:17] client-1 has disconnected.
+[2026-10-16T17:49:17] No one is playing, shutting down...
+[2026-10-16T17:49:17] Starting a new server instance...
+PvPHit outcome emitter disabled: PVPHIT_MATCH_ID is not set to a UUID

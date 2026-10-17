@@ -1,0 +1,9 @@
+{
+  "map_uid": "f183c9b8ce7b9a71ac15a01b85aae8cd53669218",
+  "peers": [
+    "Lua debug: NETWORK RESULT 2500,2500,95000,81250,46,52,50,52",
+    "Lua debug: NETWORK RESULT 2500,2500,95000,81250,46,52,50,52"
+  ],
+  "replay": "server/Replays/pvphit/{DEV_VERSION}/pvphit-Server-2026-10-16T224710Z.orarep",
+  "replay_result": "Lua debug: NETWORK RESULT 2500,2500,95000,81250,46,52,50,52"
+}

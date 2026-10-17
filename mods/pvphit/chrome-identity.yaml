@@ -1,0 +1,10 @@
+# Original title and loading atlas; existing logo rectangle and layout are retained.
+logos:
+	Image: pvphit|art/ui/presentation/identity.png
+	Image2x: pvphit|art/ui/presentation/identity-2x.png
+	Image3x: pvphit|art/ui/presentation/identity-3x.png
+
+loadscreen-stripe:
+	Image: pvphit|art/ui/presentation/identity.png
+	Image2x: pvphit|art/ui/presentation/identity-2x.png
+	Image3x: pvphit|art/ui/presentation/identity-3x.png

@@ -514,3 +514,32 @@ recovery and destruction in six animation states. The fully muted sample also
 completed and preserved the low-power visual warning while output remained at
 the backend dither floor. These are local single-player checks; no new
 multiplayer/replay or environment-routing acceptance run is claimed.
+
+## Presentation completion candidate — 2026-10-16
+
+The original twelve exports are preserved; 44 new original clips complete the
+56-clip inventory. Role commands, harvesting and accepted-transfer feedback,
+remaining core alerts, explicit grouping of inherited speech, title/loading
+identity, PvPHit connection wording and opt-in compact counters are implemented.
+Shared C# changes are part of this milestone. Gameplay/source preservation and
+deterministic reproduction checks pass; there is no listening approval implied.
+
+The Release build and 21 focused tests pass, as do YAML and sprite checks.
+Private two-controller multiplayer and replay runs produced matching outcomes.
+These are automated Linux clients, not humans. Player-perspective and full-world
+replay captures, sound visibility controls, intermediate UI scales and representative
+shell/production/chat screens are retained in the
+[completion evidence](docs/validation/presentation-completion/README.md).
+
+The vehicle, systems and core-building laboratories passed again. The current
+environment run **failed**: tank 31 remained at (30,59) during `groups-back`.
+All 15 paired travel trials and ten production exits passed before that failure;
+the subsequent siege/capture/end-of-suite assertions were not reached. This is
+an unresolved congestion acceptance issue, not a successful environment rerun.
+No gameplay or fixture changes were made to hide it.
+
+The [human protocol](docs/first-human-playtest.md) provides six candidate games
+and a side-swapped baseline pair, with empty result sheets. Hardware listening,
+accessibility, full observer/filter/transition coverage, human balance and
+authenticated platform acceptance remain open. No commit, deployment or release
+readiness is claimed.

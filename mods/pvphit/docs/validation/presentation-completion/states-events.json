@@ -1,0 +1,82 @@
+[
+  {
+    "wall_seconds": 9.784,
+    "event": "PRESENTATION READY"
+  },
+  {
+    "wall_seconds": 11.738,
+    "event": "PRESENTATION INPUT select"
+  },
+  {
+    "wall_seconds": 15.775,
+    "event": "PRESENTATION INPUT deploy"
+  },
+  {
+    "wall_seconds": 36.698,
+    "event": "PRESENTATION PASSED: real deploy input and siege damage"
+  },
+  {
+    "wall_seconds": 40.913,
+    "event": "PRESENTATION CAPTURE warning"
+  },
+  {
+    "wall_seconds": 45.192,
+    "event": "PRESENTATION INPUT mute"
+  },
+  {
+    "wall_seconds": 46.86,
+    "event": "PRESENTATION INPUT hold"
+  },
+  {
+    "wall_seconds": 50.067,
+    "event": "PRESENTATION CAPTURE held"
+  },
+  {
+    "wall_seconds": 51.609,
+    "event": "PRESENTATION INPUT unmute"
+  },
+  {
+    "wall_seconds": 54.465,
+    "event": "PRESENTATION INPUT resume"
+  },
+  {
+    "wall_seconds": 57.061,
+    "event": "PRESENTATION UNMUTED fresh warning"
+  },
+  {
+    "wall_seconds": 90.137,
+    "event": "PRESENTATION PASSED: actual resource transfer 1182"
+  },
+  {
+    "wall_seconds": 90.137,
+    "event": "PRESENTATION STORAGE full; rejected transfers must not sound"
+  },
+  {
+    "wall_seconds": 90.738,
+    "event": "PRESENTATION PASSED: paid scout produced"
+  },
+  {
+    "wall_seconds": 101.865,
+    "event": "PRESENTATION STORAGE reopened"
+  },
+  {
+    "wall_seconds": 101.865,
+    "event": "PRESENTATION INPUT withdraw"
+  },
+  {
+    "wall_seconds": 112.432,
+    "event": "PRESENTATION INPUT chat"
+  },
+  {
+    "wall_seconds": 120.255,
+    "event": "PRESENTATION CAPTURE longtext"
+  },
+  {
+    "wall_seconds": 123.315,
+    "event": "PRESENTATION PASSED: accepted transfers recovered"
+  },
+  {
+    "wall_seconds": 123.315,
+    "event": "PRESENTATION COMPLETE"
+  }
+]

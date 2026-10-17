@@ -1,0 +1,418 @@
+{
+  "baseline": "300a7643ec",
+  "clips": {
+    "scout-fire-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.27,
+      "peak_sample": 14506,
+      "peak_dbfs": -7.08,
+      "rms_sample": 1940.513,
+      "clipped_samples": 0
+    },
+    "scout-fire-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.27,
+      "peak_sample": 15742,
+      "peak_dbfs": -6.37,
+      "rms_sample": 2028.176,
+      "clipped_samples": 0
+    },
+    "scout-fire-3": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.27,
+      "peak_sample": 14066,
+      "peak_dbfs": -7.35,
+      "rms_sample": 1969.31,
+      "clipped_samples": 0
+    },
+    "scout-impact-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.3,
+      "peak_sample": 15839,
+      "peak_dbfs": -6.31,
+      "rms_sample": 2180.041,
+      "clipped_samples": 0
+    },
+    "scout-impact-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.3,
+      "peak_sample": 15759,
+      "peak_dbfs": -6.36,
+      "rms_sample": 2124.068,
+      "clipped_samples": 0
+    },
+    "scout-impact-3": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.3,
+      "peak_sample": 15818,
+      "peak_dbfs": -6.33,
+      "rms_sample": 2145.226,
+      "clipped_samples": 0
+    },
+    "siege-fire-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.85,
+      "peak_sample": 16354,
+      "peak_dbfs": -6.04,
+      "rms_sample": 1594.451,
+      "clipped_samples": 0
+    },
+    "siege-fire-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.85,
+      "peak_sample": 16277,
+      "peak_dbfs": -6.08,
+      "rms_sample": 1619.559,
+      "clipped_samples": 0
+    },
+    "siege-fire-3": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.85,
+      "peak_sample": 16389,
+      "peak_dbfs": -6.02,
+      "rms_sample": 1586.248,
+      "clipped_samples": 0
+    },
+    "siege-impact-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.8,
+      "peak_sample": 15588,
+      "peak_dbfs": -6.45,
+      "rms_sample": 1690.216,
+      "clipped_samples": 0
+    },
+    "siege-impact-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.8,
+      "peak_sample": 18047,
+      "peak_dbfs": -5.18,
+      "rms_sample": 1812.129,
+      "clipped_samples": 0
+    },
+    "siege-impact-3": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.8,
+      "peak_sample": 17821,
+      "peak_dbfs": -5.29,
+      "rms_sample": 1778.949,
+      "clipped_samples": 0
+    },
+    "death-scout": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 1.15,
+      "peak_sample": 15250,
+      "peak_dbfs": -6.64,
+      "rms_sample": 1149.773,
+      "clipped_samples": 0
+    },
+    "death-tank": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 1.15,
+      "peak_sample": 14302,
+      "peak_dbfs": -7.2,
+      "rms_sample": 1813.392,
+      "clipped_samples": 0
+    },
+    "death-hauler": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 1.15,
+      "peak_sample": 16948,
+      "peak_dbfs": -5.73,
+      "rms_sample": 1902.366,
+      "clipped_samples": 0
+    },
+    "death-siege": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 1.15,
+      "peak_sample": 17082,
+      "peak_dbfs": -5.66,
+      "rms_sample": 1848.812,
+      "clipped_samples": 0
+    },
+    "death-building-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 1.15,
+      "peak_sample": 17127,
+      "peak_dbfs": -5.64,
+      "rms_sample": 1845.177,
+      "clipped_samples": 0
+    },
+    "death-building-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 1.15,
+      "peak_sample": 16498,
+      "peak_dbfs": -5.96,
+      "rms_sample": 1839.16,
+      "clipped_samples": 0
+    },
+    "deploy": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.55,
+      "peak_sample": 8425,
+      "peak_dbfs": -11.8,
+      "rms_sample": 959.796,
+      "clipped_samples": 0
+    },
+    "withdraw": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.45,
+      "peak_sample": 8404,
+      "peak_dbfs": -11.82,
+      "rms_sample": 1067.852,
+      "clipped_samples": 0
+    },
+    "construction": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.6,
+      "peak_sample": 8844,
+      "peak_dbfs": -11.38,
+      "rms_sample": 953.186,
+      "clipped_samples": 0
+    },
+    "harvest-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.19,
+      "peak_sample": 9105,
+      "peak_dbfs": -11.12,
+      "rms_sample": 1481.293,
+      "clipped_samples": 0
+    },
+    "harvest-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.19,
+      "peak_sample": 9414,
+      "peak_dbfs": -10.83,
+      "rms_sample": 1517.642,
+      "clipped_samples": 0
+    },
+    "transfer-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 9072,
+      "peak_dbfs": -11.15,
+      "rms_sample": 1297.666,
+      "clipped_samples": 0
+    },
+    "transfer-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 9784,
+      "peak_dbfs": -10.5,
+      "rms_sample": 1297.309,
+      "clipped_samples": 0
+    },
+    "scout-select-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 5050,
+      "peak_dbfs": -16.24,
+      "rms_sample": 1289.319,
+      "clipped_samples": 0
+    },
+    "scout-select-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 4786,
+      "peak_dbfs": -16.71,
+      "rms_sample": 1288.819,
+      "clipped_samples": 0
+    },
+    "scout-move": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23501133786848072,
+      "peak_sample": 5036,
+      "peak_dbfs": -16.27,
+      "rms_sample": 1329.625,
+      "clipped_samples": 0
+    },
+    "scout-attack": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23501133786848072,
+      "peak_sample": 5055,
+      "peak_dbfs": -16.23,
+      "rms_sample": 1329.739,
+      "clipped_samples": 0
+    },
+    "scout-action": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.32,
+      "peak_sample": 5194,
+      "peak_dbfs": -16.0,
+      "rms_sample": 1434.177,
+      "clipped_samples": 0
+    },
+    "siege-select-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 4763,
+      "peak_dbfs": -16.75,
+      "rms_sample": 1288.671,
+      "clipped_samples": 0
+    },
+    "siege-select-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 4786,
+      "peak_dbfs": -16.71,
+      "rms_sample": 1288.821,
+      "clipped_samples": 0
+    },
+    "siege-move": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23501133786848072,
+      "peak_sample": 4952,
+      "peak_dbfs": -16.41,
+      "rms_sample": 1329.711,
+      "clipped_samples": 0
+    },
+    "siege-attack": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23501133786848072,
+      "peak_sample": 4812,
+      "peak_dbfs": -16.66,
+      "rms_sample": 1329.161,
+      "clipped_samples": 0
+    },
+    "siege-action": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.32,
+      "peak_sample": 4779,
+      "peak_dbfs": -16.72,
+      "rms_sample": 1356.486,
+      "clipped_samples": 0
+    },
+    "hauler-select-1": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 4791,
+      "peak_dbfs": -16.7,
+      "rms_sample": 1289.227,
+      "clipped_samples": 0
+    },
+    "hauler-select-2": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.25,
+      "peak_sample": 5002,
+      "peak_dbfs": -16.33,
+      "rms_sample": 1289.187,
+      "clipped_samples": 0
+    },
+    "hauler-move": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.23501133786848072,
+      "peak_sample": 5319,
+      "peak_dbfs": -15.79,
+      "rms_sample": 1329.719,
+      "clipped_samples": 0
+    },
+    "hauler-action": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.32,
+      "peak_sample": 5139,
+      "peak_dbfs": -16.09,
+      "rms_sample": 1397.933,
+      "clipped_samples": 0
+    },
+    "base-attack": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.58,
+      "peak_sample": 4789,
+      "peak_dbfs": -16.7,
+      "rms_sample": 1197.169,
+      "clipped_samples": 0
+    },
+    "funds": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.34,
+      "peak_sample": 4795,
+      "peak_dbfs": -16.69,
+      "rms_sample": 1105.169,
+      "clipped_samples": 0
+    },
+    "storage": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.48,
+      "peak_sample": 4799,
+      "peak_dbfs": -16.69,
+      "rms_sample": 1137.4,
+      "clipped_samples": 0
+    },
+    "construction-complete": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.48,
+      "peak_sample": 4815,
+      "peak_dbfs": -16.66,
+      "rms_sample": 1139.792,
+      "clipped_samples": 0
+    },
+    "unit-ready": {
+      "rate": 44100,
+      "channels": 1,
+      "seconds": 0.3,
+      "peak_sample": 4816,
+      "peak_dbfs": -16.66,
+      "rms_sample": 1176.933,
+      "clipped_samples": 0
+    }
+  },
+  "limits": "Technical checks only; human acceptance pending.",
+  "inventory": {
+    "weapon-impact": 18,
+    "destruction": 6,
+    "machinery": 7,
+    "command": 19,
+    "alert": 6
+  },
+  "reproduction": "Byte-identical WAV, SVG, PNG, YAML and manifest",
+  "preserved_baseline_files": 1093,
+  "grouped_speech_definitions": 113,
+  "player_layout": "Control geometry identical; compact counters explicitly opt in",
+  "weapons": {
+    "FCInduction": "Simulation fields unchanged",
+    "FCScoutGun": "Simulation fields unchanged",
+    "FCMortar": "Simulation fields unchanged"
+  }
+}

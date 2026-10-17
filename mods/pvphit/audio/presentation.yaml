@@ -1,0 +1,24 @@
+# Generated original role commands. No hauler attack or invented tank action.
+FurnaceScout:
+	DefaultVariant: .wav
+	DefaultPrefix: pvphit|audio/presentation/
+	Voices:
+		Select: scout-select-1, scout-select-2
+		Move: scout-move
+		Attack: scout-attack
+		Action: scout-action
+FurnaceSiege:
+	DefaultVariant: .wav
+	DefaultPrefix: pvphit|audio/presentation/
+	Voices:
+		Select: siege-select-1, siege-select-2
+		Move: siege-move
+		Attack: siege-attack
+		Action: siege-action
+FurnaceHauler:
+	DefaultVariant: .wav
+	DefaultPrefix: pvphit|audio/presentation/
+	Voices:
+		Select: hauler-select-1, hauler-select-2
+		Move: hauler-move
+		Action: hauler-action

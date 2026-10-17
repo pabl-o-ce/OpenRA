@@ -1,0 +1,21 @@
+  OpenRA.Game -> /home/cye/Dev/OpenRA/bin/OpenRA.Game.dll
+  OpenRA.Mods.Common -> /home/cye/Dev/OpenRA/bin/OpenRA.Mods.Common.dll
+  OpenRA.Mods.Cnc -> /home/cye/Dev/OpenRA/bin/OpenRA.Mods.Cnc.dll
+/home/cye/Dev/OpenRA/mods/pvphit/.work/dotnet/sdk/8.0.425/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/home/cye/Dev/OpenRA/OpenRA.Utility/OpenRA.Utility.csproj]
+  OpenRA.Utility -> /home/cye/Dev/OpenRA/bin/OpenRA.Utility.dll
+/home/cye/Dev/OpenRA/mods/pvphit/.work/dotnet/sdk/8.0.425/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/home/cye/Dev/OpenRA/OpenRA.Server/OpenRA.Server.csproj]
+  OpenRA.Server -> /home/cye/Dev/OpenRA/bin/OpenRA.Server.dll
+  OpenRA.Mods.D2k -> /home/cye/Dev/OpenRA/bin/OpenRA.Mods.D2k.dll
+  OpenRA.Platforms.Default -> /home/cye/Dev/OpenRA/bin/OpenRA.Platforms.Default.dll
+/home/cye/Dev/OpenRA/mods/pvphit/.work/dotnet/sdk/8.0.425/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/home/cye/Dev/OpenRA/OpenRA.Launcher/OpenRA.Launcher.csproj]
+  OpenRA.Launcher -> /home/cye/Dev/OpenRA/bin/OpenRA.dll
+
+Build succeeded.
+
+/home/cye/Dev/OpenRA/mods/pvphit/.work/dotnet/sdk/8.0.425/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/home/cye/Dev/OpenRA/OpenRA.Utility/OpenRA.Utility.csproj]
+/home/cye/Dev/OpenRA/mods/pvphit/.work/dotnet/sdk/8.0.425/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/home/cye/Dev/OpenRA/OpenRA.Server/OpenRA.Server.csproj]
+/home/cye/Dev/OpenRA/mods/pvphit/.work/dotnet/sdk/8.0.425/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/home/cye/Dev/OpenRA/OpenRA.Launcher/OpenRA.Launcher.csproj]
+    3 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.90

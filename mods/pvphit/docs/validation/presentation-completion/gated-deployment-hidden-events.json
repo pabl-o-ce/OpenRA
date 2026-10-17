@@ -1,0 +1,22 @@
+[
+  {
+    "wall_seconds": 7.819,
+    "event": "PRESENTATION READY"
+  },
+  {
+    "wall_seconds": 18.751,
+    "event": "PRESENTATION INPUT selectall"
+  },
+  {
+    "wall_seconds": 21.962,
+    "event": "PRESENTATION INPUT deploy"
+  },
+  {
+    "wall_seconds": 37.664,
+    "event": "PRESENTATION PASSED: deployed siege damage"
+  },
+  {
+    "wall_seconds": 37.664,
+    "event": "PRESENTATION COMPLETE"
+  }
+]

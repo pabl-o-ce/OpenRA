@@ -92,6 +92,20 @@ namespace OpenRA.Test
 		}
 
 		[Test]
+		public void FailedPendingSourceDoesNotBlockNextEntry()
+		{
+			var clip = new Clip();
+			var played = false;
+			var queue = new NotificationQueue(_ => { });
+			queue.Enqueue("active", 0, false, 0, () => clip);
+			queue.Enqueue("missing", 1, false, 1, () => null);
+			queue.Enqueue("next", 0, false, 2, () => { played = true; return new Clip(); });
+			clip.Complete = true;
+			queue.Tick(3);
+			Assert.That(played, Is.True);
+		}
+
+		[Test]
 		public void NotificationOptionsAreOptInAndPreserveLegacySettings()
 		{
 			const string Yaml = "Notifications:\n\tLegacy: old\n\t\tInterruptType: Overlap\n\t\tVolumeModifier: 0.33\n\tNew: custom.wav\n\t\tGroup: alerts\n\t\tPriority: 2\n\t\tInterruptLowerPriority: true\n\t\tUseFullPath: true\n";

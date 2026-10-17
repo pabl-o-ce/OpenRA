@@ -1,5 +1,11 @@
 mod-title = PvPHit: Furnace Covenant Prototype
 mod-windowtitle = OpenRA - PvPHit: Furnace Covenant Prototype
+
+# Mod-local connection identity; account endpoints and authentication logic are unchanged.
+label-connecting-panel-title = Connecting to a PvPHit game
+label-connecting-to-endpoint = Connecting to PvPHit server { $endpoint }...
+label-could-not-connect-to-target = Could not connect to PvPHit server { $target }.
+label-connection-failed = PvPHit connection failed
 faction-kiln =
     .name = Kiln Directorate
     .description = Rival expeditionary foundries fighting to sustain Veyr's industrial settlements.

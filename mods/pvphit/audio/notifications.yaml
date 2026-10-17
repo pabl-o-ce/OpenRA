@@ -1,0 +1,354 @@
+# Generated PvPHit-wide speech arbitration; standalone RA is unchanged.
+Speech:
+	Notifications:
+		AbombAvailable:
+			Group: furnace-announcements
+			Priority: 0
+		AbombLaunchDetected:
+			Group: furnace-announcements
+			Priority: 0
+		AbombPrepping:
+			Group: furnace-announcements
+			Priority: 0
+		AbombReady:
+			Group: furnace-announcements
+			Priority: 0
+		AirUnitLost:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedForcesApproaching:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedForcesFallen:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedForcesSelected:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedReinforcementsArrived:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedReinforcementsEast:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedReinforcementsNorth:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedReinforcementsSouth:
+			Group: furnace-announcements
+			Priority: 0
+		AlliedReinforcementsWest:
+			Group: furnace-announcements
+			Priority: 0
+		AtomBombLaunchDetected:
+			Group: furnace-announcements
+			Priority: 0
+		AtomBombPrepping:
+			Group: furnace-announcements
+			Priority: 0
+		BaseAttack: pvphit|audio/presentation/base-attack.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 2
+			InterruptLowerPriority: true
+		Building:
+			Group: furnace-announcements
+			Priority: 0
+		BuildingCannotPlaceAudio:
+			Group: furnace-announcements
+			Priority: 0
+		BuildingCaptured:
+			Group: furnace-announcements
+			Priority: 0
+		BuildingInfiltrated:
+			Group: furnace-announcements
+			Priority: 0
+		BuildingInProgress:
+			Group: furnace-announcements
+			Priority: 0
+		BuildingProgress:
+			Group: furnace-announcements
+			Priority: 0
+		Cancelled:
+			Group: furnace-announcements
+			Priority: 0
+		ChronosphereCharging:
+			Group: furnace-announcements
+			Priority: 0
+		ChronosphereReady:
+			Group: furnace-announcements
+			Priority: 0
+		ChronosphereTestSuccessful:
+			Group: furnace-announcements
+			Priority: 0
+		CommandCenterAttack:
+			Group: furnace-announcements
+			Priority: 0
+		CommandoFreed:
+			Group: furnace-announcements
+			Priority: 0
+		CommandoRescued:
+			Group: furnace-announcements
+			Priority: 0
+		ConstructionComplete: pvphit|audio/presentation/construction-complete.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 0
+		ControlCenterDeactivated:
+			Group: furnace-announcements
+			Priority: 0
+		ConvoyApproaching:
+			Group: furnace-announcements
+			Priority: 0
+		ConvoyUnitLost:
+			Group: furnace-announcements
+			Priority: 0
+		CreditsStolen:
+			Group: furnace-announcements
+			Priority: 0
+		EnemyUnitsApproaching:
+			Group: furnace-announcements
+			Priority: 0
+		EnemyDetected:
+			Group: furnace-announcements
+			Priority: 0
+		ExplosiveChargePlaced:
+			Group: furnace-announcements
+			Priority: 0
+		FirstObjectiveMet:
+			Group: furnace-announcements
+			Priority: 0
+		FourtyMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		HarvesterAttack:
+			Group: furnace-announcements
+			Priority: 0
+		InsufficientFunds: pvphit|audio/presentation/funds.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 1
+		InsufficientPower:
+			Group: furnace-announcements
+			Priority: 0
+		IronCurtainCharging:
+			Group: furnace-announcements
+			Priority: 0
+		IronCurtainReady:
+			Group: furnace-announcements
+			Priority: 0
+		KosyginFreed:
+			Group: furnace-announcements
+			Priority: 0
+		KosyginRescued:
+			Group: furnace-announcements
+			Priority: 0
+		Leave:
+			Group: furnace-announcements
+			Priority: 3
+			InterruptLowerPriority: true
+		Lose:
+			Group: furnace-announcements
+			Priority: 3
+			InterruptLowerPriority: true
+		LowPower: pvphit|audio/presentation-sample/low-power.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 1
+		MercenaryFreed:
+			Group: furnace-announcements
+			Priority: 0
+		MercenaryRescued:
+			Group: furnace-announcements
+			Priority: 0
+		MissionAccomplished:
+			Group: furnace-announcements
+			Priority: 3
+			InterruptLowerPriority: true
+		MissionFailed:
+			Group: furnace-announcements
+			Priority: 3
+			InterruptLowerPriority: true
+		MissionTimerInitialised:
+			Group: furnace-announcements
+			Priority: 0
+		NavalUnitLost:
+			Group: furnace-announcements
+			Priority: 0
+		NewOptions:
+			Group: furnace-announcements
+			Priority: 0
+		NoBuild:
+			Group: furnace-announcements
+			Priority: 0
+		ObjectiveMet:
+			Group: furnace-announcements
+			Priority: 0
+		ObjectiveNotMet:
+			Group: furnace-announcements
+			Priority: 0
+		ObjectiveNotReached:
+			Group: furnace-announcements
+			Priority: 0
+		ObjectiveReached:
+			Group: furnace-announcements
+			Priority: 0
+		OnHold:
+			Group: furnace-announcements
+			Priority: 0
+		OperationControlTerminated:
+			Group: furnace-announcements
+			Priority: 0
+		PrimaryBuildingSelected:
+			Group: furnace-announcements
+			Priority: 0
+		ReinforcementsArrived:
+			Group: furnace-announcements
+			Priority: 0
+		Repairing:
+			Group: furnace-announcements
+			Priority: 0
+		SatelliteLaunched:
+			Group: furnace-announcements
+			Priority: 0
+		SecondObjectiveMet:
+			Group: furnace-announcements
+			Priority: 0
+		SelectTarget:
+			Group: furnace-announcements
+			Priority: 0
+		SignalFlare:
+			Group: furnace-announcements
+			Priority: 0
+		SignalFlareEast:
+			Group: furnace-announcements
+			Priority: 0
+		SignalFlareNorth:
+			Group: furnace-announcements
+			Priority: 0
+		SignalFlareSouth:
+			Group: furnace-announcements
+			Priority: 0
+		SignalFlareWest:
+			Group: furnace-announcements
+			Priority: 0
+		SilosNeeded: pvphit|audio/presentation/storage.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 1
+		SonarPulseReady:
+			Group: furnace-announcements
+			Priority: 0
+		SovietEmpireFallen:
+			Group: furnace-announcements
+			Priority: 0
+		SovietEmpireSelected:
+			Group: furnace-announcements
+			Priority: 0
+		SovietForcesApproaching:
+			Group: furnace-announcements
+			Priority: 0
+		SovietForcesFallen:
+			Group: furnace-announcements
+			Priority: 0
+		SovietReinforcementsArrived:
+			Group: furnace-announcements
+			Priority: 0
+		SpyPlaneReady:
+			Group: furnace-announcements
+			Priority: 0
+		StartGame:
+			Group: furnace-announcements
+			Priority: 0
+		GameLoaded:
+			Group: furnace-announcements
+			Priority: 0
+		GameSaved:
+			Group: furnace-announcements
+			Priority: 0
+		StructureDestroyed:
+			Group: furnace-announcements
+			Priority: 0
+		StructureSold:
+			Group: furnace-announcements
+			Priority: 0
+		TanyaFreed:
+			Group: furnace-announcements
+			Priority: 0
+		TanyaRescued:
+			Group: furnace-announcements
+			Priority: 0
+		TargetFreed:
+			Group: furnace-announcements
+			Priority: 0
+		TargetRescued:
+			Group: furnace-announcements
+			Priority: 0
+		TenMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		ThirdObjectiveMet:
+			Group: furnace-announcements
+			Priority: 0
+		ThirtyMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		TimerStarted:
+			Group: furnace-announcements
+			Priority: 0
+		TimerStopped:
+			Group: furnace-announcements
+			Priority: 0
+		Training:
+			Group: furnace-announcements
+			Priority: 0
+		TwentyMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		UnitArmorUpgraded:
+			Group: furnace-announcements
+			Priority: 0
+		UnitFirepowerUpgraded:
+			Group: furnace-announcements
+			Priority: 0
+		UnitFull:
+			Group: furnace-announcements
+			Priority: 0
+		UnitLost:
+			Group: furnace-announcements
+			Priority: 0
+		UnitReady: pvphit|audio/presentation/unit-ready.wav
+			UseFullPath: true
+			Group: furnace-announcements
+			Priority: 0
+		UnitRepaired:
+			Group: furnace-announcements
+			Priority: 0
+		UnitSold:
+			Group: furnace-announcements
+			Priority: 0
+		UnitSpeedUpgraded:
+			Group: furnace-announcements
+			Priority: 0
+		UnitStolen:
+			Group: furnace-announcements
+			Priority: 0
+		WarningOneMinuteRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		WarningTwoMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		WarningThreeMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		WarningFourMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		WarningFiveMinutesRemaining:
+			Group: furnace-announcements
+			Priority: 0
+		Win:
+			Group: furnace-announcements
+			Priority: 3
+			InterruptLowerPriority: true

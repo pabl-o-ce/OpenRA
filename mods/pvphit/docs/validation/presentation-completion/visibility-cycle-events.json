@@ -1,0 +1,30 @@
+[
+  {
+    "wall_seconds": 8.874,
+    "event": "PRESENTATION READY"
+  },
+  {
+    "wall_seconds": 12.335,
+    "event": "PRESENTATION PHASE visible"
+  },
+  {
+    "wall_seconds": 27.611,
+    "event": "PRESENTATION PHASE lostvision"
+  },
+  {
+    "wall_seconds": 43.4,
+    "event": "PRESENTATION PHASE regained"
+  },
+  {
+    "wall_seconds": 62.806,
+    "event": "PRESENTATION PHASE distant"
+  },
+  {
+    "wall_seconds": 77.859,
+    "event": "PRESENTATION PHASE returned"
+  },
+  {
+    "wall_seconds": 94.265,
+    "event": "PRESENTATION COMPLETE"
+  }
+]

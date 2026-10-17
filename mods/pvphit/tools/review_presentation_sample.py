@@ -21,8 +21,10 @@ def main():
     parser.add_argument('--display', default=':117')
     parser.add_argument('--size', default='1280,1000')
     parser.add_argument('--scale', type=float, default=1)
-    parser.add_argument('--scenario', choices=('sample', 'hidden', 'visible', 'fog', 'muted'), default='sample')
+    parser.add_argument('--scenario', choices=('sample', 'hidden', 'visible', 'fog', 'muted', 'deployment-hidden', 'deployment-visible', 'visibility-cycle'), default='sample')
     parser.add_argument('--seconds', type=int, default=120, help='Wall-clock timeout; completion follows simulation markers')
+    parser.add_argument('--script', type=Path, help='Optional private Lua scenario; original sample is the default')
+    parser.add_argument('--engine-bin', type=Path, default=ROOT/'bin', help='Directory of the built engine binaries')
     args = parser.parse_args()
     if not args.tag.replace('-', '').isalnum():
         parser.error('Use a simple alphanumeric tag')
@@ -39,12 +41,18 @@ def main():
     text = (MOD / 'maps/foundry-environment-checks/map.yaml').read_text().replace('checks.lua', 'review.lua')
     text = text.replace('FogCheckboxEnabled: false', 'FogCheckboxEnabled: true')
     text = text.replace('ExploredMapCheckboxEnabled: true', 'ExploredMapCheckboxEnabled: ' + ('true' if args.scenario == 'fog' else 'false'))
+    if args.scenario.startswith('deployment-'):
+        text = text.replace('\tFC.TANK:\n', '\tFC.HQ:\n\t\t-RevealsShroud:\n\tFC.SIEGE:\n\t\t-Voiced:\n\t\t-RevealsShroud:\n\tFC.SCOUT:\n\t\t-Voiced:\n\tFC.TANK:\n\t\t-Voiced:\n')
+        text += '\nWeapons:\n\tFCMortar:\n\t\tReport:\n\t\tWarhead@effect: CreateEffect\n\t\t\tImpactSounds:\n'
     (path / 'map.yaml').write_text(text)
-    lua = (MOD / 'tools/presentation_sample.lua').read_text().replace('SCENARIO', args.scenario)
+    script = args.script or MOD / ('tools/presentation_deployment.lua' if args.scenario.startswith('deployment-') else
+                                  'tools/presentation_visibility.lua' if args.scenario == 'visibility-cycle' else 'tools/presentation_sample.lua')
+    lua = script.read_text().replace('SCENARIO', args.scenario)
     (path / 'review.lua').write_text(lua)
     muted = args.scenario == 'muted'
     (support / 'settings.yaml').write_text(
-        'Player:\n\tName: Presentation-Review\nGame:\n\tViewportEdgeScroll: False\n\tMouseScroll: Disabled\n'
+        'Player:\n\tName: Presentation-Review\nGame:\n\tFetchNews: False\n\tViewportEdgeScroll: False\n\tMouseScroll: Disabled\n'
+        'Debug:\n\tCheckVersion: False\n\tSendSystemInformation: False\n'
         f'Sound:\n\tMusicVolume: 0\n\tMute: {str(muted).lower()}\n'
         f'Graphics:\n\tMode: Windowed\n\tVSync: False\n\tWindowedSize: {args.size}\n\tUIScale: {args.scale}\n'
         '\tViewportDistance: Native\nServer:\n\tAdvertiseOnline: False\n')
@@ -72,7 +80,7 @@ def main():
             if socket.exists():
                 break
             time.sleep(.1)
-        game = launch([str(MOD / '.work/dotnet/dotnet'), 'bin/OpenRA.dll', 'Engine.EngineDir=' + str(ROOT),
+        game = launch([str(MOD / '.work/dotnet/dotnet'), str(args.engine_bin.resolve()/'OpenRA.dll'), 'Engine.EngineDir=' + str(ROOT),
                        'Engine.SupportDir=' + str(support), 'Game.Mod=pvphit', 'Launch.Map=presentation-review',
                        'Graphics.CapFramerate=True', 'Graphics.MaxFramerate=30'], 'game.log')
         launch(['ffmpeg', '-nostdin', '-loglevel', 'error', '-f', 'x11grab', '-framerate', '15',
@@ -100,8 +108,29 @@ def main():
                         commands = [f'move,{width//2+36},{height//2}', 'click,3']
                     elif line == 'PRESENTATION INPUT attack':
                         commands = [f'move,{width//2+120},{height//2-5}', 'down,Control_L', 'click,3', 'up,Control_L']
-                    elif line == 'PRESENTATION CAPTURE warning':
-                        subprocess.run(['magick', 'import', '-window', 'root', str(work / 'warning.png')], env=env, check=True)
+                    elif line == 'PRESENTATION INPUT deploy':
+                        commands = ['down,f', 'up,f']
+                    elif line == 'PRESENTATION INPUT selectall':
+                        commands = ['down,q', 'up,q']
+                    elif line == 'PRESENTATION INPUT withdraw':
+                        commands = [f'move,{width//2+48},{height//2}', 'click,3']
+                    elif line in ('PRESENTATION INPUT mute', 'PRESENTATION INPUT unmute'):
+                        commands = ['down,m', 'up,m']
+                    elif line in ('PRESENTATION INPUT hold', 'PRESENTATION INPUT resume'):
+                        button = 3 if line.endswith('hold') else 1
+                        commands = [f'move,{width-round(178*args.scale)},{round(324*args.scale)}', f'click,{button}']
+                    elif line == 'PRESENTATION INPUT chat':
+                        commands = ['down,Return', 'up,Return']
+                        for key in 'pressure station nine ui test':
+                            key = 'space' if key == ' ' else key
+                            commands += ['down,'+key, 'up,'+key]
+                        commands += ['down,Return', 'up,Return']
+                    elif line.startswith('PRESENTATION CAPTURE '):
+                        name = line.rsplit(' ', 1)[1]
+                        if not name.isalnum():
+                            raise RuntimeError('Invalid capture marker')
+                        time.sleep(.3)  # Let the UI render the state that emitted this marker.
+                        subprocess.run(['magick', 'import', '-window', 'root', str(work / (name+'.png'))], env=env, check=True)
                         continue
                     elif line == 'PRESENTATION COMPLETE':
                         complete = True
@@ -126,7 +155,7 @@ def main():
         if ready is None or not complete:
             raise RuntimeError('Game did not finish the scenario before timeout')
         (work / 'events.json').write_text(json.dumps(events, indent=2) + '\n')
-        (work / 'capture.json').write_text(json.dumps(vars(args), indent=2) + '\n')
+        (work / 'capture.json').write_text(json.dumps(vars(args), indent=2, default=str) + '\n')
     finally:
         for process in reversed(processes):
             if process.poll() is None:

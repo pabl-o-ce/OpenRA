@@ -1,0 +1,10 @@
+  OpenRA.Game -> /tmp/furnace-final-tests/OpenRA.Game.dll
+  OpenRA.Mods.Common -> /tmp/furnace-final-tests/OpenRA.Mods.Common.dll
+  OpenRA.Test -> /tmp/furnace-final-tests/OpenRA.Test.dll
+Test run for /tmp/furnace-final-tests/OpenRA.Test.dll (.NETCoreApp,Version=v6.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    21, Skipped:     0, Total:    21, Duration: 65 ms - OpenRA.Test.dll (net6.0)

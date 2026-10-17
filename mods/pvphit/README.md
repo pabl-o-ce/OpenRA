@@ -3,7 +3,9 @@
 Working title for an original industrial science-fiction RTS inside the `pvphit`
 mod. This is a small gameplay and asset-pipeline prototype, not a finished total
 conversion. Shared Red Alert files, release versions, account endpoints, and the
-PvPHit outcome emitter are unchanged.
+PvPHit outcome emitter are unchanged. Presentation includes shared engine changes;
+see the [completion candidate](docs/presentation-completion.md) and
+[first human playtest protocol](docs/first-human-playtest.md).
 
 Review the [in-game roster](docs/roster-preview.png),
 [tank facing samples](docs/tank-facing-preview.png), and [test results](VALIDATION.md).
@@ -243,7 +245,8 @@ for source editing, rendering, the expanded yard and rollback.
 
 ## Implementation boundaries
 
-All gameplay uses existing traits in this fork; no new C# traits were required.
+Gameplay uses existing traits in this fork. The later presentation pass adds
+shared C# sound handling and optional counter formatting without changing gameplay.
 
 | Feature | Implementation | Remaining work |
 | --- | --- | --- |
@@ -343,11 +346,17 @@ See [native sample](docs/validation/environment/native-sample.png),
 
 ### Sound and interface review sample
 
-Step 5 begins with the [Foundry console sample](docs/presentation-art-direction.md):
+Step 5 began with the [Foundry console sample](docs/presentation-art-direction.md):
 12 original K6/command/low-power clips, readable in-game chrome, opt-in sound
 visibility gates and a bounded alert channel. Review the
 [engine recording](docs/validation/presentation/sample.mp4) and
-[native warning view](docs/validation/presentation/native-warning.png) before
-expanding the batch. This is the sample review gate, not completion of step 5;
-voice/music and entry-screen branding remain deferred. See the
+[native warning view](docs/validation/presentation/native-warning.png).
+These remain the original sample, with its original
 [checks and remaining acceptance](docs/validation/presentation/README.md).
+
+The [completion candidate](docs/presentation-completion.md) now contains 56 clips,
+event-driven harvesting/transfer feedback, serialized inherited announcements,
+entry-screen identity and optional compact counters. See its
+[recording, checks and open issues](docs/validation/presentation-completion/README.md).
+Final listening, hardware review and human balance are unaccepted. A current
+environment congestion regression also remains open. Music and voices are deferred.

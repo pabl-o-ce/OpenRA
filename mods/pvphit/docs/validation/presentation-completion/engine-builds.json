@@ -1,0 +1,33 @@
+{
+  "before-counter-formatting": {
+    "OpenRA.Mods.Cnc.dll": "1c1450cb9b344d8a484cf99651fe61af7d3a10ee9282c46ffca370476708c05e",
+    "OpenRA.Mods.D2k.dll": "434bf4c03b02e6cc47bc5f0c3d4f3e2d27154ab71b8ac7790ade0bd09944dcf1",
+    "OpenRA.Test.dll": "dd1624138658c6d326e47429ca42bd4abbf4d462f96bef057c5786517fc0fd3e",
+    "OpenRA.Utility.dll": "d4c52aade42b98c66acb2bc5ca03d6c6623c318b42b3905b675e11a1b95a2d8f",
+    "OpenRA.Platforms.Default.dll": "259e7f77cf25d90c3b62ef2e57bf5dc88e16514355a457784f94d1b429c5d8f2",
+    "OpenRA.Game.dll": "51a7a15848bf23895819c7373e896b1461b6a09562cb00ce8d3f87ee23f94b4a",
+    "OpenRA.Server.dll": "0ce8b9026cd4c0b2373a575a92d894a01bd3c750c2adba142eedda8ba351ccbb",
+    "OpenRA.dll": "77c616da6a2151b12043f7091406fe2b600b4456296c0e9acd7c3a3d2fa3ad64",
+    "OpenRA.Mods.Common.dll": "8d400dfbebff9bc9de9335352fecbf2c695454efc2074644469d54bf85b30025"
+  },
+  "final": {
+    "OpenRA.dll": "77c616da6a2151b12043f7091406fe2b600b4456296c0e9acd7c3a3d2fa3ad64",
+    "OpenRA.Platforms.Default.dll": "259e7f77cf25d90c3b62ef2e57bf5dc88e16514355a457784f94d1b429c5d8f2",
+    "OpenRA.Mods.D2k.dll": "f49e1aad24eaef017de80f23b928000242a7eed6f999c12c7105596d282b090a",
+    "OpenRA.Server.dll": "0ce8b9026cd4c0b2373a575a92d894a01bd3c750c2adba142eedda8ba351ccbb",
+    "OpenRA.Utility.dll": "d4c52aade42b98c66acb2bc5ca03d6c6623c318b42b3905b675e11a1b95a2d8f",
+    "OpenRA.Mods.Cnc.dll": "76b319b532c383bd41179cacf95f36dee6b1aab1af34d43c33b2b680404072f5",
+    "OpenRA.Mods.Common.dll": "2e4b548660d1dff7e1987f639286dd50c2e79be4a923d25f97dcf38f7a4877a2",
+    "OpenRA.Game.dll": "51a7a15848bf23895819c7373e896b1461b6a09562cb00ce8d3f87ee23f94b4a"
+  },
+  "final-normal-output": {
+    "OpenRA.Mods.Cnc.dll": "76b319b532c383bd41179cacf95f36dee6b1aab1af34d43c33b2b680404072f5",
+    "OpenRA.Mods.D2k.dll": "f49e1aad24eaef017de80f23b928000242a7eed6f999c12c7105596d282b090a",
+    "OpenRA.Utility.dll": "d4c52aade42b98c66acb2bc5ca03d6c6623c318b42b3905b675e11a1b95a2d8f",
+    "OpenRA.Platforms.Default.dll": "259e7f77cf25d90c3b62ef2e57bf5dc88e16514355a457784f94d1b429c5d8f2",
+    "OpenRA.Game.dll": "51a7a15848bf23895819c7373e896b1461b6a09562cb00ce8d3f87ee23f94b4a",
+    "OpenRA.Server.dll": "0ce8b9026cd4c0b2373a575a92d894a01bd3c750c2adba142eedda8ba351ccbb",
+    "OpenRA.dll": "77c616da6a2151b12043f7091406fe2b600b4456296c0e9acd7c3a3d2fa3ad64",
+    "OpenRA.Mods.Common.dll": "2e4b548660d1dff7e1987f639286dd50c2e79be4a923d25f97dcf38f7a4877a2"
+  }
+}

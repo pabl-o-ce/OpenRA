@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewBox="0 0 512 256">
+<rect width="512" height="256" fill="#242c30"/>
+<rect width="512" height="2" fill="#9b9b8a"/><rect y="254" width="512" height="2" fill="#9b9b8a"/>
+<rect x="258" y="34" width="254" height="1" fill="#626e6e"/><rect x="258" y="222" width="254" height="1" fill="#626e6e"/>
+<rect x="24" y="34" width="208" height="1" fill="#626e6e"/><rect x="24" y="222" width="208" height="1" fill="#626e6e"/>
+<rect x="86" y="55" width="11" height="49" fill="#9b9b8a"/><rect x="123" y="43" width="11" height="61" fill="#9b9b8a"/>
+<rect x="160" y="55" width="11" height="49" fill="#9b9b8a"/><rect x="82" y="104" width="92" height="11" fill="#9b9b8a"/>
+<rect x="122" y="41" width="12" height="4" fill="#7fc9ca"/>
+<text x="128" y="151" text-anchor="middle" font-size="30" fill="#f2f1e7">FURNACE</text>
+<text x="128" y="182" text-anchor="middle" font-size="27" fill="#f2f1e7">COVENANT</text>
+<text x="128" y="207" text-anchor="middle" font-size="14" fill="#e2b76c">Prototype · PvPHit</text>
+</svg>
