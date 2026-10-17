@@ -1,0 +1,63 @@
+{
+  "candidate": "fc-local-30fa940-step7.2",
+  "engine_revision": "30fa940bbf0af679a151f8111409ba6dbd668153",
+  "map_uid": "2d3cd89c011e7c747871d8ac52927b40ddee1afb",
+  "identity_base_url": "https://furnace.local.test:18443/api/openra/",
+  "candidate_archive_sha256": "6a98218d26e8f56de80f050bcea30146cf14b47eb1c30f5652620ffe6281a4a4",
+  "image": {
+    "image_id": "sha256:46c013a6e0c8ed7fcbe0c6e7fe42bd883d29ecf89893e514054f403b701e11ae",
+    "wrong_release_exit": 78,
+    "running_after_5_seconds": true,
+    "network": "none",
+    "authentication_exercised": false
+  },
+  "automated": {
+    "rust_tests": 421,
+    "platform_tests": 217,
+    "focused_engine_tests": 44,
+    "packaging_tests": 3,
+    "rust_clippy": "pass",
+    "backend_typecheck": "pass",
+    "frontend_typecheck": "pass",
+    "yaml": "pass",
+    "sprites": [
+      "SNOW",
+      "INTERIOR",
+      "TEMPERAT",
+      "DESERT"
+    ],
+    "building_lab": "pass",
+    "systems_lab": "pass; unchanged shared Lua mounted in test support",
+    "vehicle_lab": "pass",
+    "two_controllers_and_replay": "pass; same Linux host; unauthenticated"
+  },
+  "congestion": "same recorded failure reproduced; arrival then same-tick friendly nudge confirmed; fixture correction awaiting review",
+  "human_matches_completed": 0,
+  "authenticated_platform_e2e": "pending",
+  "hardware_acceptance": "pending",
+  "controlled_handoff": "no-go",
+  "patches": {
+    "pvphit": {
+      "files": 13,
+      "patch_sha256": "725f1afafc0dfafc01179ddd1958aff865d0118657c15b00b2c720a2a50c9249"
+    },
+    "pvphit-game": {
+      "files": 24,
+      "patch_sha256": "f67f1b54bb9ae877454094e5f76c5cfcb9dc4667f64fa1f3ace5ad108fc44fde"
+    }
+  },
+  "local_update_rollback": [
+    {
+      "version": "fc-local-30fa940-step7.2",
+      "launch": true,
+      "player_name_preserved": true,
+      "existing_identity_files_checked": 0
+    },
+    {
+      "version": "fc-local-30fa940-step7.1",
+      "launch": true,
+      "player_name_preserved": true,
+      "existing_identity_files_checked": 0
+    }
+  ]
+}

@@ -543,3 +543,11 @@ and a side-swapped baseline pair, with empty result sheets. Hardware listening,
 accessibility, full observer/filter/transition coverage, human balance and
 authenticated platform acceptance remain open. No commit, deployment or release
 readiness is claimed.
+
+## Step 7 local integration preparation — 2026-10-17 UTC
+
+See [controlled-build status](docs/step7-controlled-build.md) and
+[retained Step 7 evidence](docs/validation/step7/README.md). Original failures are
+preserved. The congestion reproduction reaches its exact destination and is nudged
+in the same tick; a fixture-only correction is proposed for separate review.
+No human, hardware, authenticated end-to-end or public-release acceptance is implied.

@@ -1,0 +1,32 @@
+--- a/OpenRA.Mods.Common/Activities/Move/Move.cs
++++ b/OpenRA.Mods.Common/Activities/Move/Move.cs
+@@ -345,6 +345,8 @@
+ 
+ 		protected override void OnLastRun(Actor self)
+ 		{
++			if (self.Info.Name == "fc.tank")
++				Console.WriteLine($"STEP7 MOVE END tick={self.World.WorldTick} actor={self.ActorID} cell={mobile.ToCell} destination={destination} result={mobile.MoveResult} path={path?.Count}");
+ 			path = null;
+ 		}
+ 
+--- a/OpenRA.Mods.Common/Traits/Mobile.cs
++++ b/OpenRA.Mods.Common/Traits/Mobile.cs
+@@ -871,6 +871,8 @@
+ 
+ 			if (self.IsIdle)
+ 			{
++				if (self.ActorID == 180)
++					Console.WriteLine($"STEP7 NUDGE tick={self.World.WorldTick} actor={self.ActorID} cell={self.Location} blocking={blocking.ActorID} idle={self.IsIdle}");
+ 				self.QueueActivity(false, new Nudge(blocking));
+ 				return;
+ 			}
+--- a/OpenRA.Mods.Common/Widgets/Logic/Ingame/ReplayControlBarLogic.cs
++++ b/OpenRA.Mods.Common/Widgets/Logic/Ingame/ReplayControlBarLogic.cs
+@@ -44,6 +44,7 @@
+ 				container.Visible = true;
+ 				var speed = PlaybackSpeed.Regular;
+ 				var originalTimestep = world.Timestep;
++				world.ReplayTimestep = 1; // Diagnostic playback speed only; synced timestep is unchanged.
+ 
+ 				// In the event the replay goes out of sync, it becomes no longer usable. For polish we permanently pause the world.
+ 				bool IsWidgetDisabled() => orderManager.IsOutOfSync || orderManager.NetFrameNumber >= replayNetTicks;

@@ -1,0 +1,37 @@
+--- a/mods/pvphit/maps/foundry-environment-checks/checks.lua
++++ b/mods/pvphit/maps/foundry-environment-checks/checks.lua
+@@ -78,6 +78,10 @@
+             groupGoals[index]=CPos.New(66+dx*2,sy+dy*2)
+             groupBack[index]=CPos.New(25+dx*2,sy+dy*2)
+             unit.Move(groupGoals[index])
++            unit.CallFunc(function()
++                check(unit.Location==groupGoals[index],"tank " .. index .. " reached outbound goal")
++                groupArrived[index]=true
++            end)
+         end
+     end
+     phase="groups-out"
+@@ -164,7 +168,8 @@
+         local all=true
+         for i,unit in ipairs(groups) do
+             local goal=phase=="groups-out" and groupGoals[i] or groupBack[i]
+-            if unit.Location==goal and unit.IsIdle then groupArrived[i]=true end
++            -- Completion callbacks assert the exact destination before a later friendly nudge.
++            -- Merely passing through a destination does not complete the queued Move.
+             if not groupArrived[i] then all=false end
+         end
+         if all then
+@@ -174,7 +179,12 @@
+                     local lane=math.floor((i-1)/12)+1;local dx=(i-1)%4;local dy=math.floor(((i-1)%12)/4)
+                     local fy=lane==1 and 17 or 75
+                     if lane~=2 then unit.Move(CPos.New(62+dx,fy+dy));unit.Move(CPos.New(32+dx,fy+dy)) end
+-                    unit.Move(groupBack[i])
++                    local index=i
++                    unit.Move(groupBack[index])
++                    unit.CallFunc(function()
++                        check(unit.Location==groupBack[index],"tank " .. index .. " reached return goal")
++                        groupArrived[index]=true
++                    end)
+                 end
+                 phase="groups-back";groupArrived={};groupStart=DateTime.GameTime
+             else

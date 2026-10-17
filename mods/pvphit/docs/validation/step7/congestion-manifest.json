@@ -1,0 +1,32 @@
+{
+  "original-environment.log": {
+    "sha256": "a0ef76ab0514b5552332782d4a1d7004a9a3a8462316d2b7c9d49e18475961d2",
+    "source": "mods/pvphit/docs/validation/presentation-completion/foundry-environment-checks.log"
+  },
+  "current-reproduction.log": {
+    "sha256": "7e8623d870b8a010b569fe94bdd7b33791225cb8a9846375c7cee93bf99f0a1a",
+    "source": "mods/pvphit/.work/step7-reproduce2-environment-checks.log"
+  },
+  "baseline-reproduction.log": {
+    "sha256": "47a61e73fcbe34a323ab74ed98d65894b9e8068d5ee13585a2108d32f15347d3",
+    "source": "/tmp/furnace-step7/engine-baseline/mods/pvphit/.work/step7-baseline-environment-checks.log"
+  },
+  "movement-diagnostic.log": {
+    "sha256": "2574c0fcffb09486ed4a6ad7740b9b1097722609e1bc327feae8cd2736fac922",
+    "source": "/tmp/furnace-step7/engine-baseline/mods/pvphit/.work/step7-diagnostic-environment-checks.log"
+  },
+  "nudge-diagnostic.log": {
+    "sha256": "d223efc0c82ced3166e53bba421926a6c93429dd342f605efa38f4a622e8b59c",
+    "source": "/tmp/furnace-step7/engine-baseline/mods/pvphit/.work/step7-nudge-diagnostic-environment-checks.log"
+  },
+  "baseline-build.log": {
+    "sha256": "6adbc3b9bb2ac7010c90fb0b6f7cc8aa335b0fd4756b35cf2acd64ab17b916ce",
+    "source": "/tmp/furnace-step7/baseline-build.log"
+  },
+  "replay": {
+    "source": "mods/pvphit/.work/completion20261016-environment-checks-support/Replays/pvphit/{DEV_VERSION}/pvphit-2026-10-16T225631Z.orarep",
+    "seed": -1230864361,
+    "map_uid": "417bb951ca4e6078718bfe194f85739702e568be",
+    "sha256": "1e77d6c11bbb71be87d1f1599ef79312328975f952cbdcf77376000ba9221432"
+  }
+}

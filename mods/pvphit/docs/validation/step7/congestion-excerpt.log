@@ -1,0 +1,38 @@
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 1
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 2
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 3
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 4
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 5
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 6
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 7
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 8
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 9
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 10
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 11
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 12
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 13
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 14
+Lua debug: ENVIRONMENT YARD PASSED: paired travel within five percent: 15
+Lua debug: ENVIRONMENT YARD PASSED: side 1 opening processor supplied hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 2 opening processor supplied hauler
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.hauler
+STEP7 MOVE END tick=7620 actor=180 cell=34,76 destination=34,76 result=CompleteDestinationReached path=0
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.scout
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.scout
+STEP7 MOVE END tick=8075 actor=180 cell=64,76 destination=64,76 result=CompleteDestinationReached path=0
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.tank
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.tank
+STEP7 MOVE END tick=8354 actor=180 cell=70,60 destination=70,60 result=CompleteDestinationReached path=0
+Lua debug: ENVIRONMENT YARD PASSED: three twelve-tank groups completed groups-out
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.siege
+STEP7 MOVE END tick=9046 actor=180 cell=64,76 destination=64,76 result=CompleteDestinationReached path=0
+STEP7 MOVE END tick=9585 actor=180 cell=34,76 destination=34,76 result=CompleteDestinationReached path=0
+Lua debug: ENVIRONMENT YARD PASSED: side 2 accepted paid fc.siege
+Lua debug: ENVIRONMENT YARD PASSED: side 1 accepted paid fc.siege
+STEP7 MOVE END tick=9864 actor=180 cell=29,60 destination=29,60 result=CompleteDestinationReached path=0
+STEP7 NUDGE tick=9864 actor=180 cell=29,60 blocking=184 idle=True
+STEP7 MOVE END tick=9898 actor=180 cell=30,59 destination=30,59 result=CompleteDestinationReached path=0
+Lua debug: ENVIRONMENT YARD: stranded tank 31 at 30,59
+Fatal Lua Error: ENVIRONMENT YARD FAILED: tank group timeout groups-back

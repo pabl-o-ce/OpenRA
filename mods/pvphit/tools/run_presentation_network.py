@@ -19,6 +19,7 @@ ROOT = MOD.parents[1]
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--tag', required=True)
+    p.add_argument('--engine-dir', type=Path, help='Extracted self-contained candidate to verify')
     p.add_argument('--display', type=int, default=125)
     p.add_argument('--port', type=int, default=12439)
     p.add_argument('--seconds', type=int, default=400)
@@ -27,15 +28,18 @@ def main():
         p.error('Use an alphanumeric tag')
     work = MOD/'.work'/('presentation-network-'+args.tag)
     work.mkdir()
-    dotnet = str(MOD/'.work/dotnet/dotnet')
-    env = dict(os.environ, ENGINE_DIR=str(ROOT), XDG_CONFIG_HOME=str(MOD/'.work/config'),
+    engine_root = args.engine_dir.resolve() if args.engine_dir else ROOT
+    version = (engine_root/'VERSION').read_text().strip()
+    def engine(name):
+        return [str(engine_root/name)] if args.engine_dir else [str(MOD/'.work/dotnet/dotnet'), 'bin/'+name+'.dll']
+    env = dict(os.environ, ENGINE_DIR=str(engine_root), XDG_CONFIG_HOME=str(MOD/'.work/config'),
                LIBGL_ALWAYS_SOFTWARE='1', SDL_VIDEODRIVER='x11', LP_NUM_THREADS='2')
     env.pop('PVPHIT_MATCH_ID', None)
     processes, handles = [], []
     def launch(command, name, extra=None):
         handle = (work/(name+'.log')).open('w')
         handles.append(handle)
-        process = subprocess.Popen(command, cwd=ROOT, env=dict(env, **(extra or {})), stdout=handle, stderr=subprocess.STDOUT)
+        process = subprocess.Popen(command, cwd=engine_root, env=dict(env, **(extra or {})), stdout=handle, stderr=subprocess.STDOUT)
         processes.append(process)
         return process
     def stop(process):
@@ -48,7 +52,7 @@ def main():
                 process.wait()
     def support(name):
         path = work/name
-        target = path/'maps/pvphit/{DEV_VERSION}/presentation-network'
+        target = path/('maps/pvphit/'+version+'/presentation-network')
         target.mkdir(parents=True)
         (path/'Content').symlink_to(MOD/'.work/support/Content')
         text = (MOD/'maps/foundry-environment-checks/map.yaml').read_text()
@@ -69,15 +73,15 @@ def main():
                        stdout=subprocess.DEVNULL, check=True)
     def screenshot(display, name):
         subprocess.run(['magick','import','-window','root',str(work/(name+'.png'))],env=dict(env,DISPLAY=display),check=True)
-    result = {}
+    result = {'engine_dir': str(engine_root), 'version': version, 'authentication': False, 'human_controllers': 0}
     try:
         with socket.socket() as probe:
             probe.bind(('127.0.0.1', args.port))
         server_support = support('server')
-        uid = subprocess.check_output([dotnet,'bin/OpenRA.Utility.dll','pvphit','--map-hash',
-            str(server_support/'maps/pvphit/{DEV_VERSION}/presentation-network')],cwd=ROOT,env=env).decode().strip()
+        uid = subprocess.check_output(engine('OpenRA.Utility')+['pvphit','--map-hash',
+            str(server_support/('maps/pvphit/'+version+'/presentation-network'))],cwd=engine_root,env=env).decode().strip()
         result['map_uid'] = uid
-        server = launch([dotnet,'bin/OpenRA.Server.dll','Engine.EngineDir='+str(ROOT),'Engine.SupportDir='+str(server_support),
+        server = launch(engine('OpenRA.Server')+['Engine.EngineDir='+str(engine_root),'Engine.SupportDir='+str(server_support),
             'Game.Mod=pvphit','Server.ListenPort='+str(args.port),'Server.Map='+uid,'Server.AdvertiseOnline=False',
             'Server.QueryMapRepository=False','Server.RequireAuthentication=False','Server.RecordReplays=True',
             'Server.EnableSyncReports=True'], 'server', {'ALSOFT_DRIVERS':'null'})
@@ -93,7 +97,7 @@ def main():
             path = support('client-'+str(i))
             conf = work/('audio-'+str(i)+'.conf')
             conf.write_text('[general]\nchannels = stereo\nsample-type = int16\nfrequency = 44100\n[wave]\nfile = '+str(work/('client-'+str(i)+'.wav'))+'\n')
-            clients.append(launch([dotnet,'bin/OpenRA.dll','Engine.EngineDir='+str(ROOT),'Engine.SupportDir='+str(path),
+            clients.append(launch(engine('OpenRA')+['Engine.EngineDir='+str(engine_root),'Engine.SupportDir='+str(path),
                 'Game.Mod=pvphit','Launch.Connect=127.0.0.1:'+str(args.port)], 'client-'+str(i),
                 {'DISPLAY':display,'ALSOFT_DRIVERS':'wave','ALSOFT_CONF':str(conf)}))
             time.sleep(6)
@@ -143,7 +147,7 @@ def main():
         result['replay'] = str(replay.relative_to(work))
         # Replay commands come from the recording, never inject deployment/movement here.
         replay_support = support('replay')
-        replay_process = launch([dotnet,'bin/OpenRA.dll','Engine.EngineDir='+str(ROOT),'Engine.SupportDir='+str(replay_support),
+        replay_process = launch(engine('OpenRA')+['Engine.EngineDir='+str(engine_root),'Engine.SupportDir='+str(replay_support),
             'Game.Mod=pvphit','Launch.Replay='+str(replay)],'replay',{'DISPLAY':displays[0],'ALSOFT_DRIVERS':'null'})
         deadline=time.monotonic()+args.seconds
         while time.monotonic()<deadline:

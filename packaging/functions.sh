@@ -132,7 +132,7 @@ install_data() (
 		# and both content manifests next to its own manifest.
 		if [ "${MOD_ID}" = "pvphit" ]; then
 			echo "Installing mod ${MOD_ID} (with ra data) to ${DEST_PATH}"
-			cp -r "${SRC_PATH}/mods/pvphit" "${DEST_PATH}/mods/"
+			python3 "${SRC_PATH}/packaging/pvphit_runtime.py" "${SRC_PATH}/mods/pvphit" "${DEST_PATH}/mods/pvphit"
 			cp -r "${SRC_PATH}/mods/pvphit-content" "${DEST_PATH}/mods/"
 			cp -r "${SRC_PATH}/mods/ra" "${DEST_PATH}/mods/"
 			cp -r "${SRC_PATH}/mods/common-content" "${DEST_PATH}/mods/"
@@ -225,6 +225,19 @@ set_mod_version() (
 		awk -v v="${VERSION}" '{sub("Version:.*$", "Version: " v); print $0}' "${MOD_YAML_PATH}" > "${MOD_YAML_PATH}.tmp"
 		awk -v v="${VERSION}" '{sub("/[^/]*: User$", "/"v ": User"); print $0}' "${MOD_YAML_PATH}.tmp" > "${MOD_YAML_PATH}"
 		rm "${MOD_YAML_PATH}.tmp"
+		# Furnace runtime inventories must describe the stamped manifest on every
+		# platform, not the {DEV_VERSION} source copied into the package.
+		if [ -f "$(dirname "${MOD_YAML_PATH}")/runtime-files.json" ]; then
+			python3 - "${MOD_YAML_PATH}" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+path = Path(sys.argv[1])
+manifest = path.parent / 'runtime-files.json'
+hashes = json.loads(manifest.read_text())
+hashes[path.name] = hashlib.sha256(path.read_bytes()).hexdigest()
+manifest.write_text(json.dumps(hashes, indent=2) + '\n')
+PY
+		fi
 		shift
 	done
 )

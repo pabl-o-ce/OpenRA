@@ -360,3 +360,9 @@ entry-screen identity and optional compact counters. See its
 [recording, checks and open issues](docs/validation/presentation-completion/README.md).
 Final listening, hardware review and human balance are unaccepted. A current
 environment congestion regression also remains open. Music and voices are deferred.
+
+## Controlled-build work
+
+[Step 7 status and handoff gates](docs/step7-controlled-build.md) records local packaging,
+PvPHit integration changes, congestion diagnosis, evidence and remaining acceptance.
+This is not a public release or a completed human acceptance claim.
